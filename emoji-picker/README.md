@@ -1,6 +1,6 @@
 # 🎯 Emoji Picker - Bộ chọn emoji miễn phí
 
-Live demo: https://behitek.github.io/tools/
+Live demo: https://behitek.com/tools/emoji-picker/
 
 > Công cụ chọn emoji miễn phí với bộ sưu tập emoji đầy đủ. Tìm kiếm, chọn và sao chép emoji nhanh chóng cho social media, tin nhắn và website.
 
@@ -29,7 +29,7 @@ Repository này đã được cấu hình tự động deploy lên GitHub Pages 
 ### Cách hoạt động:
 1. **GitHub Actions Workflow**: Khi có commit mới push lên branch `main`, workflow `.github/workflows/deploy.yml` sẽ tự động chạy
 2. **Tự động build và deploy**: Workflow sẽ lấy nội dung từ thư mục `emoji-picker` và deploy lên GitHub Pages
-3. **URL live**: Website sẽ có sẵn tại `https://behitek.github.io/tools/`
+3. **URL live**: Website sẽ có sẵn tại `https://behitek.com/tools/emoji-picker/`
 
 ### Để enable GitHub Pages:
 1. Vào **Repository Settings** > **Pages**

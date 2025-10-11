@@ -7,7 +7,7 @@ A collection of useful web tools and utilities.
 ### 🎯 Emoji Picker
 > Bộ chọn emoji miễn phí với bộ sưu tập emoji đầy đủ
 
-**Live Demo**: https://behitek.github.io/tools/
+**Live Demo**: https://behitek.com/tools/emoji-picker/
 
 **Features**:
 - 🔍 Quick search by keywords
@@ -22,8 +22,8 @@ A collection of useful web tools and utilities.
 
 This repository is automatically deployed to GitHub Pages using GitHub Actions. Each tool is accessible via:
 
-- **Base URL**: `https://behitek.github.io/tools/`
-- **Emoji Picker**: `https://behitek.github.io/tools/` (main page)
+- **Base URL**: `https://behitek.com/tools/`
+- **Emoji Picker**: `https://behitek.com/tools/emoji-picker/`
 
 ## 🔧 Development
 
