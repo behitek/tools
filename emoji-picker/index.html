@@ -1,0 +1,1464 @@
+
+<!--[ Good Software Ltd. (c) 2017 ]-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=description content="Công cụ chọn emoji miễn phí với bộ sưu tập emoji đầy đủ. Tìm kiếm, chọn và sao chép emoji nhanh chóng cho social media, tin nhắn và website.">
+<title>🎯 Bộ chọn emoji miễn phí - Tìm và sao chép emoji nhanh chóng �</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<script src="script.mini.js" type="text/javascript"></script>
+<style>#container,body,html{width:100%;height:100%;margin:0;padding:0;font-family:Roboto,'Open Sans',Arial,sans-serif;overflow:hidden}body{overflow:hidden}#container{position:relative;box-sizing:content-box;padding:40px 30px 0 0;background:#fff;z-index:0;overflow:auto;overflow-x:hidden;overflow-y:auto;user-select:none}#container.search-mode{overflow:hidden!important}#container>.category{position:relative;box-sizing:border-box;display:block;width:102%;height:auto;margin:0;padding:7px 0 7px 71px;background:0 0;background-size:0 0;line-height:6px;overflow:auto;overflow-x:hidden;overflow-y:auto}#container>.category.active{display:block}#container>.category>span{display:block;margin:2px 0 0 0;padding:0 0 0 8px;font-size:16px;text-transform:uppercase;text-align:left;line-height:normal;color:#ccc}#container>.category>p{position:relative;display:block;width:24px;height:24px;margin:6px;padding:0;border:4px solid #fff;border-radius:3px;background-color:#fff!important;background-image:inherit;background-size:auto 24px!important;background-position:center center;background-repeat:no-repeat;font-size:0;color:transparent;color:transparent;line-height:0;float:left;cursor:pointer}#container>.category>p.tone1{background-image:url(categories/tone1.png)}#container>.category>p.tone2{background-image:url(categories/tone2.png)}#container>.category>p.tone3{background-image:url(categories/tone3.png)}#container>.category>p.tone4{background-image:url(categories/tone4.png)}#container>.category>p.tone5{background-image:url(categories/tone5.png)}#container>.category>p:hover{box-shadow:0 0 0 2px #aaa}#container>.category>p.active{box-shadow:0 0 0 2px #263c68,0 0 5px rgba(0,0,0,.25)}#container>.category>p>.remove{display:block;position:absolute;width:14px;height:14px;right:-6px;top:-6px;border:none;border-radius:0 5px 0 5px;background:#d9432c url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 13.96" version="1.1"><g><path d="M1.61.36l12.12,12a.93.93,0,0,1,0,1.32h0a1,1,0,0,1-1.33,0L.28,1.69A.93.93,0,0,1,.28.36h0A1,1,0,0,1,1.61.36Z" transform="translate(0 -0.04)" fill="%23fff"/><path d="M13.72.32h0a.93.93,0,0,1,0,1.32l-12.12,12a1,1,0,0,1-1.33,0h0a.93.93,0,0,1,0-1.32L12.39.32A1,1,0,0,1,13.72.32Z" transform="translate(0 -0.04)" fill="%23fff"/></g></svg>') no-repeat center center;background-size:auto 8px}#categories_list{position:absolute;box-sizing:border-box;width:70px;height:100%;left:0;top:0;margin:0;padding:0;background:#263b66;overflow:auto;overflow-x:hidden;overflow-y:auto;z-index:1}#categories_list>.list_element{position:relative;width:100%;height:40px;margin:0;padding:0;background:0 0;background-size:auto 50%;background-position:center center;background-repeat:no-repeat;cursor:pointer;overflow:hidden}#categories_list>.list_element.active{background-size:auto 80%}#categories_list>.list_element.active:after{content:'';display:block;position:absolute;width:0;height:0;margin:9px 0 0 0;right:0;filter:drop-shadow(0 0 1px #000);border-right:11px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}#categories_list>.list_element:nth-child(odd){background-color:rgba(0,0,0,.25)}#categories_list>.list_element>.icon{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px;padding:0;border:none;background-color:transparent;background-size:auto 100%;background-position:center center;background-repeat:no-repeat}#c_search{background-image:url('data:image/svg+xml;utf8,<svg height="42px" version="1.1" viewBox="-5 -5 42 42" width="42px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="translate(576 192)" fill="white"><path d="M-544.88-165.121l-7.342-7.342c-1.095,1.701-2.541,3.148-4.242,4.242l7.343,7.342c1.172,1.172,3.071,1.172,4.241,0 C-543.707-162.048-543.707-163.947-544.88-165.121z"/><path d="M-552-180c0-6.627-5.373-12-12-12s-12,5.373-12,12s5.373,12,12,12S-552-173.373-552-180z M-564-171c-4.964,0-9-4.036-9-9 c0-4.963,4.036-9,9-9c4.963,0,9,4.037,9,9C-555-175.036-559.037-171-564-171z"/><path d="M-571-180h2c0-2.757,2.242-5,5-5v-2C-567.86-187-571-183.858-571-180z"/></g></svg>')!important}#f_search{position:fixed!important;box-sizing:border-box!important;left:0;top:0;margin:0!important;height:40px!important;background-color:#e3e3e9!important;padding-top:0!important;padding-left:70px!important;box-shadow:0 0 5px rgba(0,0,0,.25);overflow:hidden!important;z-index:10}#f_search.active{height:100%!important;padding-bottom:70px!important;overflow:auto!important;overflow-x:hidden!important;overflow-y:auto!important}#right_block{position:absolute;width:100%;height:70px;left:0;bottom:0;margin:0 0 0 70px;padding:0;background:#263b66;z-index:1}#copy_block{display:block;box-sizing:border-box;width:54%;height:50px;margin:10px 0 10px 58px;padding:0 54px 0 0;border:2px solid #00184a;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.25);background:#fff;font-size:24px;font-weight:400;font-family:"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;text-align:center;color:#000;overflow:auto;overflow-x:auto;overflow-y:hidden;float:left;outline:0}.copy_label{display:block;width:auto;height:36px;margin:17px 0;padding:0 10px 0 0;font-size:18px;font-weight:500;text-align:center;line-height:20px;float:left;color:#fff}.copy_label i{display:block;font-size:12px;font-weight:300;color:#fff;opacity:.5}#sharing_block{position:absolute;width:100%;height:80px;margin:0;right:0;bottom:0}#sharing_block>span{display:block;width:100%;height:auto;margin:0;padding:0;font-size:18px;font-weight:300;text-align:center;color:#fff}ul.share-buttons{width:140px;margin:10px auto;list-style:none;padding:0}ul.share-buttons li{display:inline}ul.share-buttons img{width:32px}#search{display:block;box-sizing:border-box;width:100%;height:40px;margin:0 0 7px 0;padding:0 0 0 10px;border:none;box-shadow:0 0 5px rgba(0,0,0,.25);background:#fff;font-size:24px;font-weight:300;text-align:left;color:#000;outline:0}#clear_selection{display:none;box-sizing:content-box;width:50px;height:42px;margin:14px 3px 7px -56px;padding:0;border:none;border-radius:7px;background:#fff;font-size:14px;font-weight:700;text-align:center;text-transform:uppercase;color:#1d2c4d;float:left;outline:0;cursor:pointer}#clear_selection:hover{text-decoration:underline}#clear_selection:active{color:#eee}#copy_button{display:block;box-sizing:border-box;width:60px;height:50px;margin:10px 3px;padding:0;border:2px solid #fff;border-radius:10px;background:rgba(0,0,0,.25);font-size:14px;font-weight:700;text-align:center;text-transform:uppercase;color:#fff;float:left;outline:0;cursor:pointer}#copy_button.copied{border-color:#388E3C;font-size:12px;color:#388E3C}#scroller{position:fixed;width:7px;height:150px;right:2px;top:46px;border:none;border-radius:4px;background:#000;opacity:.5;cursor:default;z-index:10;opacity:0;pointer-events:none;-webkit-transition:opacity .1s linear;-moz-transition:opacity .1s linear;-o-transition:opacity .1s linear;transition:opacity .1s linear}#scroller:hover{opacity:.5}#set_tone{position:absolute;width:132px;height:20px;left:272px;top:10px;border:none;border-radius:3px;background:#eee}#set_tone>div{display:block;width:16px;height:16px;margin:2px 3px;padding:0;border:none;border-radius:2px;background-image:inherit;background-position:0 0;background-size:auto 16px;background-repeat:no-repeat;float:left;cursor:pointer}#set_tone>div.chosen{background-color:#fff}</style>
+</head>
+<body>
+<div id="categories_list">
+	<div id="c_search" class="list_element" title="Search"></div>
+	<div id="c0" class="list_element active" title="Smileys"></div>
+	<div id="c1" class="list_element" title="Gestures and People"></div>
+	<div id="c2" class="list_element" title="Hearts, clothes & activities"></div>
+	<div id="c3" class="list_element" title="Food, drinks"></div>
+	<div id="c4" class="list_element" title="Animals"></div>
+	<div id="c5" class="list_element" title="Plants, nature & weather"></div>
+	<div id="c6" class="list_element" title="Traveling, places & buildings"></div>
+	<div id="c7" class="list_element" title="Objects"></div>
+	<div id="c8" class="list_element" title="Symbols"></div>
+	<div id="c9" class="list_element" title="Flags"></div>
+</div>
+<div id="scroller"></div>
+<div id="container">
+	<div id="f_search" class="category">
+		
+		<input type="text" id="search" placeholder="Tìm emoji... / Search emoji...">
+	</div>
+	<div id="f0" class="category active">
+		<span>Icon Facebook phổ biến</span>
+		<p alt="Happy Facebook Emoji" title="Happy smiley face">🙂</p>
+		<p alt="Grinning Facebook Smiley" title="Grinning smiley face">😀</p>
+		<p alt="Laughing Closed Eyes" title="Toothy grin">😄</p>
+		<p alt="Grinning emoji with squinted eyes" title="Grinning and squinting eyes">😆</p>
+		<p alt="Smiling with sweat Emoji" title="Grinning with sweat drop">😅</p>
+		<p alt="LOL Emoji" title="Laughing with tears of joy">😂</p>
+		<p alt="ROFL Emoji" title="Rolling on the floor laughing">🤣</p>
+		<p alt="Smiling and blushing emoji" title="Smug smile and blushing">😊</p>
+		<p alt="Grin and blush emoji" title="Big smile and blushing">☺️</p>
+		<p alt="Relieved emoji" title="Relieved and content">😌</p>
+		<p alt="Wink Emoji" title="Winking smiley">😉</p>
+		<p alt="Flirting emoji" title="Smirking face">😏</p>
+		<p alt="Heart-eyes Emoji" title="Smiley with heart-eyes">😍</p>
+		<p alt="Emoji blowing a kiss" title="Throwing a kiss">😘</p>
+		<p alt="Kissy face emoji" title="Kissing smiley face">😗</p>
+		<p alt="Kissing emoji" title="Kissing smiley with closed eyes">😙</p>
+		<p alt="Kiss emoji blushing" title="Kissing smiley face blushing">😚</p>
+		<p alt="Hug Facebook Emoji" title="Hugging smiley face">🤗</p>
+		<p alt="Blushing emoji" title="Blushing smiley face">😳</p>
+		<p alt="Sarcasm Emoji" title="Upside-down smiley face">🙃</p>
+		<p alt="Angel emoji with halo" title="Angel smiley">😇</p>
+		<p alt="Devil Smiley for Facebook" title="Devil smiley">😈</p>
+		<p alt="Tongue out emoji" title="Sticking tongue out">😛</p>
+		<p alt="Facebook emoji with tongue stuck out" title="Tongue-out and squinting">😝</p>
+		<p alt="Cheeky emoji" title="Tongue-out and winking">😜</p>
+		<p alt="Delicious emoji" title="Smiley licking its mouth">😋</p>
+		<p alt="Drooling Facebook Smiley" title="Drooling smiley">🤤</p>
+		<p alt="Nerdy emoji" title="Smiley face with eyeglasses">🤓</p>
+		<p alt="Cool emoji with shades" title="Smiley face with sunglasses">😎</p>
+		<p alt="Money-eyes emoji" title="Money smiley">🤑</p>
+		<p alt="Unimpressed emoji dissatisfied" title="Unamused face">😒</p>
+		<p alt="Frowny emoji" title="Frowny face">🙁</p>
+		<p alt="Frown face emoji" title="Big frown">☹️</p>
+		<p alt="Sad emoji" title="Disappointed">😞</p>
+		<p alt="Sad pensive emoji" title="Sad and pensive">😔</p>
+		<p alt="Confounded emoji" title="Quivering mouth">😖</p>
+		<p alt="Sad emoji cold sweating" title="Sad face with sweat drop">😓</p>
+		<p alt="Frown emoji sweating" title="Frowny face with sweat drop">😢</p>
+		<p alt="Crying emoji with tear" title="Crying face">😢</p>
+		<p alt="Sobbing emoji" title="Sobbing">😭</p>
+		<p alt="Worried emoji" title="Worrying face">😟</p>
+		<p alt="Persevering face" title="Helpless">😣</p>
+		<p alt="Scrunched eyes emoji" title="Weary">😩</p>
+		<p alt="Tired emoji" title="Exhausted">😫</p>
+		<p alt="Confused emoji pouting" title="Unamused">😕</p>
+		<p alt="Thinking emoji" title="Thinking">🤔</p>
+		<p alt="Eye-roll emoji" title="Rolling eyes">🙄</p>
+		<p alt="Mad emoji with steam" title="Steaming mad">😤</p>
+		<p alt="Angry Facebook Emoji" title="Angry face">😠</p>
+		<p alt="Grumpy emoji" title="Grumpy">😡</p>
+		<p alt="Emoji without mouth" title="Silent blank face">😶</p>
+		<p alt="Zipper mouth emoji" title="Lips sealed">🤐</p>
+		<p alt="Speechless emoji" title="Neutral face">😐</p>
+		<p alt="Emoji with straight mouth" title="Expressionless">😑</p>
+		<p alt="Surprised Facebook Emoji" title="Surprised">😯</p>
+		<p alt="Astonished emoji with open mouth" title="Shocked">😲</p>
+		<p alt="Emoji in pain" title="Anguished">😧</p>
+		<p alt="Fearful emoji" title="Scared">😨</p>
+		<p alt="Blue scared emoji" title="Terrified">😰</p>
+		<p alt="Screaming emoji in fear" title="Screaming in fear">😱</p>
+		<p alt="Sleepy Facebook Emoticon" title="Sleepy emoji with snot bubble">😪</p>
+		<p alt="Sleeping emoji zzz" title="Sleeping and snoring">😴</p>
+		<p alt="Awkward grimace emoji" title="Nervous">😬</p>
+		<p alt="Lying emoji" title="Liar with big nose">🤥</p>
+		<p alt="Sneezing emoji" title="Sneezing">🤧</p>
+		<p alt="Sick Facebook Emoticon" title="Sick emoji with thermometer">🤒</p>
+		<p alt="Doctor emoji" title="Smiley with medical mask">😷</p>
+		<p alt="Hurt emoji" title="Head-bandage">🤕</p>
+		<p alt="Dizzy emoji with spiral eyes" title="Dizzy">😵</p>
+		<p alt="Green emoji feeling bad" title="Nauseated">🤢</p>
+		<p alt="Cowboy emoji" title="Smiley with cowboy hat">🤠</p>
+		<p alt="Clown emoji" title="Smiling clown face">🤡</p>
+		<p alt="Evil Facebook Emoji" title="Angry devil">👿</p>
+		<p alt="Ogre FB Emoji" title="Ogre">👹</p>
+		<p alt="Goblin emoji" title="Goblin">👺</p>
+		<p alt="Ghost Facebook Emoticon" title="Ghost emoji">👻</p>
+		<p alt="Skull Emoticon" title="Skull emoji">💀</p>
+		<p alt="Extraterrestrial emoticon" title="Alien emoji">👽</p>
+		<p alt="Monster FB Emoticon" title="Monster game character">👾</p>
+		<p alt="Robot Facebook Emoticon" title="Robot emoji">🤖</p>
+		<p alt="Poop emoticon for Facebook" title="Smiling poop emoji">💩</p>
+		<p alt="Pumpkin emoji - Halloween emoticon" title="Jack-o'lantern">🎃</p>
+	</div>
+
+	<div id="f1" class="category">
+		<span>Icon facebook cử chỉ, con người</span>
+		<p alt="Thumbs up emoji" title="Thumbs up">👍</p>
+		<p alt="Thumbs down emoji" title="Thumbs down">👎</p>
+		<p alt="Peace emoji" title="Peace fingers">✌️</p>
+		<p alt="Fingers crossed emoji" title="Crossed fingers">🤞</p>
+		<p alt="OK emoji" title="Perfect">👌</p>
+		<p alt="Call me emoji" title="Call me">🤙</p>
+		<p alt="Rock on hand gesture" title="Rock on">🤘</p>
+		<p alt="Middle finger emoji -  Flipping the bird" title="Rude finger">🖕</p>
+		<p alt="Index finger emoji" title="Index finger">☝️</p>
+		<p alt="Manicure emoji" title="Nail polish">💅</p>
+		<p alt="Pointing right emoji" title="Pointing right">👉</p>
+		<p alt="Pointing left emoji" title="Pointing left">👈</p>
+		<p alt="Pointing down finger emoji" title="Pointing down">👇</p>
+		<p alt="Up pointing finger emoji" title="Pointing up">👆</p>
+		<p alt="Punch emoji" title="Fist bump">👊</p>
+		<p alt="Raising fist" title="Raised fist">✊</p>
+		<p alt="Fist bump emoji" title="Right-facing fist">🤜</p>
+		<p alt="Fist emoticon" title="Left-facing fist">🤛</p>
+		<p alt="Strong muscles emoji" title="Flexed biceps">💪</p>
+		<p alt="Writing emoji" title="Writing hand">✍️</p>
+		<p alt="Praying hands emoji" title="Praying hands">🙏</p>
+		<p alt="Selfie emoji" title="Selfie hand">🤳</p>
+		<p alt="Clapping hands emoji" title="Applause">👏</p>
+		<p alt="Handshake emoji" title="Handshake">🤝</p>
+		<p alt="Raising hands emoji" title="Celebrating">🙌</p>
+		<p alt="Open hands emoticon" title="Open hands">👐</p>
+		<p alt="Raised hand emoji" title="High five">✋</p>
+		<p alt="Hi Emoji" title="Open hand">🖐️</p>
+		<p alt="Waving emoji" title="Waving hand">👋</p>
+		<p alt="Spock emoji" title="Vulcan salute">🖖</p>
+		<p alt="Ear emoji" title="Ear">👂</p>
+		<p alt="Nose emoji" title="Nose">👃</p>
+		<p alt="Eye emoji" title="Eye">👁️</p>
+		<p alt="Eyes emoji" title="Eyes">👀</p>
+		<p alt="All seeing eye emoji" title="Eye">👁️‍🗨️</p>
+		<p alt="Tongue emoji" title="Tongue out">👅</p>
+		<p alt="Footprints emoji" title="Footprints">👣</p>
+		<p alt="Silhouette emoji" title="Silhouette">👤</p>
+		<p alt="Silhouette pair emoji" title="Silhouette pair">👥</p>
+		<p alt="Speaking emoji" title="Speaking head">🗣️</p>
+		<p alt="Baby emoji" title="Baby face">👶</p>
+		<p alt="Boy emoji" title="Boy">👦</p>
+		<p alt="Girl emoji" title="Girl">👧</p>
+		<p alt="Male emoji" title="Man with moustache">👨</p>
+		<p alt="Female emoji" title="Woman">👩</p>
+		<p alt="Blonde person emoji" title="Blonde man">👱</p>
+		<p alt="Grandpa emoji" title="Older man">👴</p>
+		<p alt="Grandma emoji" title="Older woman">👵</p>
+		<p alt="Santa emoji" title="Santa Claus">🎅</p>
+		<p alt="Mrs. Santa Claus emoji" title="Mrs. Claus">🤶</p>
+		<p alt="Police emoji" title="Police officer">👮</p>
+		<p alt="Builder emoji" title="Construction worker">👷</p>
+		<p alt="Guard emoji" title="Guard">💂</p>
+		<p alt="Spy emoji" title="Detective">🕵️</p>
+		<p alt="Turban emoji" title="Person with turban">👳</p>
+		<p alt="Chinese emoji" title="Man with Chinese cap">👲</p>
+		<p alt="Man in tuxedo emoji groom" title="Groom">🤵</p>
+		<p alt="Wedding dress emoji" title="Bride">👰</p>
+		<p alt="Prince emoji" title="Prince">🤴</p>
+		<p alt="Princess emoji with crown" title="Princess">👸</p>
+		<p alt="Waving female emoji" title="Girl waving hello">🙋</p>
+		<p alt="Female emoji with raised hand" title="Girl raising hand">💁</p>
+		<p alt="Female emoji gesturing NO" title="Girl with arms forming an X">🙅</p>
+		<p alt="Ballerina emoji" title="Girl with arms above her head">🙆</p>
+		<p alt="Shrug emoji" title="Girl shrugging">🤷</p>
+		<p alt="Facepalm emoji" title="Girl facepalming">🤦</p>
+		<p alt="Pouting emoji girl" title="Sad girl">🙎</p>
+		<p alt="Frown angry girl emoji" title="Angry girl frowning">🙍</p>
+		<p alt="Massage emoji" title="Girl getting massage">💆</p>
+		<p alt="Haircut emoji" title="Girl getting haircut">💇</p>
+		<p alt="Pregnant lady emoji" title="Pregnant woman emoji">🤰</p>
+		<p alt="Playboy emoji" title="Woman with bunny ears">👯</p>
+		<p alt="Bowing emoji" title="Person bowing">🙇</p>
+		<p alt="Baby angel emoji" title="Baby angel">👼</p>
+		<p alt="Love couple emoji" title="Couple in love">💑</p>
+		<p alt="Lesbian emoji" title="Female couple in love">👩‍❤️‍👩</p>
+		<p alt="Gay emoji" title="Male couple in love">👨‍❤️‍👨</p>
+		<p alt="Couple kissing emoji" title="Kissing couple">💏</p>
+		<p alt="Lesbian kiss emoji" title="Female couple kissing">👩‍❤️‍💋‍👩</p>
+		<p alt="Gay kiss emoji" title="Male couple kissing">👨‍❤️‍💋‍👨</p>
+		<p alt="Walk emoji" title="Person walking">🚶</p>
+		<p alt="Runner emoji" title="Person running">🏃</p>
+		<p alt="Businessman emoji" title="Person in business suit">🕴️</p>
+		<p alt="Woman emoji dancing" title="Female dancer">💃</p>
+		<p alt="Man emoji dancing" title="Male dancer">🕺</p>
+		<p alt="Bathing emoji" title="Having a bath">🛀</p>
+		<p alt="Sleeping emoji person" title="Person sleeping">🛌</p>
+		<p alt="Two emojis in love" title="Couple holding hands">👫</p>
+		<p alt="Two women emoji" title="Female couple holding hands">👭</p>
+		<p alt="Two men emoji" title="Male couple holding hands">👬</p>
+		<p alt="Gymnastics emoji" title="Cartwheel">🤸</p>
+		<p alt="Lifting weights emoji" title="Weight lifter">🏋️</p>
+		<p alt="Basketball player emoji" title="Basketball player">⛹️</p>
+		<p alt="Handball emoji" title="Handball player">🤾</p>
+		<p alt="Skier emoji" title="Skier">⛷️</p>
+		<p alt="Snowboard emoji" title="Snowboarder">🏂</p>
+		<p alt="Golfer emoji" title="Golfer">🏌️</p>
+		<p alt="Surfer emoji" title="Surfer">🏄</p>
+		<p alt="Swimming emoji" title="Swimmer">🏊</p>
+		<p alt="Water polo emoji" title="Water polo">🤽</p>
+		<p alt="Fencing emoji" title="Fencer">🤺</p>
+		<p alt="Wrestling emoji" title="Wrestlers">🤼</p>
+		<p alt="Rowing emoji" title="Rowing">🚣</p>
+		<p alt="Horse racing emoji" title="Jockey">🏇</p>
+		<p alt="Cyclist emoji bike" title="Cyclist">🚴</p>
+		<p alt="Family emoji" title="Parents with son">👪</p>
+		<p alt="Parents emoji" title="Parents with daughter">👨‍👩‍👧</p>
+		<p alt="Family with two kids emoji" title="Parents with two kids">👨‍👩‍👧‍👦</p>
+		<p alt="Family with two sons emoji" title="Parents with two sons">👨‍👩‍👦‍👦</p>
+		<p alt="Family with two daughters" title="Parents with two daughters">👨‍👩‍👧‍👧</p>
+		<p alt="Lesbian family emoji" title="Female parents with son">👩‍👩‍👦</p>
+		<p alt="Two mothers emoji" title="Female parents with daughter">👩‍👩‍👧</p>
+		<p alt="Two mothers with kids" title="Female parents with two kids">👩‍👩‍👧‍👦</p>
+		<p alt="Two mothers with sons" title="Female parents with two sons">👩‍👩‍👦‍👦</p>
+		<p alt="Two mothers with daughters" title="Female parents with two daughters">👩‍👩‍👧‍👧</p>
+		<p alt="Gay family emoji" title="Male parents with son">👨‍👨‍👦</p>
+		<p alt="Gay parents emoji" title="Male parents with daughter">👨‍👨‍👧</p>
+		<p alt="Gay family with kids" title="Male parents with two kids">👨‍👨‍👧‍👦</p>
+		<p alt="Gay couple with sons" title="Male parents with two sons">👨‍👨‍👦‍👦</p>
+		<p alt="Gay family with daughters" title="Male parents with two daughters">👨‍👨‍👧‍👧</p>
+	</div>
+
+	<div id="f2" class="category">
+		<span>Icon facebook trái tim & đồ vật</span>
+		<p alt="Heart emoji" title="Heart emoji">♥️</p>
+		<p alt="Heart Facebook Emoticon" title="Red heart">❤️</p>
+		<p alt="Yellow heart emoji" title="Yellow heart">💛</p>
+		<p alt="Green Facebook Heart" title="Green heart">💚</p>
+		<p alt="Blue heart emoji" title="Blue heart">💙</p>
+		<p alt="Purple heart for Facebook" title="Purple heart">💜</p>
+		<p alt="Black heart Facebook emoji" title="Black heart">🖤</p>
+		<p alt="Sparkling heart emoji" title="Sparkly heart">💖</p>
+		<p alt="Gift heart" title="Heart with ribbon">💝</p>
+		<p alt="Broken heart Facebook emoji" title="Broken heart">💔</p>
+		<p alt="Heart above dot" title="Exclamation heart">❣️</p>
+		<p alt="Two hearts emoticons for Facebook" title="Two hearts">💕</p>
+		<p alt="Spinning hearts emoji" title="Revolving hearts">💞</p>
+		<p alt="Heartbeat emoji" title="Beating heart">💓</p>
+		<p alt="Triple emoji hearts" title="Growing heart">💗</p>
+		<p alt="Heart arrow emoji" title="Heart with arrow">💘</p>
+		<p alt="Heart decoration" title="Heart badge">💟</p>
+		<p alt="Heart envelope" title="Love letter">💌</p>
+		<p alt="Kiss mark emoji for Facebook" title="Kiss mark">💋</p>
+		<p alt="Lips emoji" title="Mouth emoji">👄</p>
+		<p alt="Makeup emoji lipstick" title="Lipstick">💄</p>
+		<p alt="Engagement ring emoji" title="Diamond ring">💍</p>
+		<p alt="Necklace emoji" title="Necklace">📿</p>
+		<p alt="Gift emoji" title="Gift">🎁</p>
+		<p alt="Bikini swimsuit emoji" title="Bikini emoji">👙</p>
+		<p alt="Skirt Emoticon" title="Dress emoji">👗</p>
+		<p alt="Womans clothes emoji" title="Woman's blouse">👚</p>
+		<p alt="T-shirt emoji" title="T-shirt">👕</p>
+		<p alt="Kimono emoji" title="Kimono">👘</p>
+		<p alt="Running shirt emoji" title="Running shirt">️🎽</p>
+		<p alt="Business shirt and necktie emoji" title="Shirt and tie">👘</p>
+		<p alt="Jeans pants emoticon" title="Jeans emoji">👖</p>
+		<p alt="High heel emoji" title="High heels">👠</p>
+		<p alt="Sandals emoji" title="Woman's sandal">👡</p>
+		<p alt="Boots emoji" title="Woman's boot">👢</p>
+		<p alt="Athletic running shoes emoji" title="Sneaker emoji">👟</p>
+		<p alt="Shoes emoji" title="Man's shoe">👞</p>
+		<p alt="Ladies hat emoji" title="Woman's hat">👒</p>
+		<p alt="Formal emoji hat" title="Top hat">🎩</p>
+		<p alt="College graduate emoji" title="Graduation hat">🎓</p>
+		<p alt="Royal crown emoji" title="Crown">👑</p>
+		<p alt="Medic helmet emoji" title="Rescue worker's helmet">⛑️</p>
+		<p alt="Glasses emoji" title="Eyeglasses">👓</p>
+		<p alt="Dark glasses Facebook emoji" title="Sunglasses">🕶️</p>
+		<p alt="Closed umbrella emoji" title="Closed umbrella">🌂</p>
+		<p alt="Purse emoji" title="Purse">👛</p>
+		<p alt="Small bag emoticon" title="Pouch">👝</p>
+		<p alt="Woman's bag" title="Handbag">👜</p>
+		<p alt="Suitcase emoji" title="Briefcase">💼</p>
+		<p alt="School bag emoji" title="Backpack">🎒</p>
+		<p alt="Shopping emoji" title="Shopping bags">🛍️</p>
+		<p alt="Shopping cart" title="Shopping cart">️🛒</p>
+		<p alt="Theater masks emoji" title="Theater">️🎭</p>
+		<p alt="Cinema emoji movies" title="Cinema">️🎦</p>
+		<p alt="Artist palette emoji" title="Painting">️🎨</p>
+		<p alt="Juggler emoji" title="Juggling">️🤹</p>
+		<p alt="Confetti emoji" title="Confetti">️🎊</p>
+		<p alt="Party emoji" title="Party popper">️🎉</p>
+		<p alt="Balloon emoji" title="Balloon">️🎈</p>
+		<p alt="Headphones emoji" title="Headphone">️🎧</p>
+		<p alt="Saxophone emoji" title="Saxophone">️🎷</p>
+		<p alt="Trumpet emoji" title="Trumpet">️🎺</p>
+		<p alt="Guitar emoji" title="Guitar">️🎸</p>
+		<p alt="Violin" title="Violin">️🎻</p>
+		<p alt="Drum" title="Drum">️🥁</p>
+		<p alt="Piano keyboard emoji" title="Piano">️🎹</p>
+		<p alt="Microphone" title="Microphone">️🎤</p>
+		<p alt="Music note emoji" title="Music note">️🎵</p>
+		<p alt="Music notes" title="Music notes">️🎶</p>
+		<p alt="Music symbol" title="Sheet music">️🎼</p>
+		<p alt="Soccer ball emoji" title="Soccer ball">️⚽</p>
+		<p alt="Basketball emoji" title="Basketball">️🏀</p>
+		<p alt="Football emoji" title="Football">️🏈</p>
+		<p alt="Baseball emoji" title="Baseball">️⚾</p>
+		<p alt="Volleyball emoji" title="Volleyball">️🏐</p>
+		<p alt="Rugby emoticon" title="Rugby">️🏉</p>
+		<p alt="Snooker emoji" title="8 ball">️🎱</p>
+		<p alt="Tennis emoji" title="Tennis">️🎾</p>
+		<p alt="Badminton racket emoji" title="Badminton">️🏸</p>
+		<p alt="Ping pong emoji" title="Table tennis">️🏓</p>
+		<p alt="Cricket" title="Cricket">️🏏</p>
+		<p alt="Field Hockey" title="Field hockey">️🏑</p>
+		<p alt="Ice Hockey" title="Ice hockey">️🏒</p>
+		<p alt="Goal Net" title="Goal net">️🥅</p>
+		<p alt="Ice Skate" title="Ice skate">️⛸️</p>
+		<p alt="Skis" title="Skis">️🎿</p>
+		<p alt="Boxing Glove" title="Boxing">️🥊</p>
+		<p alt="Martial Arts Uniform" title="Martial arts">️🥋</p>
+		<p alt="Golfing emoji" title="Golf">️⛳</p>
+		<p alt="Bowling emoji" title="Bowling">️🎳</p>
+		<p alt="Bow and arrow emoji" title="Archery">️🏹</p>
+		<p alt="Fishing emoji" title="Fishing">️🎣</p>
+		<p alt="Bullseye emoji" title="Darts">️🎯</p>
+		<p alt="Bike racing emoji" title="Cycling">🚵</p>
+		<p alt="Military Medal" title="Medal">️🎖️</p>
+		<p alt="Sports Medal" title="Sports medal">️🏅</p>
+		<p alt="Gold medal emoji" title="Gold medal">️🥇</p>
+		<p alt="Second place" title="Silver medal">️🥈</p>
+		<p alt="Last place" title="Bronze medal">️🥉</p>
+		<p alt="Trophy emoji" title="Trophy">️🏆</p>
+	</div>
+
+	<div id="f3" class="category">
+		<span>Icon facebook đồ ăn, đồ uống</span>
+		<p alt="Green apple emoji" title="Green apple">🍏</p>
+		<p alt="Apple Facebook Emoticon" title="Red apple">🍎</p>
+		<p alt="Pear emoji" title="Pear">🍐</p>
+		<p alt="Orange emoji" title="Tangerine">🍊</p>
+		<p alt="Lemon emoji" title="Lemon">🍋</p>
+		<p alt="Banana emoji" title="Banana">🍌</p>
+		<p alt="Watermelon emoji" title="Watermelon">🍉</p>
+		<p alt="Grapes emoji" title="Grapes">🍇</p>
+		<p alt="Strawberries emoji" title="Strawberry">🍓</p>
+		<p alt="Melon emoticon" title="Melon">🍈</p>
+		<p alt="Kiwi Emoji" title="Kiwi Fruit">🥝</p>
+		<p alt="Avocado" title="Avocado">🥑</p>
+		<p alt="Pineapple" title="Pineapple">🍍</p>
+		<p alt="Cherries emoji" title="Cherries">🍒</p>
+		<p alt="Peach emoji" title="Peach">🍑</p>
+		<p alt="Eggplant emoji" title="Eggplant">🍆</p>
+		<p alt="Pickle emoji" title="Cucumber">🥒</p>
+		<p alt="Carrot emoji" title="Carrot">🥕</p>
+		<p alt="Chili pepper emoji" title="Hot Pepper">🌶</p>
+		<p alt="Corn emoji" title="Corn">🌽</p>
+		<p alt="Tomato emoji" title="Tomato">🍅</p>
+		<p alt="Potato emoji" title="Potato">🥔</p>
+		<p alt="Yam Facebook Emoji" title="Yam">🍠</p>
+		<p alt="Chestnut emoji" title="Chestnut">🌰</p>
+		<p alt="Peanuts emojis" title="Peanuts">🥜</p>
+		<p alt="Honey Pot" title="Honey Pot">🍯</p>
+		<p alt="Croissant emoticon" title="Croissant">🥐</p>
+		<p alt="Bread emoji" title="Bread">🍞</p>
+		<p alt="Bread Facebook emoticon" title="Baguette bread">🥖</p>
+		<p alt="Cheese emoji" title="Cheese wedge">🧀</p>
+		<p alt="Egg emoji" title="Egg">🥚</p>
+		<p alt="Frying eggs emoji" title="Frying pan">🍳</p>
+		<p alt="Bacon" title="Bacon">🥓</p>
+		<p alt="Fried prawn emoji" title="Fried shrimp">🍤</p>
+		<p alt="Chicken leg" title="Poultry leg">🍗</p>
+		<p alt="Barbecue" title="Meat on bone">🍖</p>
+		<p alt="Pizza" title="Pizza">🍕</p>
+		<p alt="Hot Dog" title="Hot Dog">🌭</p>
+		<p alt="Hamburger" title="Hamburger">🍔</p>
+		<p alt="French fries emoji" title="Fries">🍟</p>
+		<p alt="Doner kebab emoji" title="Stuffed flatbread">🥙</p>
+		<p alt="Taco" title="Taco">🌮</p>
+		<p alt="Burrito" title="Burrito">🌯</p>
+		<p alt="Green Salad" title="Green salad">🥗</p>
+		<p alt="Paella emoji" title="Paella">🥘</p>
+		<p alt="Spaghetti emoji" title="Spaghetti">🍝</p>
+		<p alt="Noodles bowl emoji" title="Noodles">🍜</p>
+		<p alt="Pot of food emoji" title="Pot of food">🍲</p>
+		<p alt="Sushi emoji" title="Sushi">🍣</p>
+		<p alt="Lunch emoji" title="Lunch Box">🍱</p>
+		<p alt="Cooked rice emoji" title="Cooked rice">🍛</p>
+		<p alt="Bowl Of Rice" title="Bowl of rice">🍚</p>
+		<p alt="Onigiri emoji" title="Rice ball">🍙</p>
+		<p alt="Senbei emoji" title="Rice cracker">🍘</p>
+		<p alt="Food on stick" title="Food on stick">🍢</p>
+		<p alt="Sweets emoji" title="Dessert stick">🍡</p>
+		<p alt="Snow cone emoji" title="Shaved ice">🍧</p>
+		<p alt="Ice cream dessert emoji" title="Bowl of ice cream">🍨</p>
+		<p alt="Soft ice cream  emoji" title="Ice cream in a cone">🍦</p>
+		<p alt="Pancakes emoji" title="Pancakes">🥞</p>
+		<p alt="Cake emoji" title="Piece of cake">🍰</p>
+		<p alt="Birthday Facebook Emoji" title="Birthday cake">🎂</p>
+		<p alt="Pudding emoji" title="Pudding">🍮</p>
+		<p alt="Lollypop emoji" title="Lollipop">🍭</p>
+		<p alt="Cookie emoji" title="Cookie">🍥</p>
+		<p alt="Sweet candy emoji" title="Candy">🍬</p>
+		<p alt="Chocolates emoji" title="Chocolate">🍫</p>
+		<p alt="Popcorn emoji" title="Popcorn">🍿</p>
+		<p alt="Donut emoji" title="Doughnut">🍩</p>
+		<p alt="Biscuit emoji cookie" title="Biscuit">🍪</p>
+		<p alt="Baby bottle emoji" title="Baby bottle">🍼</p>
+		<p alt="Milk emoji" title="Glass of milk">🥛</p>
+		<p alt="Coffee emoji" title="Cup of coffee">☕</p>
+		<p alt="Cup of tea emoji" title="Cup of tea">🍵</p>
+		<p alt="Sake emoji" title="Sake">🍶</p>
+		<p alt="Beer emoji" title="Beer mug">🍺</p>
+		<p alt="Beer cheers" title="Clinking beer mugs">🍻</p>
+		<p alt="Cheers emoji" title="Clinking glasses">🥂</p>
+		<p alt="Wine emoji" title="Wine glass">🍷</p>
+		<p alt="Whisky emoji" title="Whisky glass">🥃</p>
+		<p alt="Cocktail emoji" title="Cocktail Glass">🍸</p>
+		<p alt="Juice emoji" title="Tropical Drink">🍹</p>
+		<p alt="Champagne emoji" title="Champagne">🍾</p>
+		<p alt="Spoon emoji" title="Spoon">🥄</p>
+		<p alt="Fork and knife emoji" title="Fork and knife">🍴</p>
+		<p alt="Utensils emoji" title="Fork and Knife with plate">🍽</p>
+	</div>
+
+	<div id="f4" class="category">
+		<span>Icon facebook về động vật</span>
+		<p alt="Smiling kitten emoji" title="Happy cat face">😺</p>
+		<p alt="Grinning cat emoji" title="Grinning cat">😸</p>
+		<p alt="Cat emoji laughing with tears" title="Cat with happy tears">😹</p>
+		<p alt="Cat emoji in love" title="Heart-eyes cat">😻</p>
+		<p alt="Wry smile emoji" title="Smirking cat">😼</p>
+		<p alt="Kissing emoji cat" title="Kissing cat">😽</p>
+		<p alt="Scared cat emoticon" title="Scrunched eyes cat">🙀</p>
+		<p alt="Sad cat emoji crying" title="Crying cat">😿</p>
+		<p alt="Grumpy emoji for Facebook" title="Grumpy cat">😾</p>
+		<p alt="Kitty emoji for Facebook" title="Kitten emoji">🐱</p>
+		<p alt="Puppy emoji" title="Puppy face">🐶</p>
+		<p alt="Bunny emoji" title="Bunny">🐰</p>
+		<p alt="Mouse emoji" title="Mouse">🐭</p>
+		<p alt="Hamster emoji" title="Hamster">🐹</p>
+		<p alt="Fox emoji" title="Fox">🦊</p>
+		<p alt="Teddy bear emoji" title="Bear">🐻</p>
+		<p alt="Panda emoji" title="Panda">🐼</p>
+		<p alt="Koala emoji" title="Koala">🐨</p>
+		<p alt="Tiger emoji" title="Tiger face">🐯</p>
+		<p alt="Lion emoji" title="Lion face">🦁</p>
+		<p alt="Cow emoji" title="Cow face">🐮</p>
+		<p alt="Boar emoji" title="Wild boar">🐗</p>
+		<p alt="Pig emoji" title="Piggy">🐷</p>
+		<p alt="Pig snout emoji" title="Pig nose">🐽</p>
+		<p alt="Frog emoji" title="Frog">🐸</p>
+		<p alt="Monkey emoji" title="Monkey face">🐵</p>
+		<p alt="See-no monkey" title="Monkey covering eyes">🙈</p>
+		<p alt="Hear-no monkey" title="Monkey covering ears">🙉</p>
+		<p alt="Speak-no monkey" title="Monkey covering mouth">🙊</p>
+		<p alt="Harambe emoji" title="Gorilla">🦍</p>
+		<p alt="Wolf emoji" title="Wolf">🐺</p>
+		<p alt="Lamb emoji sheep" title="Sheep">🐑</p>
+		<p alt="Goat emoji" title="Goat">🐐</p>
+		<p alt="Ram emoji" title="Ram">🐏</p>
+		<p alt="Horse head emoji" title="Horse face">🐴</p>
+		<p alt="Unicorn emoji" title="Unicorn">🦄</p>
+		<p alt="Deer emoji" title="Deer">🦌</p>
+		<p alt="Rhino emoji" title="Rhino">🦏</p>
+		<p alt="Eagle emoji" title="Eagle">🦅</p>
+		<p alt="Chick emoji" title="Chick face">🐤</p>
+		<p alt="Hatching chick emoticon" title="Hatching chick">🐣</p>
+		<p alt="Baby chick emoji" title="Baby chick">🐥</p>
+		<p alt="Hen emoji" title="Chicken">🐔</p>
+		<p alt="Cock emoji" title="Rooster">🐓</p>
+		<p alt="Thanksgiving emoji" title="Turkey">🦃</p>
+		<p alt="Bird emoji" title="Bird">🐦</p>
+		<p alt="Duck emoji" title="Duck">🦆</p>
+		<p alt="Bat emoji" title="Bat">🦇</p>
+		<p alt="Owl emoji" title="Owl">🦉</p>
+		<p alt="Peace dove emoji" title="Dove">🕊️</p>
+		<p alt="Penguin emoji - Facebook emoticon" title="Penguin">🐧</p>
+		<p alt="Dog emoji" title="Puppy">🐕</p>
+		<p alt="Poodle emoji" title="Poodle">🐩</p>
+		<p alt="Cat emoji" title="Cat">🐈</p>
+		<p alt="Rabbit emoji" title="Rabbit">🐇</p>
+		<p alt="Mouse emoji" title="Mouse">🐁</p>
+		<p alt="Rat emoji" title="Rat">🐀</p>
+		<p alt="Squirrel emoji" title="Chipmunk">🐿</p>
+		<p alt="Monkey emoticon" title="Monkey">🐒</p>
+		<p alt="Piggy emoji" title="Piggy">🐖</p>
+		<p alt="Leopard emoji" title="Leopard">🐆</p>
+		<p alt="Tiger emoticon" title="Tiger">🐅</p>
+		<p alt="Water Buffalo Emoji" title="Buffalo">🐃</p>
+		<p alt="Ox emoji" title="Ox">🐂</p>
+		<p alt="Cow emoticon" title="Cow">🐄</p>
+		<p alt="Horse emoticon" title="Galloping horse">🐎</p>
+		<p alt="Camel emoji" title="Camel">🐪</p>
+		<p alt="Double hump camel" title="Two-hump camel">🐫</p>
+		<p alt="Elephant emoji" title="Elephant">🐘</p>
+		<p alt="Crocodile Emoji" title="Crocodile">🐊</p>
+		<p alt="Turtle emoji" title="Turtle">🐢</p>
+		<p alt="Tropical emoji" title="Tropical fish">🐠</p>
+		<p alt="Fish emoji" title="Fish">🐟</p>
+		<p alt="Blowfish emoticon" title="Blowfish">🐡</p>
+		<p alt="Dolphin emoji" title="Dolphin">🐬</p>
+		<p alt="Shark emoji" title="Shark">🦈</p>
+		<p alt="Spouting whale" title="Spouting whale">🐳</p>
+		<p alt="Whale emoji" title="Whale">🐋</p>
+		<p alt="Squid emoji" title="Squid">🦑</p>
+		<p alt="Octopus emoji" title="Octopus">🐙</p>
+		<p alt="Shrimp emoji" title="Shrimp">🦐</p>
+		<p alt="Shell emoji" title="Seashell">🐚</p>
+		<p alt="Crab emoji" title="Crab">🦀</p>
+		<p alt="Scorpion emoji" title="Scorpion">🦂</p>
+		<p alt="Lizard emoji" title="Lizard">🦎</p>
+		<p alt="Snake emoji" title="Snake">🐍</p>
+		<p alt="Worm emoji" title="Caterpillar">🐛</p>
+		<p alt="Ant emoji" title="Ant">🐜</p>
+		<p alt="Spider emoji" title="Spider">🕷️</p>
+		<p alt="Spider web emoji" title="Spider web">🕸️</p>
+		<p alt="Lady beetle emoji" title="Ladybug">🐞</p>
+		<p alt="Butterfly emoji" title="Butterfly">🦋</p>
+		<p alt="Honey bee emoji" title="Bee">🐝</p>
+		<p alt="Snail emoji" title="Snail">🐌</p>
+		<p alt="Dragon face" title="Dragon head">🐲</p>
+		<p alt="Dragon emoji" title="Dragon">🐉</p>
+		<p alt="Paws emoji" title="Paw prints">🐾</p>
+	</div>
+
+	<div id="f5" class="category">
+		<span>Icon cây cối, tự nhiên và thời tiết</span>
+		<p alt="Blossom emoji" title="Blossoming flower">🌼</p>
+		<p alt="Pink flower emoji" title="Cherry Blossom">🌸</p>
+		<p alt="Hibiscus emoji flower" title="Hibiscus">🌺</p>
+		<p alt="Rose emoji" title="Rosette">🏵️</p>
+		<p alt="Sunflower emoji" title="Sunflower">🌻</p>
+		<p alt="Tulip emoji" title="Tulip">🌷</p>
+		<p alt="Red rose emoji" title="Rose">🌹</p>
+		<p alt="Drooping flower" title="Wilted flower">🥀</p>
+		<p alt="Bouquet emoji" title="Bouquet of flowers">💐</p>
+		<p alt="Wheat emoji" title="Crop">🌾</p>
+		<p alt="Tanabata emoji" title="Wish tree">🎋</p>
+		<p alt="Shamrock emoji" title="Three-leaf clover">☘</p>
+		<p alt="Four leaves clover emoji" title="Four-leaf clover">🍀</p>
+		<p alt="Spring emoji" title="Green leaves">🍃</p>
+		<p alt="Autumn emoji" title="Fallen leaf">🍂</p>
+		<p alt="Maple leaf emoji" title="Maple leaf">🍁</p>
+		<p alt="Sprout emoji" title="Seedling">🌱</p>
+		<p alt="Herb emoji" title="Plant">🌿</p>
+		<p alt="Bamboo emoji" title="Bamboo decoration">🎍</p>
+		<p alt="Cactus emoji" title="Cactus">🌵</p>
+		<p alt="Palm emoji" title="Palm tree">🌴</p>
+		<p alt="Green tree emoji" title="Green tree">🌳</p>
+		<p alt="Pine emoji" title="Pine tree">🌳</p>
+		<p alt="Christmas tree emoji" title="Christmas tree">🎄</p>
+		<p alt="Shroom emoji" title="Mushroom">🍄</p>
+		<p alt="Earth emoji" title="Earth Globe Americas">🌎</p>
+		<p alt="Planet Earth" title="Earth Globe Europe-Africa">🌍</p>
+		<p alt="World emoji" title="Earth Globe Asia-Australia">🌏</p>
+		<p alt="Smiling Moon Emoji" title="Last quarter moon smiling">🌜</p>
+		<p alt="Moon smiley" title="First quarter moon">🌛</p>
+		<p alt="Full moon emoji" title="Full Moon">🌕</p>
+		<p alt="Waning Moon" title="Waning Gibbous Moon">🌖</p>
+		<p alt="Last Quarter Moon" title="Last Quarter Moon">🌗</p>
+		<p alt="Crescent Moon" title="Waning Crescent Moon">🌘</p>
+		<p alt="Dark Moon" title="New Moon">🌑</p>
+		<p alt="Waxing Moon" title="Waxing Crescent Moon">🌒</p>
+		<p alt="Quarter Moon" title="First Quarter Moon">🌓</p>
+		<p alt="Gibbous Moon" title="Waxing Gibbous Moon">🌔</p>
+		<p alt="New Moon Emoji" title="Dark Moon Smiley">🌚</p>
+		<p alt="Full Moon Smiley" title="Moon Smiley">🌝</p>
+		<p alt="Crescent Moon" title="Crescent Moon">🌙</p>
+		<p alt="Spinning stars emoji" title="Spinning stars">💫</p>
+		<p alt="Star emoji" title="Star">⭐</p>
+		<p alt="Shining star emoji" title="Glowing star">🌟</p>
+		<p alt="Sparkles emoji" title="Sparkling stars">✨</p>
+		<p alt="Thunder emoji" title="Thunderbolt">⚡</p>
+		<p alt="Fire flame emoji" title="Fire">🔥</p>
+		<p alt="Exploding emoji" title="Explosion">💥</p>
+		<p alt="Comet emoji" title="Comet">☄️</p>
+		<p alt="Sun smiley" title="Smiling sun">🌞</p>
+		<p alt="Sun emoji" title="Sun">☀️</p>
+		<p alt="Partly cloudy emoji" title="Sun behind small cloud">🌤️</p>
+		<p alt="Cloudy emoji" title="Sun behind cloud">⛅</p>
+		<p alt="Very cloudy" title="Sun behind large cloud">🌥️</p>
+		<p alt="Sun, clouds and rain emoji" title="Sun behind rain cloud">🌦️</p>
+		<p alt="Cloud emoji" title="Cloud">☁️</p>
+		<p alt="Raining clouds emoji" title="Cloud With Rain">🌧️</p>
+		<p alt="Storm emoji" title="Lightning and rain">⛈️</p>
+		<p alt="Cloud emoji with lightning" title="Cloud with lightning">🌩️</p>
+		<p alt="Snowing emoji" title="Snowing">🌨️</p>
+		<p alt="Rainbow emoji" title="Rainbow">🌈</p>
+		<p alt="Water drop emoji" title="Drop">💧</p>
+		<p alt="Raining droplets emoji" title="Droplets">💦</p>
+		<p alt="Umbrella emoji" title="Umbrella">☂️</p>
+		<p alt="Umbrella rainy emoji" title="Umbrella with rain drops">☔</p>
+		<p alt="Sea wave emoji" title="wave">🌊</p>
+		<p alt="Misty fog emoji" title="Fog">🌫</p>
+		<p alt="Tornado emoji" title="Tornado">🌪</p>
+		<p alt="Fart emoji" title="Wind">💨</p>
+		<p alt="Snowflake emoji" title="Snowflake">❄</p>
+		<p alt="Mother nature emoji" title="Blowing Wind">🌬</p>
+		<p alt="Frosty the snowman emoji" title="Snowman">⛄</p>
+		<p alt="Snowman emoji" title="Snowman with snowflakes">☃️</p>
+	</div>
+
+	<div id="f6" class="category">
+		<span>Facebook icon du lịch, địa điểm, công trình</span>
+		<p alt="Automobile emoji" title="Car">🚗</p>
+		<p alt="Taxi car emoji" title="Taxi">🚕</p>
+		<p alt="Car emoji" title="Recreational vehicle">🚙</p>
+		<p alt="School bus emoji" title="Bus">🚌</p>
+		<p alt="Trolleybus emoji" title="Trolleybus">🚎</p>
+		<p alt="Formula emoji" title="Racing car">🏎</p>
+		<p alt="Police car emoji" title="Police car">🚓</p>
+		<p alt="Ambulance emoji" title="Ambulance">🚑</p>
+		<p alt="Fire truck emoji" title="Fire engine">🚒</p>
+		<p alt="Van emoji" title="Minivan">🚐</p>
+		<p alt="Delivery emoji" title="Delivery Truck">🚚</p>
+		<p alt="Lorry truck emoji" title="Lorry">🚛</p>
+		<p alt="Tractor emoji" title="Tractor">🚜</p>
+		<p alt="Scooter" title="Scooter">🛴</p>
+		<p alt="Bike emoji" title="Bicycle">🚲</p>
+		<p alt="Motorbike emoji" title="Motorbike">🛵</p>
+		<p alt="Motorcycle emoji" title="Racing motorcycle">🏍</p>
+		<p alt="Auto emoji" title="Front of car">🚘</p>
+		<p alt="Taxi emoji" title="Front of taxi">🚖</p>
+		<p alt="Bus emoji" title="Front of bus">🚍</p>
+		<p alt="Cops emoji" title="Front of police Car">🚔</p>
+		<p alt="Emergency emoji" title="Emergency light">🚨</p>
+		<p alt="Seat emoji" title="Passenger seat">💺</p>
+		<p alt="Plane emoji" title="Airplane">✈</p>
+		<p alt="Departure emoji" title="Plane departure">🛫</p>
+		<p alt="Arrival emoji" title="Plane arrival">🛬</p>
+		<p alt="Flying emoji" title="Small plane">🛩</p>
+		<p alt="Helicopter emoji" title="Helicopter">🚁</p>
+		<p alt="Rocket emoji" title="Rocket">🚀</p>
+		<p alt="Satellite emoji" title="Satellite">🛰</p>
+		<p alt="Cable car emoji" title="Cable car">🚡</p>
+		<p alt="Mountain cableway" title="Cable car">🚠</p>
+		<p alt="High train" title="Suspension railway">🚟</p>
+		<p alt="Wagon emoji" title="Railway wagon">🚃</p>
+		<p alt="Tram emoji" title="Tram">🚋</p>
+		<p alt="Mountain railway emoji" title="Mountain railway">🚞</p>
+		<p alt="Monorail emoji" title="Monorail">🚝</p>
+		<p alt="High-speed train emoji" title="High-speed train">🚄</p>
+		<p alt="Bullet emoji train" title="Bullet train">🚅</p>
+		<p alt="Transport emoji" title="Light rail">🚈</p>
+		<p alt="Locomotive emoji" title="Locomotive">🚂</p>
+		<p alt="Train emoji" title="Train front">🚆</p>
+		<p alt="Electric train emoji" title="Electric train">🚊</p>
+		<p alt="Metro emoji" title="Metro train">🚇</p>
+		<p alt="Train station emoji" title="Train station">🚉</p>
+		<p alt="Canoe emoji" title="Canoe">🛶</p>
+		<p alt="Sailing emoji" title="Sailboat">⛵</p>
+		<p alt="Boat emoji" title="Motorboat">🛥</p>
+		<p alt="Speedboat" title="Speedboat">🚤</p>
+		<p alt="Ship emoji" title="Ship">🚢</p>
+		<p alt="Ferry emoji" title="Ferry">⛴</p>
+		<p alt="Cruise emoji" title="Cruise ship">🛳</p>
+		<p alt="Anchor emoji" title="Anchor">⚓</p>
+		<p alt="Construction sign" title="Roadwork">🚧</p>
+		<p alt="Gas pump emoji" title="Fuel pump">⛽</p>
+		<p alt="Bus stop emoji" title="Bus stop">🚏</p>
+		<p alt="Traffic light emoji" title="Traffic light">🚦</p>
+		<p alt="Traffic Facebook Emoji" title="Horizontal traffic light">🚥</p>
+		<p alt="Road emoji" title="Highway">🛣</p>
+		<p alt="Rails emoji" title="Railway">🛤</p>
+		<p alt="Crane emoji" title="Construction crane">🏗</p>
+		<p alt="Industrial emoji factory" title="Factory">🏭</p>
+		<p alt="House emoji" title="House">🏠</p>
+		<p alt="Home Facebook Emoticon" title="House with garden">🏡</p>
+		<p alt="Houses emoji" title="Multiple houses">🏘</p>
+		<p alt="Haunted emoji house" title="Abandoned old house">🏚</p>
+		<p alt="Office building emoji" title="Office building">🏢</p>
+		<p alt="Mall emoji" title="Department store">🏬</p>
+		<p alt="Post office emoji" title="Post office">🏤</p>
+		<p alt="Japanese post office" title="Japanese post office">🏣</p>
+		<p alt="Hospital emoji" title="Hospital">🏥</p>
+		<p alt="Bank emoji" title="Bank">🏦</p>
+		<p alt="Store emoji" title="Convenience store">🏪</p>
+		<p alt="School emoji" title="School">🏫</p>
+		<p alt="Hotel emoji" title="Hotel">🏨</p>
+		<p alt="Love hotel emoticon" title="Love hotel">🏩</p>
+		<p alt="Classic emoji" title="Classical building">🏛</p>
+		<p alt="Castle emoji" title="Castle">🏰</p>
+		<p alt="Japanese emoji" title="Japanese castle">🏯</p>
+		<p alt="Stadium emoji" title="Stadium">🏟️</p>
+		<p alt="Church emoji" title="Church">⛪</p>
+		<p alt="Wedding emoji" title="Church wedding">💒</p>
+		<p alt="Mosque emoji" title="Mosque">🕌</p>
+		<p alt="Synagogue emoji" title="Synagogue">🕍</p>
+		<p alt="Muslim emoji" title="Kaaba">🕋</p>
+		<p alt="Shinto shrine emoji" title="Japanese shrine">⛩</p>
+		<p alt="Tower emoji" title="Tokyo Tower">🗼</p>
+		<p alt="Easter Island" title="Moyai statue">🗿</p>
+		<p alt="Statue of Liberty Emoji" title="Statue of Liberty">🗽</p>
+		<p alt="Map emoji" title="World map">🗺</p>
+		<p alt="Circus emoji" title="Circus tent">🎪</p>
+		<p alt="Carnival emoji" title="Carousel horse">🎠</p>
+		<p alt="Ferris wheel emoji" title="Ferris wheel">🎡</p>
+		<p alt="Rollercoaster emoji" title="Roller coaster">🎢</p>
+		<p alt="Fountain emoji" title="Fountain">⛲</p>
+		<p alt="Beach umbrella" title="Beach umbrella">⛱</p>
+		<p alt="Beach emoji" title="Beach">🏖</p>
+		<p alt="Desert island emoji" title="Desert island">🏝</p>
+		<p alt="Camping emoji" title="Camping site">🏕</p>
+		<p alt="Tent emoji" title="Tent">⛺</p>
+		<p alt="Japan emoji" title="Japan islands">🗾</p>
+		<p alt="Mount Fuji emoji" title="Mount Fuji">⛰</p>
+		<p alt="Snow mountain" title="Snow mountain">🏔</p>
+		<p alt="Mountain emoji" title="Mountain">🗻</p>
+		<p alt="Volcano emoji" title="Volcano">🌋</p>
+		<p alt="Nature park emoji" title="Nature park">🏞</p>
+		<p alt="Desert emoji" title="Desert">🏜</p>
+		<p alt="Sunset emoji" title="Sea sunset/sunrise">🌅</p>
+		<p alt="Sunrise emoji" title="Mountain sunset/sunrise">🌄</p>
+		<p alt="Full moon emoji" title="Full moon view">🎑</p>
+		<p alt="Shooting star emoji" title="Shooting star">🌠</p>
+		<p alt="Sparkling emoji" title="Sparkler">🎇</p>
+		<p alt="Fireworks emoji" title="Fireworks">🎆</p>
+		<p alt="City emoji" title="Cityscape">🏙</p>
+		<p alt="Cityscape sunrise" title="City sunrise">🌇</p>
+		<p alt="City smog emoji" title="City sunset">🌆</p>
+		<p alt="City Facebook Emoticons" title="City at night">🌃</p>
+		<p alt="Night sky emoji" title="Night Sky">🌌</p>
+		<p alt="Golden Gate emoji" title="Golden Gate bridge">🌉</p>
+		<p alt="Bridge emoji" title="Foggy Golden Gate bridge">🌁</p>
+	</div>
+
+	<div id="f7" class="category">
+		<span>icon Facebook các đối tượng</span>
+		<p alt="Cell phone emoji" title="Smartphone">📱</p>
+		<p alt="Mobile phone emoji" title="Phone call">📲</p>
+		<p alt="Laptop emoji" title="Laptop">💻</p>
+		<p alt="PC emoji" title="Desktop PC">🖥</p>
+		<p alt="Emoji keyboard" title="Keyboard">⌨</p>
+		<p alt="Printer emoji" title="Printer">🖨</p>
+		<p alt="PC mouse emoji" title="Computer Mouse">🖱</p>
+		<p alt="Trackball" title="Trackball">🖲</p>
+		<p alt="Joystick emoji" title="Joystick">🕹</p>
+		<p alt="Gamepad emoji" title="Gamepad">🎮</p>
+		<p alt="Disc emoji" title="Minidisc">💽</p>
+		<p alt="Floppy disk emoji" title="Floppy Disk">💾</p>
+		<p alt="CD emoji" title="CD">💿</p>
+		<p alt="DVD emoji" title="DVD">📀</p>
+		<p alt="VHS emoji" title="VHS cassete">📼</p>
+		<p alt="Camera emoji" title="Camera">📷</p>
+		<p alt="Flashing camera emoji" title="Camera with flash">📸</p>
+		<p alt="Camcorder emoji" title="Video camera">📹</p>
+		<p alt="Movie camera emoji" title="Movie camera">🎥</p>
+		<p alt="Projector emoji" title="Film projector">📽</p>
+		<p alt="Film emoji" title="Film frames">🎞</p>
+		<p alt="Clapper emoji" title="Clapper board">🎬</p>
+		<p alt="Handset emoji" title="Telephone receiver">📞</p>
+		<p alt="Telephone emoji" title="Telephone">☎</p>
+		<p alt="Pager emoji" title="Pager">📟</p>
+		<p alt="Fax emoji" title="Fax Machine">📠</p>
+		<p alt="TV emoji" title="Television">📺</p>
+		<p alt="Radio emoji" title="Radio">📻</p>
+		<p alt="Microphone emoji" title="Studio microphone">🎙</p>
+		<p alt="Emoji slider" title="Level slider">🎚</p>
+		<p alt="Controls emoji" title="Control knobs">🎛</p>
+		<p alt="Satellite emoji" title="Satellite antenna">📡</p>
+		<p alt="Loudspeaker emoji" title="Loudspeaker">📢</p>
+		<p alt="Megaphone emoji" title="Cheering megaphone">📣</p>
+		<p alt="Bell emoji" title="Bell">🔔</p>
+		<p alt="Light bulb emoji" title="Light bulb">💡</p>
+		<p alt="Candle emoji" title="Candle">🕯</p>
+		<p alt="Flashlight emoji" title="Flashlight">🔦</p>
+		<p alt="Battery emoji" title="Battery">🔋</p>
+		<p alt="Electric plug emoji" title="Electric plug">🔌</p>
+		<p alt="Watch emoji" title="Wrist watch">⌚</p>
+		<p alt="Stopwatch emoji" title="Stopwatch">⏱</p>
+		<p alt="Timer emoji" title="Timer clock">⏲</p>
+		<p alt="Alarm emoji" title="Alarm clock">⏰</p>
+		<p alt="Clock emoji" title="Mantelpiece clock">🕰</p>
+		<p alt="Hourglass emoji" title="Hourglass">⌛</p>
+		<p alt="Time emoji" title="Hourglass with flowing sand">⏳</p>
+		<p alt="Crystal ball emoji" title="Crystal ball">🔮</p>
+		<p alt="Gem emoji" title="Gem stone">💎</p>
+		<p alt="Dice emoji" title="Game die">🎲</p>
+		<p alt="Slots emoji" title="Slots">🎰</p>
+		<p alt="Flying money emoji" title="Money with wings">💸</p>
+		<p alt="Cash emoji" title="Dollar banknote">💵</p>
+		<p alt="Yen emoji" title="Yen banknote">💴</p>
+		<p alt="Euro emoji" title="Euro banknote">💶</p>
+		<p alt="Pound emoji" title="Pound banknote">💷</p>
+		<p alt="Money emoji" title="Money bag">💰</p>
+		<p alt="Credit card emoji" title="Credit card">💳</p>
+		<p alt="Dollar emoji" title="Dollar sign">💲</p>
+		<p alt="Currency emoji" title="Currency exchange">💱</p>
+		<p alt="Justice emoji" title="Balance scales">⚖</p>
+		<p alt="Gun emoji" title="Pistol">🔫</p>
+		<p alt="Bomb emoji" title="Bomb">💣</p>
+		<p alt="Knife emoji" title="Knife">🔪</p>
+		<p alt="Sword emoji" title="Dagger">🗡</p>
+		<p alt="Swords Facebook Emojis" title="Crossed swords">⚔</p>
+		<p alt="Shield" title="Shield emoji">🛡</p>
+		<p alt="Smoking emoji" title="Cigarette">🚬</p>
+		<p alt="Casket emoji" title="Coffin">⚰</p>
+		<p alt="Funeral emoji" title="Urn">⚱</p>
+		<p alt="Compression emoji" title="Clamp">🗜️</p>
+		<p alt="Wrench emoji" title="Wrench">🔧</p>
+		<p alt="Hammer emoji" title="Hammer">🔨</p>
+		<p alt="Hammer and pick" title="Hammer and pick">⚒</p>
+		<p alt="Hammer and wrench" title="Hammer and wrench">🛠</p>
+		<p alt="Pick emoji" title="Pick">⛏</p>
+		<p alt="Screw emoji" title="Bolt screw">🔩</p>
+		<p alt="Gear emoji" title="Gear">⚙</p>
+		<p alt="Chain emoji" title="Chains">⛓</p>
+		<p alt="Barber emoji" title="Barber pole">💈</p>
+		<p alt="Thermometer emoji" title="Thermometer">🌡</p>
+		<p alt="Pill emoji" title="Pill">💊</p>
+		<p alt="Syringe emoji" title="Syringe">💉</p>
+		<p alt="Science emoji" title="Alembic">⚗</p>
+		<p alt="Microscope emoji" title="Microscope">🔬</p>
+		<p alt="Telescope emoji" title="Telescope">🔭</p>
+		<p alt="Shower emoji" title="Shower">🚿</p>
+		<p alt="Bathtub emoji" title="Bathtub">🛁</p>
+		<p alt="Toilet emoji" title="Toilet">🚽</p>
+		<p alt="Bellhop" title="Bellhop Bell">🛎</p>
+		<p alt="Key emoji" title="Key">🔑</p>
+		<p alt="Old key" title="Old key">🗝</p>
+		<p alt="Doors emoji" title="Door">🚪</p>
+		<p alt="Couch emoji" title="Couch">🛋</p>
+		<p alt="Bed emoji" title="Bed">🛏</p>
+		<p alt="Picture emoji" title="Framed painting">🖼</p>
+		<p alt="Amphora emoji" title="Amphora vase">🏺</p>
+		<p alt="Trash emoji" title="Trash can">🗑</p>
+		<p alt="Barrel emoji" title="Oil drum">🛢</p>
+		<p alt="Hole emoji" title="Hole in the ground">🕳</p>
+		<p alt="Paper lantern" title="Red paper lantern">🏮</p>
+		<p alt="Carp streamer" title="Carp Streamer">🎏</p>
+		<p alt="Dolls emoji" title="Japanese dolls">🎎</p>
+		<p alt="Wind chime" title="Wind Chime">🎐</p>
+		<p alt="Ticket emoji" title="Ticket">🎫</p>
+		<p alt="Admission ticket" title="Admission ticket">🎟️</p>
+		<p alt="Ribbon emoji" title="Bow">🎀</p>
+		<p alt="Awareness emoji" title="Awareness ribbon">🎗️</p>
+		<p alt="Horn emoji" title="Postal horn">📯</p>
+		<p alt="Envelope emoji" title="Envelope">✉</p>
+		<p alt="Letter emoji" title="Envelope with arrow">📩</p>
+		<p alt="Incoming mail emoji" title="Incoming envelope">📨</p>
+		<p alt="E-mail emoji" title="E-mail">📧</p>
+		<p alt="Package" title="Package">📦</p>
+		<p alt="Full mailbox" title="Closed mailbox with raised flag">📪</p>
+		<p alt="Empty mailbox" title="Closed mailbox with lowered flag">📫</p>
+		<p alt="Mailbox emoji" title="Open mailbox with raised flag">📬</p>
+		<p alt="Empty mailbox emoji" title="Open mailbox with lowered flag">📭</p>
+		<p alt="Postbox emoji" title="Postbox">📮</p>
+		<p alt="Inbox emoji" title="Inbox">📥</p>
+		<p alt="Outbox emoji" title="Outbox">📤</p>
+		<p alt="Scroll emoji" title="Scroll">📜</p>
+		<p alt="Curly paper emoji" title="Curled paper">📃</p>
+		<p alt="Page emoji" title="Paper page">📄</p>
+		<p alt="Bookmark tabs" title="Bookmark tabs">📑</p>
+		<p alt="Bar Chart" title="Bar chart">📊</p>
+		<p alt="Positive emoji" title="Chart Increasing">📈</p>
+		<p alt="Negative" title="Chart Increasing">📉</p>
+		<p alt="Notepad emoji" title="Notepad">🗒</p>
+		<p alt="World Emoji Day" title="Calendar">📅</p>
+		<p alt="Calendar Facebook Emoticon" title="Tear-Off Calendar">📆</p>
+		<p alt="Calendar emoji" title="Spiral Calendar">🗓</p>
+		<p alt="Card index" title="Card index">📇</p>
+		<p alt="Files emoji" title="Files">🗃</p>
+		<p alt="Voting emoji" title="Ballot box">🗳</p>
+		<p alt="File cabinet emoji" title="File Cabinet">🗄</p>
+		<p alt="Clipboard emoji" title="Clipboard">📋</p>
+		<p alt="Folder emoji" title="File folder">📁</p>
+		<p alt="Open folder" title="Open file folder">📂</p>
+		<p alt="Index emoji" title="Card index dividers">🗂</p>
+		<p alt="Notebook emoji" title="Notebook">📓</p>
+		<p alt="Pink notebook" title="Notebook with decorative cover">📔</p>
+		<p alt="Ledger emoji" title="Yellow book">📒</p>
+		<p alt="Closed book emoji" title="Brown book">📕</p>
+		<p alt="Green book" title="Green book">📗</p>
+		<p alt="Blue book" title="Blue book">📘</p>
+		<p alt="Orange book" title="Orange book">📙</p>
+		<p alt="Books emoji" title="Stack of books">📚</p>
+		<p alt="Book emoji" title="Open book">📖</p>
+		<p alt="Newspaper emoji" title="Rolled-Up Newspaper">🗞</p>
+		<p alt="News emoji" title="Newspaper">📰</p>
+		<p alt="Memo emoji" title="Memo">📝</p>
+		<p alt="Pencil emoji" title="Pencil">✏</p>
+		<p alt="Pen emoji" title="Pen">🖊</p>
+		<p alt="Crayon emoji" title="Crayon">🖍</p>
+		<p alt="Paint brush emoji" title="Paintbrush">🖌</p>
+		<p alt="Fountain pen" title="Fountain pen">🖋</p>
+		<p alt="Pen nib" title="Pen nib">✒</p>
+		<p alt="Tack emoji" title="Pushpin">📌</p>
+		<p alt="Pin emoji" title="Pin">📍</p>
+		<p alt="Paperclip" title="Paperclip">📎</p>
+		<p alt="Paperclips" title="Paperclips">🖇</p>
+		<p alt="Bookmark emoji" title="Bookmark">🔖</p>
+		<p alt="Label emoji" title="Label tag">🏷</p>
+		<p alt="Link emoji" title="Link">🔗</p>
+		<p alt="Search emoji" title="Magnifying glass">🔍</p>
+		<p alt="Search icon" title="Magnifying glass">🔎</p>
+		<p alt="Triangular ruler" title="Triangular ruler">📐</p>
+		<p alt="Ruler emoji" title="Straight ruler">📏</p>
+		<p alt="Scissors emoji" title="Scissors">✂</p>
+		<p alt="Lock emoji" title="Closed lock">🔒</p>
+		<p alt="Unlocked emoji" title="Open lock">🔓</p>
+		<p alt="Locked emoji" title="Lock and pen">🔏</p>
+		<p alt="Lock and key" title="Lock and key">🔐</p>
+	</div>
+
+	<div id="f8" class="category">
+		<span>Các icon về ký hiệu, biển báo hiệu</span>
+		<p alt="Exclamation mark emoji" title="Red exclamation mark">❗</p>
+		<p alt="White exclamation mark" title="White exclamation mark">❕</p>
+		<p alt="Question mark emoji" title="Red question mark">❓</p>
+		<p alt="White question mark" title="White question mark">❔</p>
+		<p alt="Double exclamations emojis" title="Double exclamation">‼️</p>
+		<p alt="Exclamation question emoji" title="Exclamation question mark">⁉️</p>
+		<p alt="White check mark" title="White check mark">✅</p>
+		<p alt="Cross mark emoji" title="Cross mark">❌</p>
+		<p alt="Circle emoji" title="Circle">⭕</p>
+		<p alt="Anger symbol" title="Japanese anger symbol">💢</p>
+		<p alt="Banned emoji" title="Prohibited">🚫</p>
+		<p alt="Under 18 emoji" title="No one under eighteen">🔞</p>
+		<p alt="No cell emoji" title="No mobile phones">📵</p>
+		<p alt="Mute emoji" title="Muted volume">🔇</p>
+		<p alt="Silent mode emoji" title="Ringer disabled">🔕</p>
+		<p alt="No smoking emoji" title="No smoking">🚭</p>
+		<p alt="Restricted bicycles emoji" title="No bicycles">🚳</p>
+		<p alt="Non-potable water" title="Non-potable water">🚱</p>
+		<p alt="No pedestrians emoji" title="No pedestrians">🚷</p>
+		<p alt="Don't litter emoji" title="No littering">🚯</p>
+		<p alt="Stop emoji" title="Stop sign">🛑</p>
+		<p alt="No entry emoji" title="No entry">⛔</p>
+		<p alt="Children emoji" title="Children crossing">🚸</p>
+		<p alt="Warning emoji" title="Warning sign">⚠️</p>
+		<p alt="Radioactive emoji" title="Radioactive sign">☢️</p>
+		<p alt="Biohazard emoji" title="Biohazard sign">☣️</p>
+		<p alt="Skull and bones emoji" title="Poisoned">☠️</p>
+		<p alt="Cross mark" title="Cross mark button">❎</p>
+		<p alt="Recycling symbol" title="Recycling symbol">♻️</p>
+		<p alt="Yin Yang emoji" title="Yin Yang">☯️</p>
+		<p alt="Hundred emoji 100" title="One-hundred">💯</p>
+		<p alt="Zzz emoji" title="Zzz">💤</p>
+		<p alt="Bright emoji" title="Bright">🔆</p>
+		<p alt="Dim brightness emoji" title="Dim">🔅</p>
+		<p alt="Spiral swirl emoji" title="Cyclone">🌀</p>
+		<p alt="Steam emoji" title="Steam">♨️</p>
+		<p alt="Eight-pointed star" title="Eight-pointed star">✴️</p>
+		<p alt="Eight-spoked asterisk" title="Eight-spoked asterisk">✳️</p>
+		<p alt="Globe emoji" title="Globe with meridians">🌐</p>
+		<p alt="Speaker emoji" title="Speaker">🔈</p>
+		<p alt="Menorah emoji" title="Menorah">🕎</p>
+		<p alt="Fleur-De-Lis" title="Fleur-De-Lis">⚜️</p>
+		<p alt="Trident emoji" title="Trident">🔱</p>
+		<p alt="McDonalds emoji" title="Part alternation mark">〽️</p>
+		<p alt="Wavy emoji" title="Wavy dash">〰️</p>
+		<p alt="End emoji" title="End">🔚</p>
+		<p alt="Back emoji" title="Back">🔙</p>
+		<p alt="On emoji" title="On!">🔛</p>
+		<p alt="Top emoji" title="Top">🔝</p>
+		<p alt="Soon emoji" title="Soon">🔜</p>
+		<p alt="Jewish emoji" title="Star of David">✡️</p>
+		<p alt="Jesus emoji" title="Latin cross">✝️</p>
+		<p alt="Orthodox christian emoji" title="Orthodox cross">☦️</p>
+		<p alt="Islam emoji" title="Star and Crescent">☪️</p>
+		<p alt="Om" title="Om Hindu sign">🕉️</p>
+		<p alt="Wheel of Dharma" title="Wheel of Dharma">☸️</p>
+		<p alt="Praying emoji" title="Place of Worship">🛐</p>
+		<p alt="Peace symbol for Facebook" title="Peace Symbol">☮️</p>
+		<p alt="Atom Facebook Symbols" title="Atom symbol">⚛️</p>
+		<p alt="Sparkle emoji" title="Sparkle">❇️</p>
+		<p alt="Female symbol - Facebook Emojis" title="Female symbol">♀️</p>
+		<p alt="Male symbol" title="Male symbol">♂️</p>
+		<p alt="Heavy Check Mark" title="Heavy Check Mark">✔️</p>
+		<p alt="Multiplication X Emoji" title="Multiplication sign">✖️</p>
+		<p alt="Heavy Plus Sign" title="Plus sign">➕</p>
+		<p alt="Heavy Minus Sign" title="Minus sign">➖</p>
+		<p alt="Heavy Division Sign" title="Division sign">➗</p>
+		<p alt="Emoji Copyright" title="Copyright">©️</p>
+		<p alt="Registered Sign" title="Registered trademark">®️</p>
+		<p alt="Trademark emoji" title="Trademark">™️</p>
+		<p alt="Checkbox emoji" title="Checkbox">☑️</p>
+		<p alt="Water symbol" title="Potable water symbol">🚰</p>
+		<p alt="Baggage emoji" title="Baggage claim">🛄</p>
+		<p alt="Luggage emoji" title="Left luggage">🛅</p>
+		<p alt="Passport emoji" title="Passport control">🛂</p>
+		<p alt="Customs emoji" title="Customs">🛃</p>
+		<p alt="Metro emoji" title="Metro">Ⓜ️</p>
+		<p alt="Parking emoji" title="Parking sign">🅿️</p>
+		<p alt="WC emoji" title="Water closet">🚾</p>
+		<p alt="ATM emoji" title="ATM sign">🏧</p>
+		<p alt="Litter emoji" title="Litter in its place">🚮</p>
+		<p alt="Wheelchair emoji" title="Wheelchair access">♿</p>
+		<p alt="Men toilet emoji" title="Men’s room">🚹</p>
+		<p alt="Women toilet" title="Women’s room">🚺</p>
+		<p alt="Restroom emoji" title="Restroom">🚻</p>
+		<p alt="Baby change emoji" title="Baby change station">🚼</p>
+		<p alt="VS versus emoji" title="VS">🆚</p>
+		<p alt="Mobile Phone Off" title="Mobile Phone Off">📴</p>
+		<p alt="Vibration Mode" title="Vibration Mode">📳</p>
+		<p alt="SOS emoji" title="SOS emergency">🆘</p>
+		<p alt="OK emoji" title="OK">🆗</p>
+		<p alt="Up emoji" title="UP!">🆙</p>
+		<p alt="Cool emoji" title="Cool">🆒</p>
+		<p alt="No good emoji" title="NG - No good">🆖</p>
+		<p alt="New emoji for Facebook" title="NEW">🆕</p>
+		<p alt="Free emoji" title="FREE">🆓</p>
+		<p alt="Uppercase emoji" title="ABC">🔠</p>
+		<p alt="Alphabet emoji" title="Abc">🔤</p>
+		<p alt="Lowercase emoji" title="abc">🔡</p>
+		<p alt="Symbols emoji" title="Symbols">🔣</p>
+		<p alt="Emoji A" title="Letter A">🇦</p>
+		<p alt="Emoji B" title="Letter B">🇧</p>
+		<p alt="Emoji C" title="Letter C">🇨</p>
+		<p alt="Emoji D" title="Letter D">🇩</p>
+		<p alt="Emoji E" title="Letter E">🇪</p>
+		<p alt="Emoji F" title="Letter F">🇫</p>
+		<p alt="Emoji G" title="Letter G">🇬</p>
+		<p alt="Emoji H" title="Letter H">🇭</p>
+		<p alt="Emoji I" title="Letter I">🇮</p>
+		<p alt="Emoji J" title="Letter J">🇯</p>
+		<p alt="Emoji K" title="Letter K">🇰</p>
+		<p alt="Emoji L" title="Letter L">🇱</p>
+		<p alt="Emoji M" title="Letter M">🇲</p>
+		<p alt="Emoji N" title="Letter N">🇳</p>
+		<p alt="Emoji O" title="Letter O">🇴</p>
+		<p alt="Emoji P" title="Letter P">🇵</p>
+		<p alt="Emoji Q" title="Letter Q">🇶</p>
+		<p alt="Emoji R" title="Letter R">🇷</p>
+		<p alt="Emoji S" title="Letter S">🇸</p>
+		<p alt="Emoji T" title="Letter T">🇹</p>
+		<p alt="Emoji U" title="Letter U">🇺</p>
+		<p alt="Emoji V" title="Letter V">🇻</p>
+		<p alt="Emoji W" title="Letter W">🇼</p>
+		<p alt="Emoji Y" title="Letter Y">🇾</p>
+		<p alt="Emoji X" title="Letter X">🇽</p>
+		<p alt="Emoji Z" title="Letter Z">🇿</p>
+		<p alt="Number 0 emoji" title="Zero">0️⃣</p>
+		<p alt="Number 1 emoji" title="One">1️⃣</p>
+		<p alt="Number 2 emoji" title="Two">2️⃣</p>
+		<p alt="Number 3 emoji" title="Three">3️⃣</p>
+		<p alt="Number 4 emoji" title="Four">4️⃣</p>
+		<p alt="Number 5 emoji" title="Five">5️⃣</p>
+		<p alt="Number 6 emoji" title="Six">6️⃣</p>
+		<p alt="Number 7 emoji" title="Seven">7️⃣</p>
+		<p alt="Number 8 emoji" title="Eight">8️⃣</p>
+		<p alt="Number 9 emoji" title="Nine">9️⃣</p>
+		<p alt="Number 10 emoji" title="Ten">🔟</p>
+		<p alt="Emoji numbers" title="Numbers">🔢</p>
+		<p alt="Hash emoji" title="Hashtag">#️⃣</p>
+		<p alt="Asterisk emoji" title="Asterisk">*️⃣ </p>
+		<p alt="Information emoji" title="Info sign">ℹ️</p>
+		<p alt="Antenna signal emoji" title="Signal strength or volume bars">📶</p>
+		<p alt="Play button emoji" title="Play button">▶️</p>
+		<p alt="Pause emoji" title="Pause button">⏸️</p>
+		<p alt="Stop Button" title="Stop Button">⏹️</p>
+		<p alt="Record emoji" title="Record sign">⏺️</p>
+		<p alt="Play-pause button" title="Play-pause">⏯️</p>
+		<p alt="Reverse emoji" title="Reverse button">◀️</p>
+		<p alt="Up button" title="Up button">🔼</p>
+		<p alt="Down emoji" title="Down button">🔽</p>
+		<p alt="Fast-forward emoji" title="Fast-forward">⏩</p>
+		<p alt="Fast reverse button" title="Fast reverse button">⏪</p>
+		<p alt="Fast Up Button" title="Fast up">⏫</p>
+		<p alt="Fast Down Button" title="Fast down">⏬</p>
+		<p alt="Previous emoji" title="Last track button">⏮️</p>
+		<p alt="Next emoji" title="Next track button">⏭️</p>
+		<p alt="Eject emoji" title="Eject button">⏏️</p>
+		<p alt="Shuffle emoji" title="Shuffle button">🔀</p>
+		<p alt="Repeat emoji" title="Repeat button">🔁</p>
+		<p alt="Loop emoji" title="Repat once">🔂</p>
+		<p alt="Refresh emoji" title="Refresh sign">🔄</p>
+		<p alt="Spinning arrows emoji" title="Spinning arrows">🔃</p>
+		<p alt="Reply emoji" title="Arrow curving left">↩️</p>
+		<p alt="U turn emoji" title="Arrow curving right">↪️</p>
+		<p alt="Curved arrow emoji" title="Arrow curving up">⤴️</p>
+		<p alt="Curved down arrow" title="Arrow curving down">⤵️</p>
+		<p alt="Upwards arrow" title="Up arrow">⬆️</p>
+		<p alt="Downwards arrow emoji" title="Down arrow">⬇</p>
+		<p alt="Leftwards emoji" title="Left arrow">⬅️</p>
+		<p alt="Rightwards emoji" title="Right arrow">➡️</p>
+		<p alt="Up-right emoji" title="Up-right arrow">↗️</p>
+		<p alt="Down-left emoji" title="Down-left arrow">↙️</p>
+		<p alt="Down-right emoji" title="Down-right arrow">↘️</p>
+		<p alt="Up-left emoji" title="Up-left arrow">↖️</p>
+		<p alt="Left-right emoji" title="Left-right arrow">↔️</p>
+		<p alt="Up-down emoji" title="Up-down arrow">↕️</p>
+		<p alt="Aries emoji" title="Aries">♈</p>
+		<p alt="Taurus emoji" title="Taurus">♉</p>
+		<p alt="Gemini emoji" title="Gemini">♊</p>
+		<p alt="Cancer zodiac emoji" title="Cancer">♋</p>
+		<p alt="Leo emoji" title="Leo">♌</p>
+		<p alt="Virgo emoji" title="Virgo">♍</p>
+		<p alt="Libra emoji" title="Libra">♎</p>
+		<p alt="Scorpius zodiac emoji" title="Scorpio">♏</p>
+		<p alt="Sagittarius horoscope emoji" title="Sagittarius">♐</p>
+		<p alt="Capricorn emoji" title="Capricorn">♑</p>
+		<p alt="Aquarius emoji" title="Aquarius">♒</p>
+		<p alt="Pisces emoji" title="Pisces">♓</p>
+		<p alt="Ophiuchus emoji" title="Ophiuchus">⛎</p>
+		<p alt="Facebook emoji ID" title="ID">🆔</p>
+		<p alt="Japanese vacancy emoji" title="Japanese for vacancy">🈳</p>
+		<p alt="Japanese service charge" title="Japanese for service charge">🈂️</p>
+		<p alt="Japanese here emoji" title="Japanese for here">🈁</p>
+		<p alt="Japanese reserved emoji" title="Japanese for reserved">🈯</p>
+		<p alt="Japanese discount emoji" title="Japanese for discount">🈹</p>
+		<p alt="Japanese free of charge emoji" title="Japanese for free of charge">🈚</p>
+		<p alt="Japanese not free of charge" title="Japanese for not free">🈶</p>
+		<p alt="Japanese monthly amount emoji" title="Japanese for monthly amount">🈷️</p>
+		<p alt="Japanese emoji app" title="Japanese for application">🈸</p>
+		<p alt="Japanese work emoji" title="Japanese for work">🈺</p>
+		<p alt="Acceptable emoji" title="Japanese for acceptable">🉑</p>
+		<p alt="Congratulations emoji" title="Japanese for congratulations">㊗️</p>
+		<p alt="Secret emoji" title="Japanese for secret">㊙️</p>
+		<p alt="Passing grade" title="Japanese for agreement">🈴</p>
+		<p alt="Forbidden emoji" title="Japanese for forbidden">🈲</p>
+		<p alt="Blood type A" title="Blood type A">🅰️</p>
+		<p alt="Blood type B" title="Blood type B">🅱️</p>
+		<p alt="Blood type AB" title="Blood type AB">🆎</p>
+		<p alt="Blood type emoji" title="Blood type O">🅾️</p>
+		<p alt="Clear emoji" title="Clear button">🆑</p>
+		<p alt="Beginner emoji" title="Japanese symbol for beginner">🔰</p>
+		<p alt="Name badge emoji" title="Japanese name badge">📛</p>
+		<p alt="White flower emoji" title="Japanese cherry blossom">💮</p>
+		<p alt="Diamond emoji" title="Diamond">💠</p>
+		<p alt="Large emoji diamond" title="Orange diamond">🔶</p>
+		<p alt="Large blue diamond" title="Blue diamond">🔷</p>
+		<p alt="Small emoji diamond" title="Small orange diamond">🔸</p>
+		<p alt="Small blue diamond" title="Small blue diamond">🔹</p>
+		<p alt="Red arrow up" title="Red triangle pointed up">🔺</p>
+		<p alt="Red arrow down" title="Red triangle pointed down">🔻</p>
+		<p alt="Small square emoji" title="Black small square">▪️</p>
+		<p alt="White small square" title="White small square">▫️</p>
+		<p alt="Medium-small square" title="Black medium-small square">◾</p>
+		<p alt="White medium-small square" title="White medium-small square">◽</p>
+		<p alt="Medium emoji square" title="Black medium square">◼️</p>
+		<p alt="White medium square" title="White medium square">◻️</p>
+		<p alt="Large emoji square" title="Black large square">⬛</p>
+		<p alt="White large square" title="White large square">⬜</p>
+		<p alt="Black squared button" title="Black squared button">🔲</p>
+		<p alt="White squared button" title="White squared button">🔳</p>
+		<p alt="Circle emoji" title="White circle">⚪</p>
+		<p alt="Black circle" title="Black circle">⚫</p>
+		<p alt="Red circle emoji" title="Red circle">🔴</p>
+		<p alt="Blue circle" title="Blue circle">🔵</p>
+		<p alt="Radio button emoji" title="Radio button">🔘</p>
+		<p alt="Speech bubble" title="Speech bubble">🗨️</p>
+		<p alt="Thought bubble emoji" title="Thought bubble">💭</p>
+		<p alt="Anger bubble emoji" title="Anger bubble">🗯️</p>
+		<p alt="Chat emoji" title="Chat bubble">💬</p>
+		<p alt="Curly loop emoji" title="Curly loop">➰</p>
+		<p alt="Spades emoji" title="Spade Suit">♠️</p>
+		<p alt="Club suit emoji" title="Club suit">♣️</p>
+		<p alt="Diamond suit" title="Diamond suit">♦️</p>
+		<p alt="Joker emoji" title="Joker card">🃏</p>
+		<p alt="Mahjong emoji" title="Mahjong card">🀄</p>
+		<p alt="Playing card emoji" title="Hanafuda card">🎴</p>
+		<p alt="Yen Graph emoji" title="Yen Graph">💹</p>
+		<p alt="Low volume emoji" title="Low volume">🔉</p>
+		<p alt="High volume" title="High volume">🔊</p>
+		<p alt="Double curly loop" title="Double curly loop">➿</p>
+		<p alt="1 o’clock emoji" title="One o’clock">🕐</p>
+		<p alt="2 o’clock emoji" title="Two o’clock">🕑</p>
+		<p alt="3 o’clock emoji" title="Three o’clock">🕒</p>
+		<p alt="4 o’clock emoji" title="Four o’clock">🕓</p>
+		<p alt="5 o’clock emoji" title="Five o’clock">🕔</p>
+		<p alt="6 o’clock emoji" title="Six o’clock">🕕</p>
+		<p alt="7 o’clock emoji" title="Seven o’clock">🕖</p>
+		<p alt="8 o’clock emoji" title="Eight o’clock">🕗</p>
+		<p alt="9 o’clock emoji" title="Nine o’clock">🕘</p>
+		<p alt="10 o’clock emoji" title="Ten o’clock">🕙</p>
+		<p alt="11 o’clock emoji" title="Eleven o’clock">🕚</p>
+		<p alt="12 o’clock emoji" title="Twelve o’clock">🕛</p>
+		<p alt="Twelve-thirty" title="Twelve-thirty">🕧</p>
+		<p alt="One-thirty" title="One-thirty">🕜</p>
+		<p alt="Two-thirty" title="Two-thirty">🕝</p>
+		<p alt="Three-thirty emoji" title="Three-thirty">🕞</p>
+		<p alt="Four-thirty emoji" title="Four-thirty">🕟</p>
+		<p alt="Five-thirty" title="Five-thirty">🕠</p>
+		<p alt="Six-thirty" title="Six-thirty">🕡</p>
+		<p alt="Seven-thirty" title="Seven-thirty">🕢</p>
+		<p alt="Eight-thirty" title="Eight-thirty">🕣</p>
+		<p alt="Nine-thirty" title="Nine-thirty">🕤</p>
+		<p alt="Ten-thirty" title="Ten-thirty">🕥</p>
+		<p alt="Eleven-thirty" title="Eleven-thirty">🕦</p>
+	</div>
+
+	<div id="f9" class="category" style="padding-bottom:120px">
+		<span>Icon facebook cờ các quốc gia</span>
+		<p alt="White flag emoji" title="White flag">🏳️</p>
+		<p alt="Black flag emoji" title="Black flag">🏴</p>
+		<p alt="Racing flag emoji" title="Racing flag">🏁</p>
+		<p alt="Triangular flag" title="Triangular flag">🚩</p>
+		<p alt="Gay pride emoji" title="Rainbow flag">🏳️‍🌈</p>
+		<p alt="Afghanistan emoji" title="Flag of Afghanistan">🇦🇫</p>
+		<p alt="Åland Islands emoji" title="Flag of Åland Islands">🇦🇽</p>
+		<p alt="Albania emoji" title="Flag of Albania">🇦🇱</p>
+		<p alt="Algeria emoji" title="Flag of Algeria">🇩🇿</p>
+		<p alt="American Samoa emoji" title="Flag of American Samoa">🇦🇸</p>
+		<p alt="Andorra emoji" title="Flag of Andorra">🇦🇩</p>
+		<p alt="Angola emoji" title="Flag of Angola">🇦🇴</p>
+		<p alt="Anguilla emoji" title="Flag of Anguilla">🇦🇮</p>
+		<p alt="Antarctica emoji" title="Flag of Antarctica">🇦🇶</p>
+		<p alt="Antigua & Barbuda emoji" title="Flag of Antigua & Barbuda">🇦🇬</p>
+		<p alt="Argentina emoji" title="Flag of Argentina">🇦🇷</p>
+		<p alt="Armenia emoji" title="Flag of Armenia">🇦🇲</p>
+		<p alt="Aruba emoji" title="Flag of Aruba">🇦🇼</p>
+		<p alt="Australia emoji" title="Flag of Australia">🇦🇺</p>
+		<p alt="Austria emoji" title="Flag of Austria">🇦🇹</p>
+		<p alt="Azerbaijan emoji" title="Flag of Azerbaijan">🇦🇿</p>
+		<p alt="Bahamas emoji" title="Flag of Bahamas">🇧🇸</p>
+		<p alt="Bahrain emoji" title="Flag of Bahrain">🇧🇭</p>
+		<p alt="Bangladesh emoji" title="Flag of Bangladesh">🇧🇩</p>
+		<p alt="Barbados emoji" title="Flag of Barbados">🇧🇧</p>
+		<p alt="Belarus emoji" title="Flag of Belarus">🇧🇾</p>
+		<p alt="Belgium emoji" title="Flag of Belgium">🇧🇪</p>
+		<p alt="Belize emoji" title="Flag of Belize">🇧🇿</p>
+		<p alt="Benin emoji" title="Flag of Benin">🇧🇯</p>
+		<p alt="Bermuda emoji" title="Flag of Bermuda">🇧🇲</p>
+		<p alt="Bhutan emoji" title="Flag of Bhutan">🇧🇹</p>
+		<p alt="Bolivia emoji" title="Flag of Bolivia">🇧🇴</p>
+		<p alt="Caribbean Netherlands emoji" title="Flag of Caribbean Netherlands">🇧🇶</p>
+		<p alt="Bosnia & Herzegovina emoji" title="Flag of Bosnia & Herzegovina">🇧🇦</p>
+		<p alt="Botswana emoji" title="Flag of Botswana">🇧🇼</p>
+		<p alt="Brazil emoji" title="Flag of Brazil">🇧🇷</p>
+		<p alt="British Indian Ocean Territory emoji" title="Flag of British Indian Ocean Territory">🇮🇴</p>
+		<p alt="British Virgin Islands emoji" title="Flag of British Virgin Islands">🇻🇬</p>
+		<p alt="Brunei emoji" title="Flag of Brunei">🇧🇳</p>
+		<p alt="Bulgaria emoji" title="Flag of Bulgaria">🇧🇬</p>
+		<p alt="Burkina Faso emoji" title="Flag of Burkina Faso">🇧🇫</p>
+		<p alt="Burundi emoji" title="Flag of Burundi">🇧🇮</p>
+		<p alt="Cape Verde emoji" title="Flag of Cape Verde">🇨🇻</p>
+		<p alt="Cambodia emoji" title="Flag of Cambodia">🇰🇭</p>
+		<p alt="Cameroon emoji" title="Flag of Cameroon">🇨🇲</p>
+		<p alt="Canada emoji" title="Flag of Canada">🇨🇦</p>
+		<p alt="Canary Islands emoji" title="Flag of Canary Islands">🇮🇨</p>
+		<p alt="Cayman Islands emoji" title="Flag of Cayman Islands">🇰🇾</p>
+		<p alt="Central African Republic emoji" title="Flag of Central African Republic">🇨🇫</p>
+		<p alt="Chad emoji" title="Flag of Chad">🇹🇩</p>
+		<p alt="Chile emoji" title="Flag of Chile">🇨🇱</p>
+		<p alt="China emoji" title="Flag of China">🇨🇳</p>
+		<p alt="Christmas Island emoji" title="Flag of Christmas Island">🇨🇽</p>
+		<p alt="Cocos (Keeling) Islands emoji" title="Flag of Cocos (Keeling) Islands">🇨🇨</p>
+		<p alt="Colombia emoji" title="Flag of Colombia">🇨🇴</p>
+		<p alt="Comoros emoji" title="Flag of Comoros">🇰🇲</p>
+		<p alt="Congo - Brazzaville emoji" title="Flag of Congo - Brazzaville">🇨🇬</p>
+		<p alt="Congo - Kinshasa emoji" title="Flag of Congo - Kinshasa">🇨🇩</p>
+		<p alt="Cook Islands emoji" title="Flag of Cook Islands">🇨🇰</p>
+		<p alt="Costa Rica emoji" title="Flag of Costa Rica">🇨🇷</p>
+		<p alt="Côte D’Ivoire emoji" title="Flag of Côte D’Ivoire">🇨🇮</p>
+		<p alt="Croatia emoji" title="Flag of Croatia">🇭🇷</p>
+		<p alt="Cuba emoji" title="Flag of Cuba">🇨🇺</p>
+		<p alt="Curaçao emoji" title="Flag of Curaçao">🇨🇼</p>
+		<p alt="Cyprus emoji" title="Flag of Cyprus">🇨🇾</p>
+		<p alt="Czechia emoji" title="Flag of Czechia">🇨🇿</p>
+		<p alt="Denmark emoji" title="Flag of Denmark">🇩🇰</p>
+		<p alt="Djibouti emoji" title="Flag of Djibouti">🇩🇯</p>
+		<p alt="Dominica emoji" title="Flag of Dominica">🇩🇲</p>
+		<p alt="Dominican Republic emoji" title="Flag of Dominican Republic">🇩🇴</p>
+		<p alt="Ecuador emoji" title="Flag of Ecuador">🇪🇨</p>
+		<p alt="Egypt emoji" title="Flag of Egypt">🇪🇬</p>
+		<p alt="El Salvador emoji" title="Flag of El Salvador">🇸🇻</p>
+		<p alt="Equatorial Guinea emoji" title="Flag of Equatorial Guinea">🇬🇶</p>
+		<p alt="Eritrea emoji" title="Flag of Eritrea">🇪🇷</p>
+		<p alt="Estonia emoji" title="Flag of Estonia">🇪🇪</p>
+		<p alt="Ethiopia emoji" title="Flag of Ethiopia">🇪🇹</p>
+		<p alt="European Union emoji" title="Flag of European Union">🇪🇺</p>
+		<p alt="Falkland Islands emoji" title="Flag of Falkland Islands">🇫🇰</p>
+		<p alt="Faroe Islands emoji" title="Flag of Faroe Islands">🇫🇴</p>
+		<p alt="Fiji emoji" title="Flag of Fiji">🇫🇯</p>
+		<p alt="Finland emoji" title="Flag of Finland">🇫🇮</p>
+		<p alt="France emoji" title="Flag of France">🇫🇷</p>
+		<p alt="French Guiana emoji" title="Flag of French Guiana">🇬🇫</p>
+		<p alt="French Polynesia emoji" title="Flag of French Polynesia">🇵🇫</p>
+		<p alt="French Southern Territories emoji" title="Flag of French Southern Territories">🇹🇫</p>
+		<p alt="Gabon emoji" title="Flag of Gabon">🇬🇦</p>
+		<p alt="Gambia emoji" title="Flag of Gambia">🇬🇲</p>
+		<p alt="Georgia emoji" title="Flag of Georgia">🇬🇪</p>
+		<p alt="Germany emoji" title="Flag of Germany">🇩🇪</p>
+		<p alt="Ghana emoji" title="Flag of Ghana">🇬🇭</p>
+		<p alt="Gibraltar emoji" title="Flag of Gibraltar">🇬🇮</p>
+		<p alt="Greece emoji" title="Flag of Greece">🇬🇷</p>
+		<p alt="Greenland emoji" title="Flag of Greenland">🇬🇱</p>
+		<p alt="Grenada emoji" title="Flag of Grenada">🇬🇩</p>
+		<p alt="Guadeloupe emoji" title="Flag of Guadeloupe">🇬🇵</p>
+		<p alt="Guam emoji" title="Flag of Guam">🇬🇺</p>
+		<p alt="Guatemala emoji" title="Flag of Guatemala">🇬🇹</p>
+		<p alt="Guernsey emoji" title="Flag of Guernsey">🇬🇬</p>
+		<p alt="Guinea emoji" title="Flag of Guinea">🇬🇳</p>
+		<p alt="Guinea-Bissau emoji" title="Flag of Guinea-Bissau">🇬🇼</p>
+		<p alt="Guyana emoji" title="Flag of Guyana">🇬🇾</p>
+		<p alt="Haiti emoji" title="Flag of Haiti">🇭🇹</p>
+		<p alt="Honduras emoji" title="Flag of Honduras">🇭🇳</p>
+		<p alt="Hong Kong Sar China emoji" title="Flag of Hong Kong Sar China">🇭🇰</p>
+		<p alt="Hungary emoji" title="Flag of Hungary">🇭🇺</p>
+		<p alt="Iceland emoji" title="Flag of Iceland">🇮🇸</p>
+		<p alt="India emoji" title="Flag of India">🇮🇳</p>
+		<p alt="Indonesia emoji" title="Flag of Indonesia">🇮🇩</p>
+		<p alt="Iran emoji" title="Flag of Iran">🇮🇷</p>
+		<p alt="Iraq emoji" title="Flag of Iraq">🇮🇶</p>
+		<p alt="Ireland emoji" title="Flag of Ireland">🇮🇪</p>
+		<p alt="Isle of Man emoji" title="Flag of Isle of Man">🇮🇲</p>
+		<p alt="Israel emoji" title="Flag of Israel">🇮🇱</p>
+		<p alt="Italy emoji" title="Flag of Italy">🇮🇹</p>
+		<p alt="Jamaica emoji" title="Flag of Jamaica">🇯🇲</p>
+		<p alt="Japan emoji" title="Flag of Japan">🇯🇵</p>
+		<p alt="Crossed Flags emoji" title="Flag of Crossed Flags">🎌</p>
+		<p alt="Jersey emoji" title="Flag of Jersey">🇯🇪</p>
+		<p alt="Jordan emoji" title="Flag of Jordan">🇯🇴</p>
+		<p alt="Kazakhstan emoji" title="Flag of Kazakhstan">🇰🇿</p>
+		<p alt="Kenya emoji" title="Flag of Kenya">🇰🇪</p>
+		<p alt="Kiribati emoji" title="Flag of Kiribati">🇰🇮</p>
+		<p alt="Kosovo emoji" title="Flag of Kosovo">🇽🇰</p>
+		<p alt="Kuwait emoji" title="Flag of Kuwait">🇰🇼</p>
+		<p alt="Kyrgyzstan emoji" title="Flag of Kyrgyzstan">🇰🇬</p>
+		<p alt="Laos emoji" title="Flag of Laos">🇱🇦</p>
+		<p alt="Latvia emoji" title="Flag of Latvia">🇱🇻</p>
+		<p alt="Lebanon emoji" title="Flag of Lebanon">🇱🇧</p>
+		<p alt="Lesotho emoji" title="Flag of Lesotho">🇱🇸</p>
+		<p alt="Liberia emoji" title="Flag of Liberia">🇱🇷</p>
+		<p alt="Libya emoji" title="Flag of Libya">🇱🇾</p>
+		<p alt="Liechtenstein emoji" title="Flag of Liechtenstein">🇱🇮</p>
+		<p alt="Lithuania emoji" title="Flag of Lithuania">🇱🇹</p>
+		<p alt="Luxembourg emoji" title="Flag of Luxembourg">🇱🇺</p>
+		<p alt="Macau Sar China emoji" title="Flag of Macau Sar China">🇲🇴</p>
+		<p alt="Macedonia emoji" title="Flag of Macedonia">🇲🇰</p>
+		<p alt="Madagascar emoji" title="Flag of Madagascar">🇲🇬</p>
+		<p alt="Malawi emoji" title="Flag of Malawi">🇲🇼</p>
+		<p alt="Malaysia emoji" title="Flag of Malaysia">🇲🇾</p>
+		<p alt="Maldives emoji" title="Flag of Maldives">🇲🇻</p>
+		<p alt="Mali emoji" title="Flag of Mali">🇲🇱</p>
+		<p alt="Malta emoji" title="Flag of Malta">🇲🇹</p>
+		<p alt="Marshall Islands emoji" title="Flag of Marshall Islands">🇲🇭</p>
+		<p alt="Martinique emoji" title="Flag of Martinique">🇲🇶</p>
+		<p alt="Mauritania emoji" title="Flag of Mauritania">🇲🇷</p>
+		<p alt="Mauritius emoji" title="Flag of Mauritius">🇲🇺</p>
+		<p alt="Mayotte emoji" title="Flag of Mayotte">🇾🇹</p>
+		<p alt="Mexico emoji" title="Flag of Mexico">🇲🇽</p>
+		<p alt="Micronesia emoji" title="Flag of Micronesia">🇫🇲</p>
+		<p alt="Moldova emoji" title="Flag of Moldova">🇲🇩</p>
+		<p alt="Monaco emoji" title="Flag of Monaco">🇲🇨</p>
+		<p alt="Mongolia emoji" title="Flag of Mongolia">🇲🇳</p>
+		<p alt="Montenegro emoji" title="Flag of Montenegro">🇲🇪</p>
+		<p alt="Montserrat emoji" title="Flag of Montserrat">🇲🇸</p>
+		<p alt="Morocco emoji" title="Flag of Morocco">🇲🇦</p>
+		<p alt="Mozambique emoji" title="Flag of Mozambique">🇲🇿</p>
+		<p alt="Myanmar (Burma) emoji" title="Flag of Myanmar (Burma)">🇲🇲</p>
+		<p alt="Namibia emoji" title="Flag of Namibia">🇳🇦</p>
+		<p alt="Nauru emoji" title="Flag of Nauru">🇳🇷</p>
+		<p alt="Nepal emoji" title="Flag of Nepal">🇳🇵</p>
+		<p alt="Netherlands emoji" title="Flag of Netherlands">🇳🇱</p>
+		<p alt="New Caledonia emoji" title="Flag of New Caledonia">🇳🇨</p>
+		<p alt="New Zealand emoji" title="Flag of New Zealand">🇳🇿</p>
+		<p alt="Nicaragua emoji" title="Flag of Nicaragua">🇳🇮</p>
+		<p alt="Niger emoji" title="Flag of Niger">🇳🇪</p>
+		<p alt="Nigeria emoji" title="Flag of Nigeria">🇳🇬</p>
+		<p alt="Niue emoji" title="Flag of Niue">🇳🇺</p>
+		<p alt="Norfolk Island emoji" title="Flag of Norfolk Island">🇳🇫</p>
+		<p alt="Northern Mariana Islands emoji" title="Flag of Northern Mariana Islands">🇲🇵</p>
+		<p alt="North Korea emoji" title="Flag of North Korea">🇰🇵</p>
+		<p alt="Norway emoji" title="Flag of Norway">🇳🇴</p>
+		<p alt="Oman emoji" title="Flag of Oman">🇴🇲</p>
+		<p alt="Pakistan emoji" title="Flag of Pakistan">🇵🇰</p>
+		<p alt="Palau emoji" title="Flag of Palau">🇵🇼</p>
+		<p alt="Palestinian Territories emoji" title="Flag of Palestinian Territories">🇵🇸</p>
+		<p alt="Panama emoji" title="Flag of Panama">🇵🇦</p>
+		<p alt="Papua New Guinea emoji" title="Flag of Papua New Guinea">🇵🇬</p>
+		<p alt="Paraguay emoji" title="Flag of Paraguay">🇵🇾</p>
+		<p alt="Peru emoji" title="Flag of Peru">🇵🇪</p>
+		<p alt="Philippines emoji" title="Flag of Philippines">🇵🇭</p>
+		<p alt="Pitcairn Islands emoji" title="Flag of Pitcairn Islands">🇵🇳</p>
+		<p alt="Poland emoji" title="Flag of Poland">🇵🇱</p>
+		<p alt="Portugal emoji" title="Flag of Portugal">🇵🇹</p>
+		<p alt="Puerto Rico emoji" title="Flag of Puerto Rico">🇵🇷</p>
+		<p alt="Qatar emoji" title="Flag of Qatar">🇶🇦</p>
+		<p alt="Réunion emoji" title="Flag of Réunion">🇷🇪</p>
+		<p alt="Romania emoji" title="Flag of Romania">🇷🇴</p>
+		<p alt="Russia emoji" title="Flag of Russia">🇷🇺</p>
+		<p alt="Rwanda emoji" title="Flag of Rwanda">🇷🇼</p>
+		<p alt="St. Barthélemy emoji" title="Flag of St. Barthélemy">🇧🇱</p>
+		<p alt="St. Helena emoji" title="Flag of St. Helena">🇸🇭</p>
+		<p alt="St. Kitts & Nevis emoji" title="Flag of St. Kitts & Nevis">🇰🇳</p>
+		<p alt="St. Lucia emoji" title="Flag of St. Lucia">🇱🇨</p>
+		<p alt="St. Pierre & Miquelon emoji" title="Flag of St. Pierre & Miquelon">🇵🇲</p>
+		<p alt="St. Vincent & Grenadines emoji" title="Flag of St. Vincent & Grenadines">🇻🇨</p>
+		<p alt="Samoa emoji" title="Flag of Samoa">🇼🇸</p>
+		<p alt="San Marino emoji" title="Flag of San Marino">🇸🇲</p>
+		<p alt="São Tomé & Príncipe emoji" title="Flag of São Tomé & Príncipe">🇸🇹</p>
+		<p alt="Saudi Arabia emoji" title="Flag of Saudi Arabia">🇸🇦</p>
+		<p alt="Senegal emoji" title="Flag of Senegal">🇸🇳</p>
+		<p alt="Serbia emoji" title="Flag of Serbia">🇷🇸</p>
+		<p alt="Seychelles emoji" title="Flag of Seychelles">🇸🇨</p>
+		<p alt="Sierra Leone emoji" title="Flag of Sierra Leone">🇸🇱</p>
+		<p alt="Singapore emoji" title="Flag of Singapore">🇸🇬</p>
+		<p alt="Sint Maarten emoji" title="Flag of Sint Maarten">🇸🇽</p>
+		<p alt="Slovakia emoji" title="Flag of Slovakia">🇸🇰</p>
+		<p alt="Slovenia emoji" title="Flag of Slovenia">🇸🇮</p>
+		<p alt="Solomon Islands emoji" title="Flag of Solomon Islands">🇸🇧</p>
+		<p alt="Somalia emoji" title="Flag of Somalia">🇸🇴</p>
+		<p alt="South Africa emoji" title="Flag of South Africa">🇿🇦</p>
+		<p alt="South Georgia & South Sandwich Islands emoji" title="Flag of South Georgia & South Sandwich Islands">🇬🇸</p>
+		<p alt="South Korea emoji" title="Flag of South Korea">🇰🇷</p>
+		<p alt="South Sudan emoji" title="Flag of South Sudan">🇸🇸</p>
+		<p alt="Spain emoji" title="Flag of Spain">🇪🇸</p>
+		<p alt="Sri Lanka emoji" title="Flag of Sri Lanka">🇱🇰</p>
+		<p alt="Sudan emoji" title="Flag of Sudan">🇸🇩</p>
+		<p alt="Suriname emoji" title="Flag of Suriname">🇸🇷</p>
+		<p alt="Swaziland emoji" title="Flag of Swaziland">🇸🇿</p>
+		<p alt="Sweden emoji" title="Flag of Sweden">🇸🇪</p>
+		<p alt="Switzerland emoji" title="Flag of Switzerland">🇨🇭</p>
+		<p alt="Syria emoji" title="Flag of Syria">🇸🇾</p>
+		<p alt="Taiwan emoji" title="Flag of Taiwan">🇹🇼</p>
+		<p alt="Tajikistan emoji" title="Flag of Tajikistan">🇹🇯</p>
+		<p alt="Tanzania emoji" title="Flag of Tanzania">🇹🇿</p>
+		<p alt="Thailand emoji" title="Flag of Thailand">🇹🇭</p>
+		<p alt="Timor-Leste emoji" title="Flag of Timor-Leste">🇹🇱</p>
+		<p alt="Togo emoji" title="Flag of Togo">🇹🇬</p>
+		<p alt="Tokelau emoji" title="Flag of Tokelau">🇹🇰</p>
+		<p alt="Tonga emoji" title="Flag of Tonga">🇹🇴</p>
+		<p alt="Trinidad & Tobago emoji" title="Flag of Trinidad & Tobago">🇹🇹</p>
+		<p alt="Tunisia emoji" title="Flag of Tunisia">🇹🇳</p>
+		<p alt="Turkey emoji" title="Flag of Turkey">🇹🇷</p>
+		<p alt="Turkmenistan emoji" title="Flag of Turkmenistan">🇹🇲</p>
+		<p alt="Turks & Caicos Islands emoji" title="Flag of Turks & Caicos Islands">🇹🇨</p>
+		<p alt="Tuvalu emoji" title="Flag of Tuvalu">🇹🇻</p>
+		<p alt="Uganda emoji" title="Flag of Uganda">🇺🇬</p>
+		<p alt="Ukraine emoji" title="Flag of Ukraine">🇺🇦</p>
+		<p alt="United Arab Emirates emoji" title="Flag of United Arab Emirates">🇦🇪</p>
+		<p alt="United Kingdom emoji" title="Flag of United Kingdom">🇬🇧</p>
+		<p alt="United States emoji" title="Flag of United States">🇺🇸</p>
+		<p alt="U.S. Virgin Islands emoji" title="Flag of U.S. Virgin Islands">🇻🇮</p>
+		<p alt="Uruguay emoji" title="Flag of Uruguay">🇺🇾</p>
+		<p alt="Uzbekistan emoji" title="Flag of Uzbekistan">🇺🇿</p>
+		<p alt="Vanuatu emoji" title="Flag of Vanuatu">🇻🇺</p>
+		<p alt="Vatican City emoji" title="Flag of Vatican City">🇻🇦</p>
+		<p alt="Venezuela emoji" title="Flag of Venezuela">🇻🇪</p>
+		<p alt="Vietnam emoji" title="Flag of Vietnam">🇻🇳</p>
+		<p alt="Wallis & Futuna emoji" title="Flag of Wallis & Futuna">🇼🇫</p>
+		<p alt="Western Sahara emoji" title="Flag of Western Sahara">🇪🇭</p>
+		<p alt="Yemen emoji" title="Flag of Yemen">🇾🇪</p>
+		<p alt="Zambia emoji" title="Flag of Zambia">🇿🇲</p>
+		<p alt="Zimbabwe emoji" title="Flag of Zimbabwe">🇿🇼</p>
+	</div>
+</div>
+<div id="right_block">
+	<span class="copy_label">Selected emojis:<i>(Copies automatically)</i></span>
+	<input type="text" id="copy_block" title="Emoji codes" onmousedown="return this.select(),this.value.length<1&&this.blur(),!1" placeholder="" value="" onkeydown="return!1">
+	<button id="clear_selection">Xóa</button>
+	<button id="copy_button">Copy</button>
+	
+</div>
+<script>(document.getElementById("copy_block")||{}).value="",window.emojiKeywords=[["happy smileys smiles smiling cheerful joyful content amused vui vẻ mặt cười hạnh phúc vui sướng hài lòng","grinning happy smileys smiling laughing smiles cheerful joyful amused LOL cười toe toét vui vẻ hạnh phúc cười lớn","grinning happy smileys smiling laughing smiles cheerful joyful LOL amused cười toe toét vui vẻ hạnh phúc cười lớn","grinning happy amused smileys smiling laughing smiles cheerful joyful LOL squinted squinting XD cười toe toét vui vẻ hạnh phúc cười lớn nheo mắt","grinning happy smileys amused smiling laughing smiles cheerful joyful squinted squinting sweating drop dripping exercise LOL cười toe toét vui vẻ hạnh phúc cười lớn nheo mắt đổ mồ hôi","grinning happy smileys amused smiling laughing teary smiles cheerful joyful tears squinted squinting LOL cười toe toét vui vẻ hạnh phúc cười lớn nheo mắt nước mắt","grinning happy smileys amused smiling rolling laughing smiles cheerful joyful LOL squinted squinting ROFL LMAO cười lăn lóc vui vẻ hạnh phúc cười lớn nheo mắt","happy smileys amused smiling blushing smiles blushed flushed cheerful joyful content smug squinting squinted vui vẻ mặt cười hạnh phúc cười toe toét mặt đỏ ngại ngùng","laughing happy smileys amused smiling blushing smiles blushed flushed cheerful joyful content smug squinting squinted cười vui vẻ hạnh phúc mặt đỏ ngại ngùng","smiley relieved cheerful joyful amused content smileys smiling smiles mặt cười vui vẻ hạnh phúc thở phào nhẹ nhõm","winking winks smiling happy smileys smiles amused cheerful joyful nháy mắt mặt cười vui vẻ hạnh phúc","smirking smirks flirts smiling flirting amused smugly happy smileys smiles side cười lém lỉnh tán tỉnh vui vẻ hạnh phúc","loving romantic love hearts eyes smiling happy amused smileys smiles cheerful joyful flirt yêu thương tình yêu lãng mạn mắt trái tim vui vẻ hạnh phúc","kissing blowing kisses throwing kissy flirt winking hôn thổi hôn ném hôn tán tỉnh nháy mắt","kissing blowing kisses throwing kissy flirt hôn thổi hôn ném hôn tán tỉnh","kissing blowing kisses throwing kissy flirt squinting squinted hôn thổi hôn ném hôn tán tỉnh nheo mắt","kissing blowing kisses throwing kissy blushing blushed flushed shy squinting squinted hôn thổi hôn ném hôn mặt đỏ ngại ngùng nheo mắt","hugging hugs smiling happy amused smileys smiles cheerful joyful blushing blushed flushed ôm ôm ấp mặt cười vui vẻ hạnh phúc mặt đỏ","surprised amazed astonished appalled stunned astounded blushing shamed blushed raising eyebrows embarrassed flushed confused shocked disbelief confusing shocking WTF OMG ngạc nhiên kinh ngạc sốc choáng váng bối rối xấu hổ","upside down cheeky sarcasm happy smileys silly smiles smiling cheerful joyful úp ngược tinh nghịch mỉa mai vui vẻ hạnh phúc ngốc nghếch","heavenly angels happy smileys smiles smiling cheerful joyful content smug amused thiên thần vui vẻ mặt cười hạnh phúc hài lòng","evil devil imp smiling smileys smiles ma quỷ quỷ nhỏ cười mặt cười","goofy sticking tongue out stuck cheeky mocking smileys cheerful joyful smiles smiling joking kidding jokes silly lè lưỡi tinh nghịch chế giễu vui vẻ hạnh phúc đùa giỡn ngốc nghếch","goofy sticking tongue out stuck cheeky mocking smileys cheerful joyful smiles smiling joking kidding jokes squinting silly lè lưỡi tinh nghịch chế giễu vui vẻ hạnh phúc đùa giỡn ngốc nghếch nheo mắt","goofy sticking tongue out stuck cheeky mocking smileys cheerful joyful smiles smiling joking kidding jokes winking silly lè lưỡi tinh nghịch chế giễu vui vẻ hạnh phúc đùa giỡn ngốc nghếch nháy mắt","goofy hungry sticking tongue out stuck licking savouring delicious smileys cheerful joyful smiles smiling eating tasteful foods squinting squinted silly lè lưỡi đói liếm ngon vui vẻ hạnh phúc ăn uống ngốc nghếch nheo mắt","drooling dripping desire wanting hungry savouring delicious smileys cheerful joyful smiles smiling eating tasteful foods chảy nước miếng khao khát đói ngon vui vẻ hạnh phúc ăn uống","nerdy smileys smiles smiling teeth cheerful joyful eyeglasses glasses mọt sách mặt cười vui vẻ hạnh phúc răng kính mắt","cool chilling smileys smiles smug smiling cheerful joyful glasses sunglasses amused ngầu thư giãn mặt cười vui vẻ hạnh phúc kính râm kính mắt","cash dollars money smiley riches wealthy greedy silly smiles smiling cheerful joyful amused tiền bạc đô la giàu có tham lam ngốc nghếch mặt cười vui vẻ hạnh phúc","unimpressed unamused dissatisfied discontented disappointed unhappy frowny frowns frowning frowned không ấn tượng không vui không hào hứng thất vọng không hạnh phúc nhăn mặt","unhappy frowny frowns frowning frowned sadness sorrowful sorry depressed không hạnh phúc nhăn mặt buồn bã xin lỗi trầm cảm","unhappy frowny frowns frowning frowned sadness sorrowful sorry depressed không hạnh phúc nhăn mặt buồn bã xin lỗi trầm cảm","unhappy frowny frowns frowning frowned sadness sorrowful sorry disappointed depressed không hạnh phúc nhăn mặt buồn bã xin lỗi thất vọng trầm cảm","unhappy frowny frowns frowning frowned sadness sorrowful sorry disappointed depressed không hạnh phúc nhăn mặt buồn bã xin lỗi thất vọng trầm cảm","sadness depressed unhappy sorrowful sorry confounded quivering scrunched squinting squinted confused perplexed eek disturbed buồn bã trầm cảm không hạnh phúc xin lỗi bối rối nheo mắt","sadness depressed unhappy sorrowful sorry sweating drop dripping buồn bã trầm cảm không hạnh phúc xin lỗi đổ mồ hôi","sadness depressed unhappy sorrowful sorry sweating drop dripping buồn bã trầm cảm không h���nh phúc xin lỗi đổ mồ hôi","sadness depressed unhappy sorrowful sorry crying weeping sobbing snivel tears teary upset buồn bã trầm cảm không hạnh phúc xin lỗi khóc nước mắt","sadness depressed unhappy sorrowful sorry crying sobbing wailing tears teary streaming distraught upset weeping bawling buồn bã trầm cảm không hạnh phúc xin lỗi khóc nước mắt khóc lóc","concerned distraught stressed worrying worried anxious scared troubled frowny frowns frowning frowned sadness sorrowful sorry depressed lo lắng căng thẳng sợ hãi buồn bã nhăn mặt","distraught stressed anxious helpless persevering squinting scrunched squinted hoảng loạn căng thẳng lo lắng bất lực nheo mắt","distraught stressed anxious weary squinting scrunched squinted hoảng loạn căng thẳng lo lắng mệt mỏi nheo mắt","distraught stressed worrying worried anxious tired exhausted squinting scrunched squinted hoảng loạn căng thẳng lo lắng mệt mỏi kiệt sức nheo mắt","concerned worrying worried dont know unsure WTF puzzled confused baffled displeased unamused annoyed grumpy irritated angry pouting lo lắng không biết không chắc chắn bối rối khó chịu tức giận","dont know planning hmmm thinking thinks chin không biết lập kế hoạch suy nghĩ cằm","impatient waiting pouting nevermind cant not WTF OMG rolling eyes whatever disdain contempt patient boredom disbelief dont hate annoyed thiếu kiên nhẫn chờ đợi bỏ cuộc không thể lăn mắt chán nản ghét tức giận","angry steaming mad irritated displeased annoyed anger fury hate unamused dont tức giận điên cuồng khó chịu giận dữ hận thù không vui","angry mad irritated displeased annoyed anger fury hate unamused dont tức giận điên cuồng khó chịu giận dữ hận thù không vui","angry irritated annoyed displeased anger hate grumpy unamused dont tức giận khó chịu giận dữ hận thù cáu kỉnh không vui","mouthless silent silence blank not speak speechless dont hush không miệng im lặng câm lặng không nói","sealed zipper mouth closed silent silence not speak speechless dont hush khóa miệng im lặng câm lặng không nói","neutral indifferent speechless WTF OMG straight shocked trung lập thờ ơ câm lặng thẳng sốc","neutral expressionless indifferent speechless squinted scrunched closed straight trung lập vô cảm thờ ơ câm lặng nheo mắt thẳng","raised eyebrows surprised amazed gasping astonished appalled stunned astounded shocked OMG WTF nhăn trán ngạc nhiên kinh ngạc sốc choáng váng","raised eyebrows surprised amazed gasping astonished appalled stunned astounded shocked OMG WTF nhăn trán ngạc nhiên kinh ngạc sốc choáng váng","pained frowning shocked fearing afraid anguished stressed miserable despairing fearful fearing afraid scared đau khổ nhăn mặt sốc sợ hãi lo lắng tuyệt vọng","frowny frowning scared fearing afraid nhăn mặt sợ hãi","shocked fearing afraid terrified scared OMG scary sweating stressed sốc sợ hãi kinh hoàng đổ mồ hôi căng thẳng","shocked fearing afraid terrified screaming scared OMG WTF surprised scary stunned astonished sốc sợ hãi kinh hoàng la hét ngạc nhiên","night snot bubble sleeping sleepy snores snoring đêm bong bóng ngủ buồn ngủ ngáy","zzzzz night snoring snores sleeping sleepy đêm ngáy ngủ buồn ngủ","awkward nervous grimace teeth mistake eek kỳ cục căng thẳng nhăn mặt răng sai lầm","pinocchio lying liar big nose lie pinocchio nói dối người nói dối mũi to","sick bad sneezing gesundheit blowing tissue flu cold ốm xấu hắt hơi cảm lạnh","sick bad temperature thermometer flu cold ốm xấu nhiệt độ nhiệt kế cảm lạnh","sick bad medical masked patient doctors flu cold ốm xấu y tế đeo khẩu trang bệnh nhân bác sĩ cảm lạnh","sick bad bandage hurting pained frowny patient frowns frowned frowning ốm xấu băng bó đau nhức nhăn mặt bệnh nhân","dizzy spiral eyes confused frowny OMG trans chóng mặt xoắn ốc mắt bối rối nhăn mặt","nauseated green feeling sick bad buồn nôn xanh cảm thấy ốm xấu","cowboys hats amused smiley smiling smiles masked cao bồi mũ vui vẻ mặt cười đeo khẩu trang","clown amused smileys smiling smiles silly funny masked bozo hề vui vẻ mặt cười ngốc nghếch buồn cười đeo khẩu trang","evil angry devil imp horns xấu xa tức giận ma quỷ sừng","ogre evil devil imp horns monster creature yêu tinh xấu xa ma quỷ sừng quái vật sinh vật","goblin ogre evil devil imp horns monster creature yêu tinh ma quỷ sừng quái vật sinh vật","scary ghosts ma đáng sợ","skulls đầu lâu","extraterrestrial aliens người ngoài hành tinh","monster creature quái vật sinh vật","robot rô bốt","smiles smiling poop funny cười mặt cười phân buồn cười","smiles smiling halloween pumpkin cười mặt cười halloween bí ngô"],["like thumbs up yes okay hands gestures fingers great good positive thích ngón tay cái lên đúng rồi bàn tay cử chỉ ngón tay tuyệt vời tốt tích cực","dislike thumbs down not dont hands gestures negative fingers không thích ngón tay cái xuống không bàn tay cử chỉ tiêu cực ngón tay","peace sign victory hands gestures fingers dấu hòa bình chiến thắng bàn tay cử chỉ ngón tay","fingers crossed wishing luck hands gestures ngón tay chéo ước mong may mắn bàn tay cử chỉ","okay like fingers hands gestures yes excellent like perfect great good positive okay thích ngón tay bàn tay cử chỉ đúng xuất sắc hoàn hảo tuyệt vời tốt tích cực","phones hands gestures pinky fingers calling điện thoại bàn tay cử chỉ ngón út gọi điện","devil fingers horns rock on hands gestures fingers ma quỷ ngón tay sừng rock bàn tay cử chỉ ngón tay","middle fingers hands gestures rude flipping negative ngón tay giữa bàn tay cử chỉ thô lỗ chỉ tiêu cực","index fingers hands gestures pointing upwards ngón tay trỏ bàn tay cử chỉ chỉ lên trên","beautiful beauty manicure polishing nails fingers hands gestures đẹp làm đẹp làm móng đánh bóng móng tay ngón tay bàn tay cử chỉ","hands gestures pointing fingers rightwards bàn tay cử chỉ chỉ ngón tay sang phải","hands gestures pointing fingers leftwards bàn tay cử chỉ chỉ ngón tay sang trái","hands gestures pointing fingers downwards bàn tay cử chỉ chỉ ngón tay xuống dưới","hands gestures pointing fingers upwards bàn tay cử chỉ chỉ ngón tay lên trên","punching fists bump fighting hands gestures brofist fighters fights đấm nắm đấm chiến đấu bàn tay cử chỉ brofist chiến binh đánh nhau","raised raising clenched fists fighters hands gestures pointing upwards power liberty solidarity freedom nâng lên nắm chặt chiến binh bàn tay cử chỉ chỉ lên quyền lực tự do đoàn kết","fists bump fightinghands fighters fights gestures right nắm đấm chiến đấu bàn tay chiến binh đánh nhau cử chỉ phải","fists bump fighting hands fighters fights gestures left nắm đấm chiến đấu bàn tay chiến binh đánh nhau cử chỉ trái","strong muscles biceps hands gestures arms mạnh mẽ cơ bắp bàn tay cử chỉ cánh tay","writing hands writes gestures viết bàn tay viết cử chỉ","please praying hands gestures arms begging folded thanks làm ơn cầu nguyện bàn tay cử chỉ cánh tay błagać khép lại cảm ơn","selfie hands phones cameras arms selfie bàn tay điện thoại máy ảnh cánh tay","clapping hands applause bravo like good sarcastic gestures positive vỗ tay hoan hô bravo thích tốt mỉa mai cử chỉ tích cực","Shaking Handshakes friends deal businesses gestures bắt tay bạn bè thỏa thuận kinh doanh cử chỉ","raised hands gestures raising celebration celebrate hallelujah partying praised nâng tay cử chỉ nâng lên ăn mừng hallelujah tiệc tùng khen ngợi","open hands gestures hugs mở tay cử chỉ ôm","high five hands gestures raised stopping high five bàn tay cử chỉ nâng lên dừng lại","hi hello greetings salute hands gestures hi xin chào chào hỏi chào bàn tay cử chỉ","hi hello bye salute greetings hands gestures hi xin chào tạm biệt chào chào hỏi bàn tay cử chỉ","spock vulcan salute greetings hands gestures star trek spock vulcan chào chào hỏi bàn tay cử chỉ star trek","ears listening hearing hears listens tai nghe nghe thấy lắng nghe","noses smelling sniffing stinking stinks smells mũi ngửi hít thở thối","eyes looking watching eyeballs looks seeing mắt nhìn xem nhãn cầu nhìn thấy","eyes looking watching eyeballs looks seeing mắt nhìn xem nhãn cầu nhìn thấy","eyes looking watching eyeballs looks illuminati conspiracy seeing mắt nhìn xem nhãn cầu nhìn illuminati âm mưu thấy","tongue sticking out mocking mouth cheeky lưỡi lè ra chê bai miệng tinh nghịch","footprints feet footsteps track dấu chân bàn chân bước chân dấu vết","shadow silhouette peoples persons bóng tối bóng dáng người","silhouette pair peoples persons bóng dáng cặp người","speaking head speech đầu nói diễn thuyết","baby children toddler faces babies peoples persons newborn kids happy","male boys peoples faces persons children kids happy","female girls peoples faces persons children kids happy","male moustache man fathers men peoples faces persons","female woman women mothers lady ladies peoples faces persons happy","blond male man men peoples persons faces happy","male grandpa elderly older fathers man men peoples faces persons happy","female grandma elderly nanna older mothers lady ladies woman women peoples persons happy faces","fathers christmas santas claus peoples persons male faces man men caps happy","mothers christmas santas claus peoples persons female faces woman happy women","cops policeman policemen policewoman officers hats proffessions caps faces persons happy peoples","builder construction helmets workers hats proffessions man men faces persons happy peoples","british guardsman helmets proffessions hats man men faces persons peoples","spying detective magnifying looking sleuth watching inspector inspecting hats private eye proffessions man men faces persons peoples","sikhs arabs turbans muslims man men male faces persons peoples","chinese china man men male hats caps faces persons happy peoples","weddings marriages tuxedos grooms male persons happy peoples husbands faces","weddings marriage dress bride female lady girls ladies woman women peoples happy persons wife wives faces","male prince man men peoples royal happy persons","female lady girls ladies woman women princess dress crowns tiara royal peoples happy persons faces","waving hi hello happy girls woman women female lady ladies peoples happy faces persons hands gestures arms","concierge raising upwards tipping girls woman women female lady ladies peoples happy faces persons hands gestures arms","cant dont not X negative girls woman women female lady ladies peoples faces persons hands gestures arms","ballerina raised arms girls woman women female lady ladies peoples faces persons hands gestures","shrugging dont know what confused baffled confounded arms girls woman women female lady ladies peoples faces persons hands gestures","doh SMH OMG WTF facepalming displeased unamused baffled disbelief whatever disdain idiots stupid girls woman women female lady ladies peoples faces persons hands gestures arms","sadness pouting unhappy frowny frowns frowning frowned disappointed depressed girls woman women female lady ladies peoples faces persons","angry anger frowns frowning frowned disappointed annoyed dissatisfied displeased unamused irritated unamused girls woman women female lady ladies peoples faces persons","massaged enjoying happy relaxing content chilling girls woman women female lady ladies peoples happy faces persons","haircut makeovers beauty beautiful happy girls woman women female lady ladies peoples happy faces persons","pregnant baby babies expecting pregnancy family born newborn girls woman women female lady ladies peoples happy persons","playboy ears girls woman women female lady ladies peoples faces persons hats caps","bowing please praying begging humble kneeling man male men peoples persons","baby babies children toddler heavenly angels cupids happy faces peoples persons","loving romantic love happy couples hearts peoples faces persons","gays lesbians love romantic loving happy couples hearts girls woman women female lady ladies peoples faces persons","gays love romantic loving happy couples hearts male man men peoples persons","loving romantic love couples hearts kissing kisses peoples faces persons","gays lesbians loving romantic love couples hearts kissing kisses peoples faces persons","gays loving romantic love couples hearts kissing kisses peoples faces persons","going away walker walking pedestrian peoples persons BRB","going away runner running jogging peoples persons BRB","businessman tuxedo suit peoples persons hats cool sunglasses shades","dancing dancers dresses salsa peoples persons tango","dancing disco dancers salsa tango peoples persons","bathing bathtub enjoying relaxing chilling","sleeping sleepy night beds zzzzz peoples persons","couple holding hands loving romantic love peoples persons","lesbians gays couples holding hands loving romantic love people persons","gays couples holding hands loving romantic love peoples persons","family parents kids sons couples fathers mothers","gymnastics cartwheel olympics sportsman","weights lifting weight lifter olympics sportsmen","basketball dribbling balls running olympics sportsmen players","balls sportsmen players olympics","skiing sportsmen skiers snow winters skis olympics","snowboarder sportsmen winters snow olympics","golfing player golfer club sportsmen","surfing summer water surfer waves","swimming sportsmen water swimmer olympics","swimming sports water polo swimmer olympics balls","sword fencing sports fencer olympics","olympics sports wrestling wrestlers fighting fighters fights","rowing boat sports","horses racing sports running jockey race","bicycles sports bike olympics cyclist","family parents kids daughters couples fathers mothers","family parents kids sons couples fathers mothers","family parents kids sons couples fathers mothers","family parents kids daughters couples fathers mothers","gays family parents kids sons couples mothers","family gays parents kids daughter couples mothers","gays family parents kids sons couples mothers","gays family parents kids sons couples mothers","family parents gays kids daughter couples mothers","family parents kids sons couples gays fathers","family parents kids daughters couples fathers gays","family parents kids sons couples fathers","family parents kids sons gays couples fathers","gays family parents kids daughter couples fathers"],["red hearts cards love romantic suits","red pink hearts love romantic","yellow hearts love romantic","green hearts love romantic","blue hearts love romantic","purple hearts love romantic","black hearts love romantic","sparkly sparkling hearts love romantic","ribbon hearts love romantic","brokenhearted breaking hearts heartbroken love romantic","exclamations hearts love romantic","two hearts love romantic","revolving spinning hearts love romantic","beating hearts heartbeats love romantic","radiant hearts love romantic","hearts love arrows romantic","hearts love romantic","envelopes notes letters hearts love romantic","kissing kisses lipstick love romantic","mouth kissing kisses lipstick love romantic","lipsticks makeup fashion","engagements diamonds rings gems jewellery jewels proposal engaged married marrying marriage love romantic fashion","beads jewelery jewels necklaces bling gems diamonds fashion","gifts boxes presents birthdays love valentines romantic christmas","bikinis bathers bathing swimsuits swimming fashion","dresses gowns skirts clothes clothing fashion","blouses shirts clothes clothing fashion","tshirts t-shirts tee shirts clothes clothing fashion","kimonos clothes clothing fashion","shirts clothes clothing fashion","businesses shirts clothes ties necktie clothes clothing fashion","jeans pants clothes clothing fashion","high heels shoes fashion","sandals shoes fashion","boots shoes fashion","sneakers shoes running","shoes fashion","hats fashion caps","formal hats fashion caps gentleman","graduates graduation hats caps university colleges educations","crowns royal","medics medical rescue workers helmets hats help","spectacles glasses","dark glasses sunglasses shades fashion","umbrellas raining","purses bags handbags fashion","handbags bags purses fashion","handbags bags fashion","businesses suitcases briefcases fashion","school bags backpacks satchels educations","groceries consumer bags shopping","groceries consumer shopping carts","drama theatre theater masks shows","cinema movies show","artists painting colorful colors palettes","juggling hands juggler colorful balls","partying confetti celebrate birthdays colorful celebration","partying poppers confetti celebrate birthdays colorful celebration","partying red balloons celebrate birthdays celebration","headphones listening music","musical trumpets jazz saxophones instruments","musical jazz instruments trumpets horns","musical guitars","musical violins orchestra instruments","musical drumming drumsticks instruments","musical playing piano instruments","musical karaoke singing microphone","listening musical symbols notes singing","listening musical notes symbols singing","listening musical notes sheet symbols","soccer footballs olympics sports balls","basketballs olympics sports balls","footballs sports superbowl balls","baseballs sports balls","volleyballs olympics sports balls","rugby balls footballs sports","8 ball pool snooker billiards sports balls","racket tennis racquet sports balls","racket badminton racquet sports","ping pong paddle racket tennis racquet olympics sports balls","cricket bats olympics sports","field hockey sticks olympics sports","ice hockey sticks olympics winter sports","scores goals nets sports","ice skates winters sports","skis winters skiing sports","boxing gloves olympics fighting sports boxer fighters fights","judo martial uniform olympics fighting sports fighters fights","golfing flags golfers sports","bowling balls sports","bows arrows archery olympics sports","fishing rod sports","bullseye darts sports","bicycles olympics sports bike cyclist racing race","military medals","scores olympics sports championship gold medals winning trophies trophy winners","first scores olympics sports championship medals winning trophies trophy winners","second scores olympics sports medals losers","third scores olympics sports medals losers","trophy championship trophies gold winning olympics sports awards winners"],["green apples fruits garden eating foods táo xanh trái cây vườn ăn thực phẩm","red apples fruits garden eating foods táo đỏ trái cây vườn ăn thực phẩm","pears fruits garden eating foods lê trái cây vườn ăn thực phẩm","fruits oranges garden eating foods tangerines trái cây cam vườn ăn thực phẩm quýt","fruits lemons garden eating foods trái cây chanh vườn ăn thực phẩm","fruits bananas garden eating foods trái cây chuối vườn ăn thực phẩm","melon fruits garden eating foods dưa trái cây vườn ăn thực phẩm","purple grapes fruits garden eating foods nho tím trái cây vườn ăn thực phẩm","strawberry strawberries fruits garden eating foods dâu tây trái cây vườn ăn thực phẩm","melons fruits garden eating foods dưa hấu trái cây vườn ăn thực phẩm","kiwi fruits garden eating foods kiwi trái cây vườn ăn thực phẩm","avocado fruits garden eating foods bơ trái cây vườn ăn thực phẩm","pineapple fruits garden eating foods dứa khóm trái cây vườn ăn thực phẩm","cherry cherries fruits garden eating foods anh đào trái cây vườn ăn thực phẩm","vagi flirting fruits butts garden eating foods vagi tán tỉnh trái cây mông vườn ăn thực phẩm","eggplants flirting vegetables garden phallic eating foods cooking cà tím tán tỉnh rau củ vườn ăn thực phẩm nấu ăn","cucumbers vegetables garden phallic eating foods gherkin pickle dưa chuột rau củ vườn ăn thực phẩm dưa muối","carrots vegetables garden eating cooking foods cà rốt rau củ vườn ăn nấu ăn thực phẩm","hot peppers vegetables garden eating foods cooking ớt cay rau củ vườn ăn thực phẩm nấu ăn","corns vegetables garden eating foods ngô rau củ vườn ăn thực phẩm","tomato vegetables garden eating cooking foods cà chua rau củ vườn ăn nấu ăn thực phẩm","potato vegetables garden eating cooking foods khoai tây rau củ vườn ăn nấu ăn thực phẩm","yam vegetables garden eating cooking foods khoai lang rau củ vườn ăn nấu ăn thực phẩm","chestnut vegetables garden eating foods hạt dẻ rau củ vườn ăn thực phẩm","peanuts vegetables garden eating foods đậu phộng rau củ vườn ăn thực phẩm","honey pots eating foods mật ong hũ ăn thực phẩm","croissant eating breakfast foods bánh sừng bò ăn sáng thực phẩm","bread loaf sandwich eating foods lunch dinner breakfast bánh mì ăn thực phẩm trưa tối sáng","bread loaf sandwich eating foods lunch dinner breakfast bánh mì ăn thực phẩm trưa tối sáng","cheese sandwich eating foods phô mai sandwich ăn thực phẩm","eggs foods cooking trứng thực phẩm nấu ăn","frying pans fried eggs eating breakfast foods cooking lunch chảo rán trứng ăn sáng thực phẩm nấu ăn trưa","fried bacons sandwich meat eating breakfast foods cooking lunch thịt xông khói rán sandwich thịt ăn sáng thực phẩm nấu ăn trưa","fried shrimps eating foods tôm rán ăn thực phẩm","poultry chickens legs roast thanksgiving turkeys eating lunch foods meat dinner cooking bones gia cầm chân gà nướng lễ tạ ơn gà tây ăn trưa thực phẩm thịt tối nấu ăn xương","BBQ barbecue eating foods dinner meat bones cooking lunch BBQ nướng ăn thực phẩm tối thịt xương nấu ăn trưa","pizza slice pies eating dinner foods cooking lunch pizza lát bánh ăn tối thực phẩm nấu ăn trưa","hotdog sausage meat sandwich dinner eating foods lunch xúc xích thịt sandwich tối ăn thực phẩm trưa","hamburger meat dinner cheeseburger sandwich burger eating lunch foods hamburger thịt tối cheeseburger sandwich burger ăn trưa thực phẩm","potatos french fries fried eating foods lunch mcdonalds dinner khoai tây chiên rán ăn thực phẩm trưa mcdonalds tối","Stuffed flatbread sandwich lunch burger eating dinner foods kebab bánh mì kẹp sandwich trưa burger ăn tối thực phẩm kebab","taco sandwich mexican dinner eating lunch foods taco sandwich mexico tối ăn trưa thực phẩm","burrito wrapped mexican dinner eating lunch foods burrito cuốn mexico tối ăn trưa thực phẩm","salads lettuce vegetables eating dinner foods cooking lunch salad rau diếp rau củ ăn tối thực phẩm nấu ăn trưa","paella dish bowls eating foods cooking lunch stoves dinner paella món tô ăn thực phẩm nấu ăn trưa bếp tối","spaghetti eating dinner foods cooking lunch plates mì ý ăn tối thực phẩm nấu ăn trưa đĩa","bowls eating foods cooking dinner noodles lunch tô ăn thực phẩm nấu ăn tối mì trưa","pots soups eating foods cooking lunch stoves dinner nồi súp ăn thực phẩm nấu ăn trưa bếp tối","sushi foods eating cooking sushi thực phẩm ăn nấu ăn","cooking eating lunch foods dinner plates nấu ăn ăn trưa thực phẩm tối đĩa","curry cooking rice eating foods lunch dinner plates cà ri nấu ăn cơm ăn thực phẩm trưa tối đĩa","bowls rice eating lunch dinner foods tô cơm ăn trưa tối thực phẩm","rice foods cơm thực phẩm","rice foods cơm thực phẩm","eating foods sticks ăn thực phẩm đũa","desserts sweets eating foods sticks tráng miệng kẹo ăn thực phẩm đũa","desserts ice bowls sweets eating foods tráng miệng kem tô kẹo ăn thực phẩm","desserts ice creams bowls eating sweets foods tráng miệng kem tô ăn kẹo thực phẩm","desserts ice creams cones eating sweets foods tráng miệng kem ống ăn kẹo thực phẩm","syrup pancakes plates eating sweets foods cakes xi rô bánh kếp đĩa ăn kẹo thực phẩm bánh","desserts cakes eating sweets cream foods cream tráng miệng bánh ăn kẹo kem thực phẩm kem","birthdays cakes candles eating cream sweets foods sinh nhật bánh nến ăn kem kẹo thực phẩm","sweets custard puddings cream dessert eating foods plates cakes kẹo custard pudding kem tráng miệng ăn thực phẩm đĩa bánh","sweets lollypops lollipops eating foods kẹo lollipop ăn thực phẩm","sweets cookies eating swirl foods kẹo bánh quy ăn xoắn thực phẩm","sweets candies candy eating foods kẹo ăn thực phẩm","sweets chocolates eating foods kẹo sô cô la ăn thực phẩm","popcorns eating corn foods bỏng ngô ăn ngô thực phẩm","sweets donuts eating foods doughnuts kẹo bánh donut ăn thực phẩm","sweets biscuits cookies eating chocolates foods kẹo bánh quy ăn sô cô la thực phẩm","feeding baby babies bottles milk teat drinking drinks cho ăn em bé bình sữa ti uống","milk glass drinking drinks sữa ly uống","coffee cups drinking teacup drinks cà phê cốc uống tách","teacup cups drinking drinks tách cốc uống","sake drinking cups drinks bottle sake uống cốc chai","cheers beers mugs drinking lager drinks cheers bia cốc uống","cheers beers clinking mugs celebrate partying celebration drinking lager drinks cheers bia chạm cốc ăn mừng tiệc tùng ăn mừng uống","cheers celebrate partying celebration champagne drinking clinking alcohol drinks cheers ăn mừng tiệc tùng ăn mừng champagne uống chạm rượu","wines glass drinking cheers alcohol drinks rượu vang ly uống cheers rượu","whisky bourbon glass cheers alcohol drinking drinks whisky bourbon ly cheers rượu uống","cocktails glass drinking drinks cocktail ly uống","tiki juice drinking cocktails drinks glass tiki nước ép uống cocktail ly","partying drinks champagne bottles popping cork celebrate drinking celebration tiệc tùng uống champagne chai bật nút ăn mừng uống ăn mừng","spoons eating utensils soups thìa ăn dụng cụ súp","fork knife eating lunch dinner cutlery utensils nĩa dao ăn trưa tối dao kéo dụng cụ","fork knife eating lunch dinner plates cutlery utensils nĩa dao ăn trưa tối đĩa dao kéo dụng cụ"],["smiles smiling happy cats amused kitty kitties kittens feline pussy meow animals","laughing smiles smiling grinning grins hahaha happy cats amused kitty kitties kittens feline pussy meow animals","lol teary smiles laughing smiling grinning grins hahaha happy tears amused cats kitty kitties kittens feline pussy meow animals","love loving hearts eyes cats kitty kitties kittens feline pussy meow animals","smirking smugly proudly conceited flirting smiles cats kitty kitties kittens feline pussy meow animals","kissing love loving cats kitty kitties kittens feline pussy animals","scared fearful fearing stressed squinting squinted scrunching scrunched eyes cats kitty kitties kittens feline pussy meow animals","crying cries sad unhappy depressed tears teary frowny frowns frowning frowned weeping sobbing snivel cats kitty kitties kittens feline pussy meow animals","grumpy moody irritated angry anger annoyed displeased dissatisfied disappointed discontented unamused cats kitty kitties kittens feline pussy meow animals","cats kitty kitties kittens feline pussy meow animals","puppy puppies dogs bark happy animals","bunny bunnies rabbits hares leverets happy animals","Mouse mice rodents animals","hamsters rodents animals","foxes foxy happy animals","teddy bears teddies animals","pandas bears happy animals","koalas australia animals","tigers animals","lions animals","cows bulls animals","wild pigs boars animals","piggy piggies pigs oink animals","piggy piggies pigs noses snouts oink animals","frogs pepe kermit animals","monkeys apes happy animals","not see monkeys apes animals","not hear monkeys apes animals","not speak monkeys apes animals","gorillas monkeys apes animals","wolf wolves animals","sheeps lambs animals","billy goats animals","goats rams animals","horses pony ponies animals","unicorns animals","deers stag fawns animals","rhinoceros happy animals","eagles birds animals","chicks chickens poultry animals","chicks chickens hatching eggs poultry animals","chicks chickens poultry animals","chickens hens poultry animals","roosters cocks fowls poultry animals","turkeys thanksgivings gobble poultry animals","birds animals","duckling animals","bats batman animals","owls birds animals","doves peace birds animals","penguins animals","dog puppy happy bark animals","poodle dog puppy animals","cats kitty kitties kittens feline pussy meow happy animals","rabbits bunny bunnies hares leverets animals","mouse mice rats rodents animals","rats rodents animals","chipmunks squirrels acorn nuts animals","monkeys apes happy animals","piggy piggies pigs oink animals","leopards jaguars animals","tigers animals","buffalos bulls animals","ox oxen oxes bulls animals","cows bulls animals","horses galloping running races racing animals","camels animals","camels animals","elephants animals","crocodiles alligators animals","tortoise turtle sea animals slowly","tropical fishes sea animals","fishes sea animals","fishes blowfish sea animals","dolphins fishes sea animals","sharks fishes predator sea animals","sputing fishes whales sea animals","whales fishes animals","squids sea animals","octopuses sea animals","shrimps sea animals","seashells animals","crabs cancer animals","scorpions animals","gecko lizards animals","lizards snakes animals","bugs worms centipede caterpillar animals","ants bugs animals","bugs spiders animals","spiders webs cobwebs animals","beetle bugs animals","butterfly butterflies animals","honey bee animals","slow snails animals","dragons animals","dragons animals","paws prints animals"],["blossoming flowers plants blooming","pink blossoming flowers plants blooming","pink blossoming flowers plants blooming","rosette blossoming flowers plants blooming","sunflower yellow blossoming flowers plants blooming","tulip pink blossoming flowers blooming plants","red roses blossoming flowers plants romantic blooming love Valentines","drooping flower wilted dead died dying plants","flowers bouquets romantic gifts Valentines love plants","sheaf rice crops farming wheat plants","japanese trees plants","clovers ireland irish plants","four leaf clovers leaves ireland lucky plants","green leaves spring leaf fluttering windy","fallen brown leaves autumn leaf plants","Canada canadian maple leaf plants","spring herbs sprouts seedlings plants","herbs plants crops","bamboo decoration kadomatsu plants","cactus plants desert","palms trees coconut tropical plants","green trees plants spring","pines trees plants evergreen","christmas trees xmas plants holidays","mushroom shroom poisoned plants","earth globes geography planets world america","earth geography globes planets world europe africa","geography earth globes planets world asia australia","moons smileys smiles smug smiling cheerful happy joyful squinted squinting amused","moons smileys smiles smug smiling cheerful happy joyful squinted squinting amused","moons","waning gibbous moons","quarter moons","waning crescent moons","dark moons","crescent moons","quarter moons","gibbous moons","dark moons smileys smiles smug smiling cheerful happy joyful amused","moons smileys smiles smug smiling cheerful happy joyful amused","crescent moons","dizzy revolving spinning stars","stars","shining stars glowing","sparkle stars sparkling starry","electricity voltage power lightnings thunders bolts","fire flames hot flaming warming","bang impact spark explosion exploding stars","space comets shooting stars","sunny warming sunshine smileys smiles smiling cheerful grinning happy joyful laughing squinted squinting LOL XD amused","sunny warming sunshine stars","cloudy weather clouds sunshine","cloudy weather clouds suns","cloudy weather clouds suns","cloudy weather raining rainy clouds suns","weather clouds cloudy","raining clouds rainy weather rains","storms stormy weather lightnings thunders bolts raining clouds rains","weather lightning bolt thunders storms clouds","weather snowing snows clouds snowflakes winters","lgbt gays rainbows","dripping water drops droplets rains raining","dripping water drops droplets rains raining weather","rains raining rainy umbrella weather","rains raining rainy umbrella weather","sea waves water weather","misty foggy haze weather","tornado wind storms weather","windy farting steam dash weather","snowflakes snowing weather snows","nature weather blowing windy winters","frosty snowman winters","snowflakes frosty snowman winters"],["automobiles driving cars vehicles traveling","taxis cabs driving cars vehicles traveling","automobiles RV driving cars vehicles traveling","school buses driving vehicles autobus traveling","trolley driving buses vehicles traveling","formula F1 racing cars driving vehicles","police cars emergency automobiles driving vehicles cops sirens","emergency driving ambulances vehicles sirens sick doctors","firefighters driving trucks emergency vehicles sirens","minibus driving van vehicles traveling","lorry delivery driving trucks vehicles","trucks delivery driving lorry vehicles","driving tractors vehicles farming farmers traveling","driving scooters vehicles traveling","bikes driving  bicycles vehicles traveling","mopeds driving scooters vespa bikes motorcycles motorbikes vehicles traveling","motorbikes motorcycles vehicles driving bikes traveling","automobiles driving cars vehicles traveling","cabs automobiles driving cars vehicles taxis traveling","school driving buses vehicles traveling","police driving cars emergency vehicles sirens cops automobiles","police emergency ambulance lights sirens","passengers seats sitting","flying planes airplanes vehicles traveling","flying planes departuring airplanes vehicles departure traveling","flying planes arriving airplanes vehicles travelling","flying vehicles traveling","chopper helicopter flying vehicles traveling","flying orbit shuttle rockets space vehicles traveling","space orbit satellite","cable mountains vehicles traveling","cable mountains vehicles traveling","trains railways vehicles traveling","wagon trains railways vehicles traveling","electric trains trams railways vehicles traveling","mountain trains railways vehicles traveling","monorail trains railways vehicles traveling","speed trains railways vehicles traveling","speed trains railways vehicles traveling","trains railways vehicles traveling","steam trains locomotive railways vehicles traveling","trains railways vehicles traveling","electric trains railways vehicles traveling","metro subway trains railways vehicles traveling","trains stations railways vehicles traveling","boats vehicles","sailing boats yachts vehicles traveling","boats speedboats vehicles traveling","boats speedboats vehicles traveling","cruise ships vehicles traveling","ferry ships vehicles traveling","cruise ships vehicles traveling","sailors ships anchors","construction signs roadwork stop","gasoline pump fuel","bus stops","traffic stop lights","stop traffic lights","roads highways","trains rails tracks railways","construction cranes buildings","pollution smog factory industrial buildings factories","home houses buildings","home houses buildings","neigbourhood hood home houses buildings","home houses buildings","city buildings offices cities","shopping department stores malls shops buildings","postal offices buildings","japanese buildings","medicals hospitals emergency buildings doctors health patients","banks money buildings cash","shops stores shopping buildings","educations school buildings","hotel rooms tourists buildings traveling","romantic hotel buildings love motel rooms","classical ancient greece buildings","castles disney buildings","japanese castles buildings","sports stadiums buildings","praying churches buildings","marry love marriages church romantic weddings buildings","muslims praying churches mosques buildings","jews praying churches buildings","praying churches buildings","shrines japanese temples buildings","tokyo eiffel towers buildings","statues moyai moai tourists landmarks","statues of liberty york tourists NY landmarks","earth maps world traveling tourists geography","circuses tents","carnival carousel horses","ferris wheels","rollercoasters parks","water fountains parks","beaches umbrellas","sand beaches sea coasts water swimming sky traveling","desert islands traveling sand beaches palm trees sky sea water swimming","camping tents sky mountain grass nature","grass night sky camping tents nature","japanese maps","mountains sky","snow mountains nature sky","nature mountains sky","erupting volcanoes lava mountains","parks grass nature mountains rivers sky","deserts cactuses sky","morning sunrises evening sunsets sky","morning mountain sunrises evening sunsets sky","evening moons stars nights starry sky","sparkling glowing stars nights sky","sparkles stars sparkling fireworks year celebrations july nights sky","sparkles stars sparkling year celebrations july nights sky explosion exploding","metropolitan cityscapes buildings skyscrapers towns cities","smog sunsets cityscapes sunrises evening cities morning skyscrapers buildings towns","dusk evening smog cityscapes morning cities skyscrapers towns buildings","starry skyscrapers buildings cityscapes towns nights moons cities","nights evenings starry sky nature space","bridges nights starry sky evenings moons stars san francisco","bridges sky foggy san francisco"],["cellular phones mobile cells calls iphones smartphones","cellular phones mobile cells calls iphones smartphones","PC computers laptops macbooks notebooks","PC desktop computers monitors imacs","PC computers keyboards","PC printers","PC mouse","PC trackballs","PC joysticks playing consoles controllers games","PC playing playstation gamepad joysticks playing consoles xbox controller games","disks mini discs","floppy disks discs","DVD CD disks discs","DVD CD disks discs","VCR VHS cassettes videocassettes","cameras photos","flashing cameras photos","camcorder video cameras","movies films cameras hollywood","hollywood movies films projectors","hollywood movies films frames","movies films directors clappers hollywood","handset tele phones receivers","tele phones dial","pager phones","fascimiles fax machines","TVs televisions broadcast receivers","wireless radios broadcast receivers","studios microphones mics","level controls sliders","level controls knobs","satellites antennas","public loudspeakers","cheering megaphone","wedding gold church bells","ideas lights bulbs","burning candles lights","flash lights","battery power","electricity power plugs","wrist watches clocks timepieces","clocks time watches","timer clocks","alarms clocks time","mantelpiece time clocks","time hourglasses","time hourglasses","psychic gypsy future fortune teller purple crystal balls","diamonds gems jewels","playing games dice","sevens slots games","losing cash monies dollars moneylosers","cash money dollars monies riches greedy","yens money currency cash rich monies","euros money rich cash currency monies","pounds money currency rich cash monies","cash riches money bags dollars rich monies","amex credit cards visa","dollars signs cash money monies","currencies exchanges currency","justice scales balances","pistols guns revolvers weapons","bombs explosion exploding weapons","butchers knives kitchen knife weapons","swords daggers weapons","crossed swords weapons X","Shields weapons","smoking cigarettes","funerals caskets dead coffins death died","funerals urns death vase died","compression clamps","tools wrenches handyman","construction hammers tools handyman","construction tools picks","construction tools hammers wrenches handyman","picks digging tools","construction screws","settings construction gears","construction chains","barber poles","thermometer hot weather temperature sick flu","capsule pills medical drugs","hospital syringes vaccinations needles blood","chemistry distiller alchemical alembic science","science microscope magnifying","stargazing telescopes","WC bathrooms showering water showers","WC bathrooms bathtubs water bathing","WC toilets loos restrooms","bellhop ringing reception bells","unlocking keys","unlocking keys","entrance doors doorway furniture","couches lounge furniture","sleeping beds bedrooms furniture","pictures framed paintings gallery","jar ceramic vases amphora","waste baskets bins trash cans","oil barrel drums","holes","japanese lanterns","carp wind streamer","japanese dolls","japanese chime","concert tickets performance","admission tickets","pink bows ribbons ties","pink bows ribbons ties cancer awareness hiv aids reminders","postal horns musical instruments","mailing postal envelopes letters messages","mailing postal envelopes arrows insert letters messages","mailing envelopes postal letters messages","emails messages mailing","postal packages parcel boxes","postal mailbox","postal mailbox","postal mailbox messages letters envelopes","postal empty mailbox","postal mailbox postbox","inbox papers","outbox papers","ancient scrolls degree papers","curled papers curly pages","blank papers pages","bookmarks tabs papers","graphs charts businesses","positive graphs upwards trend charts businesses","negative graphs downwards trend charts businesses","notepads notes","calendars","calendars","calendars rolodex","cards index","files","voting ballots boxes votes","files cabinets","clipboard papers notes","files folders","files folders","index","notebooks books","pink notebook books","reading books","reading books","reading books","reading books","reading books","reading books stack","reading opened books","rolled newspapers delivery","newspapers feeds","writing memo notes","writing pencils","writing pens","writing crayon","paint brushes","writing ink pens","writing ink pens","tack pins","pins","paper clips","paper clips","tags","label tags","linked chains","rulers","rulers","searching magnifier magnifying","searching magnifier magnifying","cutting scissors","closed locks","unlocking opened locks","locks","locks keys"],["excited exclamations yelling","excited exclamations yelling yelling","questions confused baffled dont know what where why whom","questions confused baffled dont know what where why whom","double excited exclamations yelling","excited exclamations questions confused baffled dont know what where why whom","check mark tick approved okay good fine done symbols","dont crossed mark not deny denied forbidden symbols X","round circles symbols","crossroads symbols","entry access not stopped banned signs restricted dont restrictions deny traffic denied forbidden","restricted signs restrictions banned dont forbidden under age eighteen 18 denied","not restricted restrictions signs banned forbidden dont mobiles cellular cells phones off denied","dont stopped not muted volume sounds off denied signs","dont stopped not alarm bells ringers silents volumes sounds off denied signs","not stopped smoking cigarette smoke forbidden restricted restrictions banned signs dont denied","not bicycles forbidden restricted restrictions banned bikes dont stopped signs denied","not restricted restrictions banned forbidden water drinking dont stopped signs denied","not restricted restrictions banned forbidden pedestrians dont stopped signs denied","trashing littering dont rubbish stopped signs denied","entry access not restricted signs restrictions banned forbidden dont stopped traffic","not restricted signs restrictions banned forbidden dont stopped traffic","school pedestrians traffic signs","dangerous warnings signs alerts exclamations","dangerous radioactive symbols poisonous poison signs","dangerous biohazard symbols poisonous poison signs","dangerous warning poisonous poison skulls bones dead death died","crossed mark","recycling symbols green recycles rotating arrows","yin yang symbols","hundred 100 perfect great excellent","sleepy sleeping zzzzz night snoring snores","bright suns","dim suns","spiral swirl hurricane cyclone","warm steaming hot","stars","asterisks snowflakes","globes meridians world WWW","speakers volume sounds","hanukkah jewish judaism menorah candlesticks","fleur scouts","trident","graph lines","wavy dash","end arrows","back arrows","on arrows","top arrows","soon arrows","jewish judaism stars davids symbols","latin christianity religions crosses symbols","orthodox christianity religions crosses symbols","muslim crescent islam religions symbols","hinduism buddhism religions symbols","hinduism buddhism religions dharma wheels symbols","church praying worship religions kneeling symbols","peace signs symbols","atoms symbols","sparkles","female woman women signs symbols","men man male signs symbols","check mark tick approved okay good fine done symbols","mathematics symbols multiplication X dont crossed mark not deny denied forbidden","mathematics symbols adding pluses","mathematics symbols subtracting minuses","mathematics symbols dividing divisions","copyrights text symbols","registered trademarks text symbols","TM trademarks text symbols","checkbox check mark tick approved okay good fine done symbols","water symbols","traveling baggage luggage","traveling baggage luggage","borders traveling airport customs controlling passports checking","borders controlling traveling airport customs checking","subway metro text","parking traffic signs text","toilet WC restroom text","ATM text","trashing littering rubbish signs","wheelchairs signs","mens toilet wc male restrooms signs","womens toilets wc female restrooms signs","toilets wc restrooms signs","baby babies change diapers signs","VS versus text","mobiles phones cells off","vibration silent mobiles phones cells","sos emergency text","okay text","up text","cool text","NG not good text","new text","free text","ABCD uppercase alphabets","ABCD alphabets","ABCD lowercase alphabets","cursing swearing symbols @ ? #","text alphabet letters A","text alphabet letters B","text alphabet letters C","text alphabet letters D","text alphabet letters E","text alphabet letters F","text alphabet letters G","text alphabet letters H","text alphabet letters I","text alphabet letters J","text alphabet letters K","text alphabet letters L","text alphabet letters M","text alphabet letters N","text alphabet letters O","text alphabet letters P","text alphabet letters Q","text alphabet letters R","text alphabet letters S","text alphabet letters T","text alphabet letters U","text alphabet letters V","text alphabet letters W","text alphabet letters Y","text alphabet letters X","text alphabet letters Z","numbers zero 0 digits","numbers one 1 digits","numbers two 2 digits","numbers three 3 digits","numbers four 4 digits","numbers five 5 digits","numbers six 6 digits","numbers seven 7 digits","numbers eight 8 digits","numbers nine 9 digits","numbers ten 10 digits","numbers 1234  digits","hashtags symbols signs #","asterisk symbols signs *","information signs","antennas signals volume","play buttons rightwards","pause buttons","stop buttons","recorder buttons","play buttons pauses","reverse back buttons leftwards","upwards buttons","downwards buttons","fast forward buttons","fast reverse buttons","upwards buttons","downwards buttons","backwards previous buttons","next buttons","eject buttons","shuffle buttons","repeat buttons","repeat once buttons","counterclockwise arrows refresh buttons","spinning arrows refresh","curved left arrows","curved right arrows","curved upwards arrows","curved downwards arrows","northwards upwards arrows","southwards downwards arrows","westwards leftwards arrows","eastwards rightwards arrows","northeastwards upwards rightwards arrows","southwest downwards leftwards arrows","southeast downwards rightwards arrows","northwestwards upwards leftwards arrows","leftwards rightwards arrows","upwards downwards arrows","aries horoscopes zodiacs signs","taurus horoscopes zodiacs signs","gemini horoscopes twins zodiacs signs","cancer horoscopes zodiacs signs","leo horoscopes zodiacs signs","virgo horoscopes virgin zodiacs signs","libra horoscopes zodiacs signs","scorpio scorpius horoscopes zodiacs signs","sagittarius horoscopes arrows zodiacs signs","Capricorn horoscopes zodiacs signs","aquarius horoscopes water zodiacs signs","pisces horoscopes zodiacs signs","ophiuchus horoscopes zodiacs signs","identification text","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","japanese","A","B","AB","O","CL","emblem badges","badges","japanese flowers","diamonds shapes","diamonds shapes","diamonds shapes","diamonds shapes","diamonds shapes","triangles shapes","triangles shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","squares shapes","circles shapes","circles shapes","circles shapes","circles shapes","circles shapes","chatting talking thoughts speech bubbles","chatting talking thoughts speech bubbles","chatting talking thoughts speech bubbles","typing chatting writing thoughts speech talking bubbles","curly loops","spade cards suits","club cards suits","diamond cards suits","joker cards","mahjong cards","cards","yens graphs charts","speakers volumes sounds","speakers volumes sounds","curly loops","one 1 clocks time","two 2 hours clocks time","three 3 hours clocks time","four 4 hours clocks time","five 5 hours clocks time","six 6 hours clocks time","seven 7 hours clocks time","eight 8 hours clocks time","nine 9 hours clocks time","ten 10 hours clocks time","eleven 11 hours clocks time","noon midnight twelve 12 hours clocks time","half 12 twelve hours clocks time","half 1 one hours clocks time","half 2 two hours clocks time","half 3 three hours clocks time","half 4 four hours clocks time","half 5 five hours clocks time","half 6 six hours clocks time","half 7 seven hours clocks time","half 8 eight hours clocks time","half 9 nine hours clocks time","half 10 ten hours clocks time","half 11 eleven hours clocks time"],["white flags","black flags","racing sports flags","triangular flags","gays pride LGBT rainbows flags","afghanistan flags","åland flags","albania flags","algeria flags","american samoa flags","andorra flags","angola flags","anguilla flags","antarctica flags","antigua & barbuda flags","argentina flags","armenia flags","aruba flags","australia flags","austria flags","azerbaijan flags","bahamas flags","bahrain flags","bangladesh flags","barbados flags","belarus flags","belgium flags","belize flags","benin flags","bermuda flags","bhutan flags","bolivia flags","caribbean netherlands flags","bosnia & herzegovina flags","botswana flags","brazil flags","british indian ocean territory flags","british virgin islands flags","brunei flags","bulgaria flags","burkina faso flags","burundi flags","cape verde flags","cambodia flags","cameroon flags","canada flags","canary islands flags","cayman islands flags","central african republic flags","chad flags","chile flags","china flags","christmas island flags","cocos (keeling) islands flags","colombia flags","comoros flags","congo - brazzaville flags","congo - kinshasa flags","cook islands flags","costa rica flags","côte d’Ivoire flags","croatia flags","cuba flags","curaçao flags","cyprus flags","czechia flags","denmark flags","djibouti flags","dominica flags","dominican republic flags","ecuador flags","egypt flags","el salvador flags","equatorial guinea flags","eritrea flags","estonia flags","ethiopia flags","european union flags","falkland islands flags","faroe islands flags","fiji flags","finland flags","france flags","french guiana flags","french polynesia flags","french southern territories flags","gabon flags","gambia flags","georgia flags","germany flags","ghana flags","gibraltar flags","greece flags","greenland flags","grenada flags","guadeloupe flags","guam flags","guatemala flags","guernsey flags","guinea flags","guinea-bissau flags","guyana flags","haiti flags","honduras flags","hong kong sar china flags","hungary flags","Iceland flags","india flags","indonesia flags","iran flags","iraq flags","ireland flags","isle of man flags","israel flags","italy flags","jamaica flags","japan flags","crossed flags flags","jersey flags","jordan flags","kazakhstan flags","kenya flags","kiribati flags","kosovo flags","kuwait flags","kyrgyzstan flags","laos flags","latvia flags","lebanon flags","lesotho flags","liberia flags","libya flags","liechtenstein flags","lithuania flags","luxembourg flags","macau sar china flags","macedonia flags","madagascar flags","malawi flags","malaysia flags","maldives flags","mali flags","malta flags","marshall islands flags","martinique flags","mauritania flags","mauritius flags","mayotte flags","mexico flags","micronesia flags","moldova flags","monaco flags","mongolia flags","montenegro flags","montserrat flags","morocco flags","mozambique flags","myanmar (burma) flags","namibia flags","nauru flags","nepal flags","netherlands flags","new caledonia flags","new zealand flags","nicaragua flags","niger flags","nigeria flags","niue flags","norfolk island flags","northern mariana islands flags","north korea flags","norway flags","oman flags","pakistan flags","palau flags","palestinian territories flags","panama flags","papua new guinea flags","paraguay flags","peru flags","philippines flags","pitcairn Islands flags","poland flags","portugal flags","puerto rico flags","qatar flags","réunion flags","romania flags","russia flags","rwanda flags","st. barthélemy flags","st. helena flags","st. kitts & nevis flags","st. lucia flags","st. pierre & miquelon flags","st. vincent & grenadines flags","samoa flags","san marino flags","são tomé & príncipe flags","saudi arabia flags","senegal flags","serbia flags","seychelles flags","sierra leone flags","singapore flags","sint maarten flags","slovakia flags","slovenia flags","solomon islands flags","somalia flags","south africa flags","south georgia sandwich islands flags","south korea flags","south sudan flags","spain flags","sri lanka flags","sudan flags","suriname flags","swaziland flags","sweden flags","switzerland flags","syria flags","taiwan flags","tajikistan flags","tanzania flags","thailand flags","timor-leste flags","togo flags","tokelau flags","tonga flags","trinidad & tobago flags","tunisia flags","turkey flags","turkmenistan flags","turks & caicos islands flags","tuvalu flags","uganda flags","ukraine flags","united arab emirates uae flags","united kingdom uk flags","united states us usa flags","us usa virgin islands flags","uruguay flags","uzbekistan flags","vanuatu flags","vatican city flags","venezuela flags","vietnam flags","wallis & futuna flags","western sahara flags","yemen flags","zambia flags","zimbabwe flags"]]</script>
+
+</body>
+</html>
