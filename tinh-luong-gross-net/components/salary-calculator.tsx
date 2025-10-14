@@ -204,9 +204,6 @@ export function SalaryCalculator() {
                 </span>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground text-center">
-              🎯 {mode === "gross-to-net" ? "Kết quả Net sẽ được làm nổi bật" : "Kết quả Gross sẽ được làm nổi bật"}
-            </p>
           </div>
 
           {/* Input Fields */}
@@ -254,7 +251,7 @@ export function SalaryCalculator() {
                 </Label>
               </div>
               <p className="text-xs text-muted-foreground">
-                💡 Nhiều công ty chỉ đóng bảo hiểm trên mức tối thiểu (5-10 triệu) thay vì lương chính thức
+                💡 Nhiều công ty có mức đóng bảo hiểm khác lương chính thức!
               </p>
               
               {useCustomInsuranceBase && (
