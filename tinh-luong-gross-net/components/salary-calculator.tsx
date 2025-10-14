@@ -269,7 +269,7 @@ export function SalaryCalculator() {
                     className="text-lg mt-1"
                   />
                   <p className="text-xs text-muted-foreground mt-1">
-                    Mức lương thực tế dùng để tính bảo hiểm (thường 5-10 triệu)
+                    Mức lương thực tế dùng để tính bảo hiểm (thường thấp hơn lương chính thức)
                   </p>
                 </div>
               )}
