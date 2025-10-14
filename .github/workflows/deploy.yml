@@ -48,33 +48,33 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('tinh-luong-gross-net/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies for gross-net-convert
+      - name: Install dependencies for tinh-luong-gross-net
         run: |
-          cd gross-net-convert
+          cd tinh-luong-gross-net
           pnpm install --no-frozen-lockfile
 
-      - name: Build and export gross-net-convert
+      - name: Build and export tinh-luong-gross-net
         run: |
-          cd gross-net-convert
+          cd tinh-luong-gross-net
           pnpm run build
 
       - name: Create deployment directory structure
         run: |
           mkdir -p ./deploy-site
           mkdir -p ./deploy-site/emoji-picker
-          mkdir -p ./deploy-site/salary-calculator
+          mkdir -p ./deploy-site/tinh-luong-gross-net
 
       - name: Copy emoji-picker files
         run: |
           cp -r ./emoji-picker/* ./deploy-site/emoji-picker/
 
-      - name: Copy gross-net-convert build files
+      - name: Copy tinh-luong-gross-net build files
         run: |
-          cp -r ./gross-net-convert/out/* ./deploy-site/salary-calculator/
+          cp -r ./tinh-luong-gross-net/out/* ./deploy-site/tinh-luong-gross-net/
 
       - name: Copy main homepage
         run: |

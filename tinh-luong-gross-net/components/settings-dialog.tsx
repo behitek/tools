@@ -115,34 +115,6 @@ export function SettingsDialog({ open, onOpenChange, config, onConfigChange, onR
                   </div>
                   
                   <div className="pt-4 border-t">
-                    <h4 className="font-medium mb-3">Mức trần đóng bảo hiểm</h4>
-                    <div className="space-y-3">
-                      <div>
-                        <Label htmlFor="cap-bhxh-bhyt">Trần BHXH + BHYT (VNĐ/tháng)</Label>
-                        <Input
-                          id="cap-bhxh-bhyt"
-                          type="text"
-                          value={formatCurrency(localConfig.insuranceCapBhxhBhyt)}
-                          onChange={(e) => updateDeduction("insuranceCapBhxhBhyt", e.target.value)}
-                          className="mt-1"
-                        />
-                        <p className="text-xs text-muted-foreground mt-1">20 lần lương cơ sở (46.8M)</p>
-                      </div>
-                      <div>
-                        <Label htmlFor="cap-bhtn">Trần BHTN (VNĐ/tháng)</Label>
-                        <Input
-                          id="cap-bhtn"
-                          type="text"
-                          value={formatCurrency(localConfig.insuranceCapBhtn)}
-                          onChange={(e) => updateDeduction("insuranceCapBhtn", e.target.value)}
-                          className="mt-1"
-                        />
-                        <p className="text-xs text-muted-foreground mt-1">20 lần lương tối thiểu vùng (99.2M - Vùng I)</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4 border-t">
                     <h4 className="font-medium mb-3">Vùng lương tối thiểu</h4>
                     <div className="space-y-3">
                       <div>
@@ -179,7 +151,37 @@ export function SettingsDialog({ open, onOpenChange, config, onConfigChange, onR
                           {formatCurrency(localConfig.regionMinWage)} VND/tháng
                         </p>
                         <p className="text-xs text-muted-foreground mt-1">
-                          Trần BHTN: {formatCurrency(localConfig.insuranceCapBhtn)} VND
+                          💡 Ảnh hưởng đến trần BHTN: {formatCurrency(localConfig.insuranceCapBhtn)} VND
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-4 border-t">
+                    <h4 className="font-medium mb-3">Mức trần đóng bảo hiểm</h4>
+                    <div className="space-y-3">
+                      <div>
+                        <Label htmlFor="cap-bhxh-bhyt">Trần BHXH + BHYT (VNĐ/tháng)</Label>
+                        <Input
+                          id="cap-bhxh-bhyt"
+                          type="text"
+                          value={formatCurrency(localConfig.insuranceCapBhxhBhyt)}
+                          onChange={(e) => updateDeduction("insuranceCapBhxhBhyt", e.target.value)}
+                          className="mt-1"
+                        />
+                        <p className="text-xs text-muted-foreground mt-1">20 lần lương cơ sở (46.8M)</p>
+                      </div>
+                      <div>
+                        <Label htmlFor="cap-bhtn">Trần BHTN (VNĐ/tháng)</Label>
+                        <Input
+                          id="cap-bhtn"
+                          type="text"
+                          value={formatCurrency(localConfig.insuranceCapBhtn)}
+                          onChange={(e) => updateDeduction("insuranceCapBhtn", e.target.value)}
+                          className="mt-1"
+                        />
+                        <p className="text-xs text-muted-foreground mt-1">
+                          🔗 Tự động tính từ vùng lương tối thiểu (20 lần × {formatCurrency(localConfig.regionMinWage)})
                         </p>
                       </div>
                     </div>

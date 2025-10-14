@@ -4,10 +4,27 @@ A collection of useful web tools and utilities.
 
 ## 📦 Available Tools
 
+### 💰 Máy tính lương (Salary Calculator)
+> Tính toán chính xác lương gross-net theo luật Việt Nam 2025
+
+**Live Demo**: https://behitek.github.io/tools/tinh-luong-gross-net/
+
+**Features**:
+- 💵 Tính toán gross-to-net và net-to-gross
+- 🏢 Hỗ trợ 4 vùng lương tối thiểu Việt Nam
+- 🔧 Tùy chỉnh mức đóng bảo hiểm riêng
+- 📊 Hiển thị chi tiết từng khoản tính toán
+- 🎯 Làm nổi bật kết quả tính toán
+- 📱 Giao diện responsive, thân thiện
+
+**Tech Stack**: Next.js, TypeScript, Tailwind CSS, Radix UI
+
+**Location**: `/tinh-luong-gross-net/`
+
 ### 🎯 Emoji Picker
 > Bộ chọn emoji miễn phí với bộ sưu tập emoji đầy đủ
 
-**Live Demo**: https://behitek.com/tools/emoji-picker/
+**Live Demo**: https://behitek.github.io/tools/emoji-picker/
 
 **Features**:
 - 🔍 Quick search by keywords
@@ -16,14 +33,17 @@ A collection of useful web tools and utilities.
 - 📱 Responsive design
 - 🎨 User-friendly interface
 
+**Tech Stack**: Vanilla HTML, CSS, JavaScript
+
 **Location**: `/emoji-picker/`
 
 ## 🚀 Deployment
 
 This repository is automatically deployed to GitHub Pages using GitHub Actions. Each tool is accessible via:
 
-- **Base URL**: `https://behitek.com/tools/`
-- **Emoji Picker**: `https://behitek.com/tools/emoji-picker/`
+- **Base URL**: `https://behitek.github.io/tools/`
+- **Salary Calculator**: `https://behitek.github.io/tools/tinh-luong-gross-net/`
+- **Emoji Picker**: `https://behitek.github.io/tools/emoji-picker/`
 
 ## 🔧 Development
 
@@ -38,13 +58,22 @@ Each tool is self-contained in its own directory with:
 tools/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # Deployment workflow
-├── emoji-picker/              # Emoji picker tool
+│       └── deploy.yml                    # Deployment workflow
+├── emoji-picker/                        # Emoji picker tool
 │   ├── index.html
 │   ├── style.css
 │   ├── script.mini.js
 │   └── categories/
-└── README.md                  # This file
+├── tinh-luong-gross-net/                # Salary calculator tool
+│   ├── app/                             # Next.js app directory
+│   ├── components/                      # React components
+│   ├── lib/                            # Utility functions
+│   ├── public/                         # Static assets
+│   ├── package.json
+│   ├── next.config.mjs
+│   └── tsconfig.json
+├── index.html                          # Homepage
+└── README.md                           # This file
 ```
 
 ## 🤝 Contributing
