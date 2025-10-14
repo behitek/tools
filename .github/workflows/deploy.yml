@@ -32,18 +32,35 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: './gross-net-convert/package.json'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies for gross-net-convert
         run: |
           cd gross-net-convert
-          npm ci
+          pnpm install --frozen-lockfile
 
       - name: Build and export gross-net-convert
         run: |
           cd gross-net-convert
-          npm run build
+          pnpm run build
 
       - name: Create deployment directory structure
         run: |
@@ -59,97 +76,9 @@ jobs:
         run: |
           cp -r ./gross-net-convert/out/* ./deploy-site/salary-calculator/
 
-      - name: Create main index.html
+      - name: Copy main homepage
         run: |
-          cat > ./deploy-site/index.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="vi">
-          <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>🛠️ Bộ công cụ tiện ích - Luyencode Tools</title>
-              <meta name="description" content="Bộ sưu tập các công cụ tiện ích miễn phí: Máy tính lương, Bộ chọn emoji và nhiều công cụ khác">
-              <style>
-                  * { margin: 0; padding: 0; box-sizing: border-box; }
-                  body { 
-                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                      line-height: 1.6; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                      min-height: 100vh; display: flex; align-items: center; justify-content: center;
-                  }
-                  .container { 
-                      max-width: 800px; margin: 0 auto; padding: 2rem; 
-                      background: rgba(255, 255, 255, 0.95); border-radius: 20px;
-                      box-shadow: 0 20px 40px rgba(0,0,0,0.1); backdrop-filter: blur(10px);
-                  }
-                  h1 { 
-                      text-align: center; color: #333; margin-bottom: 2rem; font-size: 2.5rem;
-                      background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text;
-                      -webkit-text-fill-color: transparent; background-clip: text;
-                  }
-                  .tools-grid { 
-                      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                      gap: 2rem; margin-top: 2rem;
-                  }
-                  .tool-card { 
-                      background: white; border-radius: 15px; padding: 2rem; text-decoration: none;
-                      box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: all 0.3s ease;
-                      border: 2px solid transparent;
-                  }
-                  .tool-card:hover { 
-                      transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-                      border-color: #667eea;
-                  }
-                  .tool-icon { font-size: 3rem; margin-bottom: 1rem; }
-                  .tool-title { 
-                      color: #333; font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;
-                  }
-                  .tool-description { 
-                      color: #666; font-size: 1rem; line-height: 1.5;
-                  }
-                  .footer {
-                      text-align: center; margin-top: 3rem; color: #666; font-size: 0.9rem;
-                  }
-                  .footer a { color: #667eea; text-decoration: none; }
-                  .footer a:hover { text-decoration: underline; }
-              </style>
-          </head>
-          <body>
-              <div class="container">
-                  <h1>🛠️ Bộ công cụ tiện ích</h1>
-                  <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 2rem;">
-                      Tổng hợp các công cụ hữu ích được phát triển bởi Luyencode
-                  </p>
-                  
-                  <div class="tools-grid">
-                      <a href="./salary-calculator/" class="tool-card">
-                          <div class="tool-icon">💰</div>
-                          <h3 class="tool-title">Máy tính lương</h3>
-                          <p class="tool-description">
-                              Tính toán chính xác lương gross-net theo luật Việt Nam 2025. 
-                              Hỗ trợ tùy chỉnh vùng, mức đóng bảo hiểm linh hoạt.
-                          </p>
-                      </a>
-                      
-                      <a href="./emoji-picker/" class="tool-card">
-                          <div class="tool-icon">😊</div>
-                          <h3 class="tool-title">Bộ chọn Emoji</h3>
-                          <p class="tool-description">
-                              Tìm kiếm và sao chép emoji nhanh chóng với bộ sưu tập đầy đủ. 
-                              Giao diện thân thiện, dễ sử dụng.
-                          </p>
-                      </a>
-                  </div>
-                  
-                  <div class="footer">
-                      <p>
-                          Phát triển bởi <a href="https://luyencode.net" target="_blank">Luyencode</a> |
-                          <a href="https://github.com/behitek/tools" target="_blank">GitHub</a>
-                      </p>
-                  </div>
-              </div>
-          </body>
-          </html>
-          EOF
+          cp ./index.html ./deploy-site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
