@@ -1,10 +1,10 @@
 "use client"
 
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { HelpCircle } from "lucide-react"
@@ -19,7 +19,7 @@ const faqData = [
       },
       {
         question: "Tại sao cần phải trừ bảo hiểm xã hội khỏi lương?",
-        answer: "Bảo hiểm xã hội là quy định bắt buộc theo luật pháp Việt Nam nhằm đảm bảo quyền lợi cho người lao động. Gồm 3 loại: BHXH (8%) để hưởng chế độ hưu trí, ốm đau; BHYT (1.5%) để khám chữa bệnh; BHTN (1%) để hỗ trợ khi thất nghiệp. Tổng cộng 10.5% lương gross sẽ được trừ vào bảo hiểm."
+        answer: "Bảo hiểm xã hội là quy định bắt buộc theo luật pháp Việt Nam nhằm đảm bảo quyền lợi cho người lao động. Gồm 3 loại: BHXH (8% vào quỹ hưu trí và tử tuất) để hưởng chế độ hưu trí, ốm đau; BHYT (1.5%) để khám chữa bệnh; BHTN (1%) để hỗ trợ khi thất nghiệp. Tổng cộng 10.5% lương gross sẽ được trừ vào bảo hiểm."
       },
       {
         question: "Công thức tính lương Net từ Gross như thế nào?",
@@ -36,7 +36,7 @@ const faqData = [
     questions: [
       {
         question: "Tỷ lệ đóng BHXH, BHYT, BHTN năm 2025 là bao nhiêu?",
-        answer: "Tỷ lệ đóng bảo hiểm năm 2025 - Người lao động đóng tổng cộng 10.5%: BHXH 8%, BHYT 1.5%, BHTN 1%. Doanh nghiệp đóng tổng cộng 21.5%: BHXH hưu trí & tử tuất 14%, BHXH ốm đau & thai sản 3%, BHYT 3%, BHTN 1%, tai nạn lao động 0.5%. Tổng cộng bảo hiểm bắt buộc chiếm 32% lương gross."
+        answer: "Tỷ lệ đóng bảo hiểm năm 2025 - Người lao động đóng tổng cộng 10.5%: BHXH 8% (vào quỹ hưu trí và tử tuất), BHYT 1.5%, BHTN 1%. Doanh nghiệp đóng tổng cộng 21.5%: BHXH 17% (14% vào quỹ hưu trí và tử tuất + 3% vào quỹ ốm đau và thai sản), BHYT 3%, BHTN 1%, BHTNLĐ-BNN 0.5%. Tổng cộng bảo hiểm bắt buộc chiếm 32% lương gross."
       },
       {
         question: "Lương đóng bảo hiểm có giới hạn tối đa không?",
@@ -57,7 +57,7 @@ const faqData = [
     questions: [
       {
         question: "Bậc thuế thu nhập cá nhân năm 2025 như thế nào?",
-        answer: "Bậc thuế TNCN năm 2025: Đến 5 triệu (5%), 5-10 triệu (10%), 10-18 triệu (15%), 18-32 triệu (20%), 32-52 triệu (25%), 52-80 triệu (30%), trên 80 triệu (35%). Thuế được tính lũy tiến, tức là chỉ phần vượt mức mới áp dụng thuế suất cao hơn."
+        answer: "Bậc thuế TNCN năm 2025 (theo Luật Thuế TNCN): Đến 5 triệu (5%), Trên 5-10 triệu (10%), Trên 10-18 triệu (15%), Trên 18-32 triệu (20%), Trên 32-52 triệu (25%), Trên 52-80 triệu (30%), Trên 80 triệu (35%). Thuế được tính lũy tiến từng phần, tức là chỉ phần vượt mức mới áp dụng thuế suất cao hơn."
       },
       {
         question: "Mức giảm trừ gia cảnh năm 2025 là bao nhiêu?",
@@ -65,15 +65,15 @@ const faqData = [
       },
       {
         question: "Thu nhập nào phải chịu thuế TNCN?",
-        answer: "Các loại thu nhập chịu thuế: Lương, thưởng từ công việc; Thu nhập từ kinh doanh; Thu nhập từ đầu tư chứng khoán, bất động sản; Thu nhập từ chuyển nhượng tài sản; Thu nhập khác như trúng thưởng, được tặng. Mỗi loại có cách tính thuế khác nhau, lương áp dụng thuế suất lũy tiến 5-35%."
+        answer: "Các loại thu nhập chịu thuế: Lương, thưởng từ công việc; Thu nhập từ kinh doanh; Thu nhập từ đầu tư chứng khoán, bất động sản; Thu nhập từ chuyển nhượng tài sản; Thu nhập khác như trúng thưởng, được tặng. Mỗi loại có cách tính thuế khác nhau, lương và thưởng từ công việc áp dụng thuế suất lũy tiến từng phần 5-35%."
       },
       {
         question: "Làm thế nào để tính thuế khi có nhiều nguồn thu nhập?",
-        answer: "Khi có nhiều nguồn thu nhập từ lương: Cộng tất cả thu nhập chịu thuế trong tháng, trừ giảm trừ gia cảnh, sau đó áp dụng bậc thuế lũy tiến. Nếu có thu nhập từ kinh doanh hoặc đầu tư, cần kê khai riêng theo quy định. Thuế tổng hợp sẽ được quyết toán cuối năm."
+        answer: "Khi có nhiều nguồn thu nhập từ lương: Cộng tất cả thu nhập chịu thuế trong tháng, trừ giảm trừ gia cảnh, sau đó áp dụng bậc thuế lũy tiến từng phần. Nếu có thu nhập từ kinh doanh hoặc đầu tư, cần kê khai riêng theo quy định. Thuế tổng hợp sẽ được quyết toán cuối năm."
       },
       {
         question: "Có cách nào giảm thuế TNCN hợp pháp không?",
-        answer: "Các cách giảm thuế hợp pháp: Kê khai đầy đủ người phụ thuộc; Đóng bảo hiểm nhân thọ tự nguyện (tối đa 2.4 triệu/tháng); Ủng hộ từ thiện, nhân đạo; Học tập nâng cao trình độ; Đầu tư vào quỹ hưu trí tự nguyện. Lưu ý phải có chứng từ hợp lệ và tuân thủ quy định của pháp luật."
+        answer: "Các cách giảm thuế hợp pháp: Kê khai đầy đủ người phụ thuộc; Đóng bảo hiểm nhân thọ tự nguyện (tối đa 2.4 triệu/tháng); Ủng hộ từ thiện, nhân đạo; Học tập nâng cao trình độ; Đóng quỹ hưu trí tự nguyện. Lưu ý phải có chứng từ hợp lệ và tuân thủ quy định của pháp luật."
       },
       {
         question: "Tại sao cần dùng thuật toán tìm kiếm nhị phân để tính Net to Gross?",
@@ -107,7 +107,7 @@ const faqData = [
       },
       {
         question: "Lương tháng 13, thưởng Tết có đóng thuế không?",
-        answer: "Lương tháng 13 và thưởng đều chịu thuế TNCN. Tuy nhiên có quy định đặc biệt: Thưởng dưới 10 triệu/năm được miễn thuế; Thưởng từ 10 triệu trở lên chịu thuế 10% (không cộng vào thu nhập tháng). Lương tháng 13 được coi như lương bình thường, cộng vào thu nhập tháng để tính thuế lũy tiến."
+        answer: "Lương tháng 13 và thưởng Tết đều phải chịu thuế TNCN. Các khoản thưởng này được cộng vào tổng thu nhập chịu thuế của tháng nhận thưởng, sau đó tính thuế theo biểu thuế lũy tiến từng phần (5%-35%) như thu nhập lương bình thường. Ví dụ: Nếu tháng 1 nhận lương 20 triệu + thưởng Tết 30 triệu = tổng 50 triệu, sẽ tính thuế trên 50 triệu theo bậc thuế lũy tiến."
       },
       {
         question: "Nghỉ việc giữa tháng, lương và thuế tính như thế nào?",
@@ -118,8 +118,8 @@ const faqData = [
         answer: "Khi có 2 nguồn lương, mỗi công ty tính thuế riêng lẻ có thể thiếu hoặc thừa thuế. Cuối năm phải kê khai quyết toán thuế tổng hợp để tính chính xác. Thường sẽ phải đóng thêm thuế vì tổng thu nhập cao hơn, áp dụng bậc thuế cao hơn. Nên báo với công ty chính để được tính thuế chính xác hơn."
       },
       {
-        question: "Cách tính thuế TNCN theo bậc lũy tiến hoạt động như thế nào?",
-        answer: "Thuế TNCN tính lũy tiến có nghĩa là chỉ phần thu nhập vượt mức mới chịu thuế suất cao hơn. Ví dụ thu nhập chịu thuế 15 triệu: 5 triệu đầu × 5% = 250K, 5 triệu tiếp × 10% = 500K, 5 triệu cuối × 15% = 750K. Tổng thuế = 1.5 triệu (10% trên tổng thu nhập), không phải 15 triệu × 15% = 2.25 triệu."
+        question: "Cách tính thuế TNCN theo bậc lũy tiến từng phần hoạt động như thế nào?",
+        answer: "Thuế TNCN tính lũy tiến từng phần có nghĩa là chỉ phần thu nhập vượt mức mới chịu thuế suất cao hơn. Ví dụ thu nhập chịu thuế 15 triệu: 5 triệu đầu × 5% = 250K, 5 triệu tiếp (phần từ >5-10 triệu) × 10% = 500K, 5 triệu cuối (phần từ >10-15 triệu) × 15% = 750K. Tổng thuế = 1.5 triệu (10% trên tổng thu nhập), không phải 15 triệu × 15% = 2.25 triệu."
       },
       {
         question: "Tại sao cần phải làm tròn kết quả cuối cùng?",
@@ -196,8 +196,9 @@ export function FaqSection() {
             <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
               <li>• Công cụ áp dụng mức lương cơ sở 2.34 triệu và lương tối thiểu vùng từ 1/7/2024</li>
               <li>• Bảo hiểm được tính riêng biệt: BHXH+BHYT (tối đa 46.8M), BHTN (tối đa theo vùng)</li>
-              <li>• Thuế TNCN chỉ áp dụng khi thu nhập chịu thuế {'>'}11 triệu/tháng</li>
+              <li>• Thuế TNCN áp dụng khi thu nhập chịu thuế {'>'} 0 đồng theo bậc lũy tiến từng phần</li>
               <li>• Conversion Net→Gross sử dụng thuật toán tìm kiếm nhị phân với độ chính xác ±1,000 VNĐ</li>
+              <li>• Thưởng tháng 13, thưởng Tết được cộng vào thu nhập tháng để tính thuế lũy tiến</li>
               <li>• Nên tham khảo chuyên gia thuế cho các tình huống phức tạp</li>
             </ul>
           </div>
