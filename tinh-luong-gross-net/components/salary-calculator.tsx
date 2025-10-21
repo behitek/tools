@@ -159,7 +159,23 @@ export function SalaryCalculator() {
       <Card className="backdrop-blur-lg bg-white/95 dark:bg-gray-900/95 shadow-2xl">
         <CardHeader>
           <div className="flex items-center justify-between">
-            <CardTitle className="text-2xl">Máy Tính Lương</CardTitle>
+            <div className="flex flex-col gap-2">
+              <CardTitle className="text-2xl">Máy Tính Lương</CardTitle>
+              <div className="flex items-center gap-2">
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs font-medium rounded-full border border-green-200 dark:border-green-800">
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                  100% Riêng tư
+                </div>
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-medium rounded-full border border-blue-200 dark:border-blue-800">
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  Client-side
+                </div>
+              </div>
+            </div>
             <div className="flex gap-2">
               <Button
                 variant="outline"
@@ -340,6 +356,48 @@ export function SalaryCalculator() {
                 bold 
                 highlighted={mode === "gross-to-net"}
               />
+            </div>
+          </div>
+
+          {/* Privacy Notice */}
+          <div className="mt-6 p-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 rounded-lg border border-green-200 dark:border-green-800">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-6 h-6 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center mt-0.5">
+                <svg className="w-3.5 h-3.5 text-green-600 dark:text-green-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">
+                  🔒 Bảo mật tuyệt đối - Tính năng độc quyền
+                </h4>
+                <div className="space-y-2 text-sm text-green-700 dark:text-green-300">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span><strong>100% Client-side:</strong> Tất cả tính toán diễn ra trên trình duyệt của bạn</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span><strong>Không thu thập dữ liệu:</strong> Không có server, không có database</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span><strong>Không gửi dữ liệu:</strong> Thông tin lương không bao giờ rời khỏi máy tính của bạn</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span><strong>Mã nguồn mở:</strong> Kiểm tra tại <a href="https://github.com/behitek/tools" target="_blank" rel="noopener" className="underline hover:no-underline">GitHub</a></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </CardContent>

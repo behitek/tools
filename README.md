@@ -5,11 +5,17 @@ A collection of useful web tools and utilities.
 ## 📦 Available Tools
 
 ### 💰 Máy tính lương (Salary Calculator)
-> Tính toán chính xác lương gross-net theo luật Việt Nam 2025
+> Tính toán chính xác lương gross-net theo luật Việt Nam 2025 - **100% riêng tư, không thu thập dữ liệu**
 
 **Live Demo**: https://behitek.github.io/tools/tinh-luong-gross-net/
 
-**Features**:
+**🔒 Tính năng bảo mật độc quyền**:
+- 🛡️ **100% Static**: Tất cả tính toán diễn ra trên máy tính của bạn
+- 🚫 **Không thu thập dữ liệu**: Không có server, không có database
+- 📱 **Offline hoàn toàn**: Hoạt động ngay cả khi mất mạng
+- 🔍 **Mã nguồn mở**: Có thể kiểm tra và xác minh
+
+**Tính năng chính**:
 - 💵 Tính toán gross-to-net và net-to-gross
 - 🏢 Hỗ trợ 4 vùng lương tối thiểu Việt Nam
 - 🔧 Tùy chỉnh mức đóng bảo hiểm riêng

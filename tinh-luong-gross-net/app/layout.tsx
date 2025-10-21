@@ -7,8 +7,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Máy Tính Lương Việt Nam 2025 - Chuyển Đổi Gross Net Chính Xác",
-  description: "Công cụ tính lương Gross-Net miễn phí cho Việt Nam. Tính chính xác BHXH, BHYT, BHTN và thuế TNCN. Cập nhật quy định 2025. Có FAQ chi tiết về lương và thuế.",
+  title: "Máy Tính Lương Việt Nam 2025 - 100% Riêng Tư, Không Thu Thập Dữ Liệu",
+  description: "Công cụ tính lương Gross-Net hoàn toàn riêng tư cho Việt Nam. 100% client-side, tính toán trên trình duyệt, không thu thập dữ liệu cá nhân. Tính chính xác BHXH, BHYT, BHTN và thuế TNCN theo quy định 2025.",
   keywords: [
     "máy tính lương",
     "lương gross net",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: "https://tools.luyencode.net/gross-net-convert"
   },
   openGraph: {
-    title: "Máy Tính Lương Việt Nam 2025 - Chuyển Đổi Gross Net",
-    description: "Công cụ tính lương Gross-Net miễn phí, chính xác cho người lao động Việt Nam. Cập nhật quy định mới nhất.",
+    title: "Máy Tính Lương Việt Nam 2025 - 100% Riêng Tư",
+    description: "Công cụ tính lương Gross-Net hoàn toàn riêng tư, không thu thập dữ liệu cá nhân. Tính toán trên trình duyệt, bảo mật tuyệt đối cho người lao động Việt Nam.",
     url: "https://tools.luyencode.net/gross-net-convert",
     siteName: "LuyenCode Tools",
     locale: "vi_VN",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Máy Tính Lương Việt Nam 2025",
-    description: "Công cụ tính lương Gross-Net miễn phí, chính xác cho người lao động Việt Nam",
+    title: "Máy Tính Lương Việt Nam 2025 - 100% Riêng Tư",
+    description: "Công cụ tính lương Gross-Net hoàn toàn riêng tư, không thu thập dữ liệu. Tính toán trên trình duyệt, bảo mật tuyệt đối",
   },
   robots: {
     index: true,
@@ -60,7 +60,7 @@ const jsonLd = {
   "@type": "WebApplication",
   name: "Máy Tính Lương Việt Nam",
   alternateName: "Vietnam Salary Calculator",
-  description: "Công cụ tính lương Gross-Net miễn phí cho Việt Nam với các thông số có thể tùy chỉnh. Tính chính xác BHXH, BHYT, BHTN và thuế TNCN theo quy định 2025.",
+  description: "Công cụ tính lương Gross-Net hoàn toàn riêng tư cho Việt Nam. 100% client-side, tính toán trên trình duyệt, không thu thập dữ liệu cá nhân. Tính chính xác BHXH, BHYT, BHTN và thuế TNCN theo quy định 2025.",
   url: "https://tools.luyencode.net/gross-net-convert",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
@@ -78,13 +78,14 @@ const jsonLd = {
   },
   inLanguage: "vi-VN",
   featureList: [
+    "100% riêng tư - không thu thập dữ liệu",
+    "Tính toán trên trình duyệt (client-side)",
     "Chuyển đổi lương Gross sang Net",
     "Chuyển đổi lương Net sang Gross", 
     "Tính toán BHXH, BHYT, BHTN",
     "Tính thuế thu nhập cá nhân",
     "Hỗ trợ người phụ thuộc",
-    "Cài đặt thông số tùy chỉnh",
-    "FAQ chi tiết về lương và thuế"
+    "Cài đặt thông số tùy chỉnh"
   ]
 }
 
