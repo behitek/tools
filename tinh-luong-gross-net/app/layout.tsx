@@ -102,7 +102,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`} style={{fontFamily: `${GeistSans.style.fontFamily}, "Inter", "Segoe UI", "Roboto", "Noto Sans", "Arial", sans-serif`}}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
