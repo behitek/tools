@@ -27,7 +27,35 @@ A collection of useful web tools and utilities.
 
 **Location**: `/tinh-luong-gross-net/`
 
-### 🎯 Emoji Picker
+### 🎯 Vòng quay may mắn (Lucky Wheel)
+> Công cụ vòng quay ngẫu nhiên tương tác cho việc ra quyết định và trò chơi
+
+**Live Demo**: https://behitek.github.io/tools/vong-quay-may-man/
+
+**Tính năng nổi bật**:
+- 🎪 **Vòng quay tương tác**: Hoạt ảnh mượt mà với vật lý thực tế
+- 🎉 **Hiệu ứng pháo hoa**: Ăn mừng khi có người thắng
+- 📊 **Thống kê chi tiết**: Theo dõi lịch sử quay và tần suất thắng
+- 🔊 **Âm thanh phản hồi**: Hiệu ứng âm thanh cho từng hành động
+
+**Tính năng quản lý**:
+- ➕ Thêm/xóa các mục dễ dàng
+- ✏️ Chỉnh sửa mục trực tiếp
+- 📝 Nhập nhiều mục cùng lúc
+- 🎨 Tự động gán màu cho từng mục
+- 💾 Lưu trữ dữ liệu tự động
+
+**Tùy chỉnh**:
+- 🔇 Bật/tắt âm thanh
+- 🎊 Điều khiển hiệu ứng ăn mừng
+- ⏱️ Hiển thị thời gian quay tùy chọn
+- 📱 Thiết kế responsive hoàn hảo
+
+**Tech Stack**: Vanilla HTML5, CSS3, JavaScript, Canvas API, Web Audio API
+
+**Location**: `/vong-quay-may-man/`
+
+### 😊 Emoji Picker
 > Bộ chọn emoji miễn phí với bộ sưu tập emoji đầy đủ
 
 **Live Demo**: https://behitek.github.io/tools/emoji-picker/
@@ -49,6 +77,7 @@ This repository is automatically deployed to GitHub Pages using GitHub Actions. 
 
 - **Base URL**: `https://behitek.github.io/tools/`
 - **Salary Calculator**: `https://behitek.github.io/tools/tinh-luong-gross-net/`
+- **Lucky Wheel**: `https://behitek.github.io/tools/vong-quay-may-man/`
 - **Emoji Picker**: `https://behitek.github.io/tools/emoji-picker/`
 
 ## 🔧 Development
@@ -78,6 +107,11 @@ tools/
 │   ├── package.json
 │   ├── next.config.mjs
 │   └── tsconfig.json
+├── vong-quay-may-man/                   # Lucky wheel tool
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   └── README.md
 ├── index.html                          # Homepage
 └── README.md                           # This file
 ```

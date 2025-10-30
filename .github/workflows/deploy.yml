@@ -67,10 +67,15 @@ jobs:
           mkdir -p ./deploy-site
           mkdir -p ./deploy-site/emoji-picker
           mkdir -p ./deploy-site/tinh-luong-gross-net
+          mkdir -p ./deploy-site/vong-quay-may-man
 
       - name: Copy emoji-picker files
         run: |
           cp -r ./emoji-picker/* ./deploy-site/emoji-picker/
+
+      - name: Copy vong-quay-may-man files
+        run: |
+          cp -r ./vong-quay-may-man/* ./deploy-site/vong-quay-may-man/
 
       - name: Copy tinh-luong-gross-net build files
         run: |

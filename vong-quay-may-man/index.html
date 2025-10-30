@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Wheel - Random Decision Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-dharmachakra"></i> Lucky Wheel</h1>
+            <p>Spin the wheel for random decisions!</p>
+        </header>
+
+        <main class="main-content">
+            <div class="wheel-section">
+                <div class="wheel-container">
+                    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+                    <div class="wheel-center">
+                        <button id="spinButton" class="spin-btn">
+                            <span><i class="fas fa-play"></i></span>
+                        </button>
+                    </div>
+                    <div class="pointer">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+                <div class="winner-display" id="winnerDisplay">
+                    <div class="winner-content">
+                        <h2>🎉 Winner! 🎉</h2>
+                        <p id="winnerText"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <div class="panel">
+                    <h3><i class="fas fa-list"></i> Items</h3>
+                    <div class="item-controls">
+                        <input type="text" id="itemInput" placeholder="Enter item name" maxlength="30">
+                        <button id="addItemBtn" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                    <div class="items-list" id="itemsList">
+                        <!-- Items will be dynamically added here -->
+                    </div>
+                    <div class="bulk-import">
+                        <textarea id="bulkInput" placeholder="Enter multiple items (one per line)" rows="3"></textarea>
+                        <button id="bulkImportBtn" class="btn btn-secondary">
+                            <i class="fas fa-file-import"></i> Bulk Import
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3><i class="fas fa-cog"></i> Settings</h3>
+                    <div class="settings">
+                        <label class="setting-item">
+                            <input type="checkbox" id="soundEnabled" checked>
+                            <span><i class="fas fa-volume-up"></i> Sound Effects</span>
+                        </label>
+                        <label class="setting-item">
+                            <input type="checkbox" id="confettiEnabled" checked>
+                            <span><i class="fas fa-star"></i> Confetti Effect</span>
+                        </label>
+                        <label class="setting-item">
+                            <input type="checkbox" id="spinTime">
+                            <span><i class="fas fa-clock"></i> Show Spin Duration</span>
+                        </label>
+                    </div>
+                    <div class="action-buttons">
+                        <button id="clearAllBtn" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Clear All
+                        </button>
+                        <button id="resetStatsBtn" class="btn btn-warning">
+                            <i class="fas fa-redo"></i> Reset Stats
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel stats-panel">
+                    <h3><i class="fas fa-chart-bar"></i> Statistics</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Spins:</span>
+                            <span class="stat-value" id="totalSpins">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Unique Winners:</span>
+                            <span class="stat-value" id="uniqueWinners">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Most Frequent:</span>
+                            <span class="stat-value" id="mostFrequent">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel history-panel">
+                    <h3><i class="fas fa-history"></i> Recent History</h3>
+                    <div class="history-list" id="historyList">
+                        <p class="no-history">No spins yet</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
