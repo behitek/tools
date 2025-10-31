@@ -238,7 +238,7 @@ class LuckyWheel {
         const segmentPadding = segmentAngle * 0.2; // 20% padding from edges
         const safeZone = segmentAngle - segmentPadding;
         const randomSegment = Math.floor(Math.random() * this.items.length);
-        const randomOffset = segmentPadding/2 + Math.random() * safeZone;
+        const randomOffset = segmentPadding / 2 + Math.random() * safeZone;
         const randomAngle = randomSegment * segmentAngle + randomOffset;
 
         this.targetRotation = this.currentRotation + (totalSpins * 360) + randomAngle;
@@ -584,8 +584,8 @@ class LuckyWheel {
         toast.className = `toast ${type}`;
 
         const icon = type === 'success' ? 'check-circle' :
-                    type === 'error' ? 'times-circle' :
-                    type === 'warning' ? 'exclamation-triangle' : 'info-circle';
+            type === 'error' ? 'times-circle' :
+                type === 'warning' ? 'exclamation-triangle' : 'info-circle';
 
         toast.innerHTML = `
             <i class="fas fa-${icon}"></i>
@@ -637,12 +637,16 @@ class LuckyWheel {
     }
 
     loadDefaultItems() {
-        // Load some default items for demonstration
+        // Load Vietnamese food names as default items
         const defaultItems = [
-            { id: 1, name: 'Option 1', color: this.generateColor(0) },
-            { id: 2, name: 'Option 2', color: this.generateColor(1) },
-            { id: 3, name: 'Option 3', color: this.generateColor(2) },
-            { id: 4, name: 'Option 4', color: this.generateColor(3) }
+            { id: 1, name: 'Phở', color: this.generateColor(0) },
+            { id: 2, name: 'Bún bò Huế', color: this.generateColor(1) },
+            { id: 3, name: 'Bánh mì', color: this.generateColor(2) },
+            { id: 4, name: 'Cơm tấm', color: this.generateColor(3) },
+            { id: 5, name: 'Bánh xèo', color: this.generateColor(4) },
+            { id: 6, name: 'Gỏi cuốn', color: this.generateColor(5) },
+            { id: 7, name: 'Bún chả', color: this.generateColor(6) },
+            { id: 8, name: 'Cao lầu', color: this.generateColor(7) }
         ];
 
         this.items = defaultItems;
